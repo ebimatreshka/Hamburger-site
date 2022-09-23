@@ -2,8 +2,24 @@
 //文字色
 $color-white: #FFFFFF;
 $color-brown: #707070;
-$color-dark-brown: #3C2A10;
+$color-darkbrown: #3C2A10; //articleの中の文字
 
 //背景色
 $color-bg-seashell: #FFF7EF;     //ヘッダー
 $color-bg-lightgray: #F2EDE9;    //ボタン、サイドバー
+
+//ブレイクポイント
+$tablet: 600px;
+$pc: 1025px;
+
+@mixin tablet {
+    @media screen and (min-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin pc {
+    @media screen and (min-width: $pc) {
+       @content; 
+    }
+}

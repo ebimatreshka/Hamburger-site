@@ -1,5 +1,6 @@
 //foundation
-
 @use "./foundation/base"; 
-@use "./foundation/variables"; 
+@use "./foundation/variables" as v;
 
+//layout
+@use "./layout/header";
