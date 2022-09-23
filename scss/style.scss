@@ -1,1 +1,5 @@
-@use 'layout/header'; //layout/_header.scss
+//foundation
+
+@use "./foundation/base"; 
+@use "./foundation/variables"; 
+
