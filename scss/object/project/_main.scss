@@ -1,0 +1,12 @@
+.p-main-visual {
+    position: relative;
+    height: 530px;
+    overflow: hidden;
+    background-image: url(../../../images/mainvisual\(pc\).jpg);
+    display: flex;
+    align-items: center;
+    &__title {
+        padding-left: 86px;
+        font-size: 40px;
+    }
+}

@@ -30,4 +30,91 @@ img {
   border: none;
   display: block;
 }
+
+.l-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFF7EF;
+  height: 217px;
+}
+
+.c-grid {
+  display: grid;
+  grid-template-rows: 217px 1fr 150px;
+  grid-template-columns: 1fr 20%;
+  gap: 10px;
+}
+.c-grid__header {
+  grid-row: 1;
+  grid-column: 1/2;
+}
+.c-grid__main {
+  grid-row: 2;
+  grid-column: 1/2;
+}
+.c-grid__footer {
+  grid-row: 3;
+  grid-column: 1/2;
+}
+.c-grid__sidebar {
+  grid-row: 1;
+  grid-column: 2/3;
+}
+
+.c-button {
+  text-align: center;
+  text-decoration: none;
+}
+
+.c-text {
+  color: #3C2A10;
+}
+
+.c-title {
+  color: #FFFFFF;
+  color: plum;
+  font-weight: bold;
+}
+
+.p-header .p-header__title {
+  margin-left: 65px;
+  font-weight: 900;
+  font-size: 64px;
+  font-family: Roboto;
+}
+
+.p-main-visual {
+  position: relative;
+  height: 530px;
+  overflow: hidden;
+  background-image: url(../../../images/mainvisual\(pc\).jpg);
+  display: flex;
+  align-items: center;
+}
+.p-main-visual__title {
+  padding-left: 86px;
+  font-size: 40px;
+}
+
+.p-search-form {
+  display: flex;
+  width: 396px;
+}
+.p-search-form__keyword {
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  width: 396px;
+  height: 46px;
+  margin: 86px 0 85px;
+}
+.p-search-form__submit {
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: #F2EDE9;
+  width: 136px;
+  height: 46px;
+  margin: 86px 31px 85px 13px;
+}
 /*# sourceMappingURL=style.css.map */

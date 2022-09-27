@@ -1,3 +1,5 @@
+@use "./variables" as v;
+
 * {
     box-sizing: border-box;
 }
@@ -9,7 +11,7 @@ html {
 }
 
 body {
-    color: #707070;
+    color: v.$color-brown;
     font-size: 1.6rem;
     width: 100%;
     overflow-x: hidden;
@@ -21,7 +23,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: #707070;
+    color: v.$color-brown;
 }
 
 img {

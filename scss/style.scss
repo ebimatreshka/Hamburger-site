@@ -1,6 +1,18 @@
 //foundation
 @use "./foundation/base"; 
-@use "./foundation/variables" as v;
+@use "./foundation/variables";
 
 //layout
-@use "./layout/header";
+@use "./layout/l-header";
+
+//object/component
+@use "./object/project/brunch-menu";
+@use "./object/component/grid";
+@use "./object/component/button";
+@use "./object/component/text";
+@use "./object/component/title";
+
+//object/project
+@use "./object/project/header";
+@use "./object/project/main";
+@use "./object/project/search-form";

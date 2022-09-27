@@ -1,0 +1,9 @@
+@use "./../foundation/variables" as v;
+
+.l-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: v.$color-bg-seashell;
+    height: 217px;
+}

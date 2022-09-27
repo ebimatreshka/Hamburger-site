@@ -1,0 +1,22 @@
+@use "./../../foundation/variables" as v;
+
+.p-search-form {
+    display: flex;  
+    width: 396px;
+    &__keyword {
+        border: 1px solid;
+        border-radius: 10px;
+        background-color: v.$color-white;
+        width: 396px;
+        height: 46px;
+        margin: 86px 0 85px;
+    }
+    &__submit {
+        border: 1px solid;
+        border-radius: 10px;
+        background-color: v.$color-bg-lightgray;
+        width: 136px;
+        height: 46px;
+        margin: 86px 31px 85px 13px;    
+    }
+}

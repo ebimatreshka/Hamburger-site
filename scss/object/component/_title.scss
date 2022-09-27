@@ -1,0 +1,7 @@
+@use "./../../foundation/variables" as v;
+
+.c-title {
+    color: v.$color-white;
+    color: plum;
+    font-weight: bold;
+}
