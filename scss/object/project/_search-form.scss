@@ -3,6 +3,17 @@
 .p-search-form {
     display: flex;  
     width: 396px;
+    position: relative;  //虫眼鏡入れるため
+    &::before {
+        content: "";
+        width: 24px;
+        height: 24px;
+        background: url(./../../../images/glass.jpg) no-repeat center center / auto 100%;
+        display: inline-block;
+        position: absolute;
+        top: 98px;
+        left: 12px;
+    }
     &__keyword {
         border: 1px solid;
         border-radius: 10px;

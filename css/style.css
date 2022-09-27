@@ -100,6 +100,17 @@ img {
 .p-search-form {
   display: flex;
   width: 396px;
+  position: relative;
+}
+.p-search-form::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url(./../../../images/glass.jpg) no-repeat center center/auto 100%;
+  display: inline-block;
+  position: absolute;
+  top: 98px;
+  left: 12px;
 }
 .p-search-form__keyword {
   border: 1px solid;
