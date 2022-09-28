@@ -2,7 +2,7 @@
     display: grid;
     grid-template-rows: 217px 1fr 150px;
     grid-template-columns: 1fr 20%;
-    gap: 10px;
+    // gap: 10px;
     &__header {
         grid-row: 1;
         grid-column: 1/2;

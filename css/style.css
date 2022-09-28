@@ -43,7 +43,6 @@ img {
   display: grid;
   grid-template-rows: 217px 1fr 150px;
   grid-template-columns: 1fr 20%;
-  gap: 10px;
 }
 .c-grid__header {
   grid-row: 1;
@@ -111,6 +110,9 @@ img {
   position: absolute;
   top: 98px;
   left: 12px;
+  content: "\f002";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
 }
 .p-search-form__keyword {
   border: 1px solid;
