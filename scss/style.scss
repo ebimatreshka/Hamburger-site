@@ -3,16 +3,19 @@
 @use "./foundation/variables";
 
 //layout
+@use "./layout/l-footer";
 @use "./layout/l-header";
+@use "./layout/l-sidebar";
 
 //object/component
-@use "./object/project/brunch-menu";
 @use "./object/component/grid";
 @use "./object/component/button";
 @use "./object/component/text";
 @use "./object/component/title";
 
 //object/project
+@use "./object/project/brunch-menu";
+@use "./object/project/footer";
 @use "./object/project/header";
 @use "./object/project/main";
 @use "./object/project/search-form";
