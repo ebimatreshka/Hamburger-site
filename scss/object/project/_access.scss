@@ -1,3 +1,21 @@
+@use "./../../foundation/variables" as v;
+
 .p-access {
-    background-image: url(./../../../images/);
+    width: 100%;
+    height: 649px;
+    background-image: url(./../../../images/map.jpg);
+    &__container {
+        background-color: v.$color-black;
+        opacity: 0.6;
+        width: 61%;
+        height: 649px;
+    }
+    &__title {
+        padding-top: 83px;
+        padding-left: 119px;
+    }
+    &__text {
+        padding: 39% 14% 6% 12%;
+        font-size: 1.4rem;
+    }
 }
