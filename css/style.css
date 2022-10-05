@@ -96,6 +96,7 @@ img {
   background-image: url(./../../../images/map.jpg);
 }
 .p-access__container {
+  position: relative;
   background-color: #000000;
   opacity: 0.6;
   width: 61%;
@@ -104,6 +105,16 @@ img {
 .p-access__title {
   padding-top: 83px;
   padding-left: 119px;
+}
+.p-access__title::after {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 3px;
+  background-color: #FFFFFF;
+  position: absolute;
+  left: 120px;
+  top: 155px;
 }
 .p-access__text {
   padding: 39% 14% 6% 12%;
@@ -137,7 +148,10 @@ img {
 .p-brunch-menu__dl {
   background-color: #FFFFFF;
   opacity: 0.6;
-  margin-bottom: 20px;
+  margin: 20px;
+}
+.p-brunch-menu__dl:nth-of-type(1) {
+  margin-top: 702px;
 }
 
 .p-footer {
@@ -145,7 +159,7 @@ img {
 }
 .p-footer__ul {
   display: flex;
-  margin: 0 auto;
+  margin: 40px auto 34px;
 }
 .p-footer__ul :first-child::after {
   position: absolute;

@@ -4,7 +4,7 @@
     position: relative;
     &__ul {
         display: flex;
-        margin: 0 auto;
+        margin: 40px auto 34px;
         :first-child::after {
             position: absolute;
             content:"";

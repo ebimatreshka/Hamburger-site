@@ -12,6 +12,9 @@
         background-image: url(./../../../images/brunch-menu-right.jpg);
         margin: 120px 111px 134px 40px;
     }
+    // &__li:nth-of-type(2) {
+    //     margin-top: 400px;
+    // }
     &__title {
         font-size: 80px;
     }
@@ -26,6 +29,9 @@
     &__dl {
         background-color: v.$color-white;
         opacity: 0.6;
-        margin-bottom: 20px;
+        margin: 20px;
+    }
+    &__dl:nth-of-type(1) {
+        margin-top: 702px;
     }
 }
