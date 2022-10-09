@@ -1,0 +1,45 @@
+@use "./../../foundation/variables" as v;
+
+.c-bg-color {
+    &--seashell {
+        background-color: v.$color-bg-seashell; //header
+    }
+    &--lightgray {
+        background-color: v.$color-bg-lightgray;    //ボタン、サイドバー
+    }
+    &--white {
+        background-color: v.$color-bg-white;    //take out/eat in
+    }
+    &--mocha {
+        background-color: v.$color-bg-mocha;   //フッター
+    }
+    &--dark-brown {
+        background-color: v.$color-bg-dark-brown;   //カード
+    }
+    &--light-gray {
+        background-color: v.$color-bg-light-gray;   //single-page
+    }
+}
+
+.c-background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &__main {
+        @extend .c-background;
+        background-image: url(./../../../images/mainvisual.jpg);
+        &--archive {
+            @extend .c-background;
+            background-image: url(./../../../images/brunch-menu-left.jpg);
+        }
+        &--single {
+            @extend .c-background;
+            background-image: url(./../../../images/hamburger-single.jpg);
+        }
+        &--page {
+            @extend .c-background;
+            background-image: url(./../../../images/shop.jpg);
+        }
+    }
+}

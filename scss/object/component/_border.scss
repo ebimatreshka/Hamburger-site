@@ -1,0 +1,12 @@
+@use "./../../foundation/variables" as v;
+
+.c-border {
+    &--brown {
+        border-color: v.$color-brown;
+    }
+}
+
+.c-underline {
+    width: 3.3vw;
+}
+

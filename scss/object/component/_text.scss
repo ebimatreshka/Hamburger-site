@@ -1,5 +1,16 @@
 @use "./../../foundation/variables" as v;
 
 .c-text {
-    color: v.$color-dark-brown;
+    &--white {
+        color: v.$color-white;
+    }
+    &--brown {
+        color: v.$color-brown;
+    }
+    &--dark-brown {
+        color: v.$color-dark-brown;
+    }
+    &--black {
+        color: v.$color-black;
+    }
 }

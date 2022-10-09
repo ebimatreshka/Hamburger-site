@@ -1,0 +1,11 @@
+.c-round {
+    &--10per {
+        border-radius: 10%;
+    } 
+    &--20per {
+        border-radius: 20%;
+    }
+    &--50per {
+        border-radius: 50%;
+    }
+}

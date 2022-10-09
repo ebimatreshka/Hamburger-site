@@ -43,7 +43,6 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #FFF7EF;
   height: 217px;
 }
 
@@ -51,6 +50,60 @@ img {
   display: flex;
   flex-direction: column;
   background-color: #F2EDE9;
+}
+
+.c-bg-color--seashell {
+  background-color: #FFF7EF;
+}
+.c-bg-color--lightgray {
+  background-color: #F2EDE9;
+}
+.c-bg-color--lightgray-gradation {
+  background-color: #F5F5F5;
+  background: linear-gradient(#F2EDE9, #DED8D3);
+}
+.c-bg-color--white {
+  background-color: #FFFFFF;
+}
+.c-bg-color--mocha {
+  background-color: #9D8670;
+}
+.c-bg-color--dark-brown {
+  background-color: #3C2B1C;
+}
+.c-bg-color--light-gray {
+  background-color: #F5F5F5;
+}
+
+.c-background, .c-background__main--page, .c-background__main--single, .c-background__main--archive, .c-background__main {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.c-background__main {
+  background-image: url(./../../../images/mainvisual.jpg);
+}
+.c-background__main--archive {
+  background-image: url(./../../../images/brunch-menu-left.jpg);
+}
+.c-background__main--single {
+  background-image: url(./../../../images/hamburger-single.jpg);
+}
+.c-background__main--page {
+  background-image: url(./../../../images/shop.jpg);
+}
+
+.c-border--brown {
+  border-color: #707070;
+}
+
+.c-underline {
+  width: 3.3vw;
+}
+
+.c-button {
+  text-align: center;
+  text-decoration: none;
 }
 
 .c-grid {
@@ -75,19 +128,48 @@ img {
   grid-column: 2/3;
 }
 
-.c-button {
-  text-align: center;
-  text-decoration: none;
+.c-opacity--60per {
+  opacity: 60%;
+}
+.c-opacity--50per {
+  opacity: 50%;
+}
+.c-opacity--29per {
+  opacity: 29%;
 }
 
-.c-text {
+.c-round--10per {
+  border-radius: 10%;
+}
+.c-round--20per {
+  border-radius: 20%;
+}
+.c-round--50per {
+  border-radius: 50%;
+}
+
+.c-text--white {
+  color: #FFFFFF;
+}
+.c-text--brown {
+  color: #707070;
+}
+.c-text--dark-brown {
   color: #3C2A10;
+}
+.c-text--black {
+  color: #000000;
 }
 
 .c-title {
   color: #FFFFFF;
-  color: plum;
   font-weight: bold;
+}
+
+.c-unit--2col {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .p-access {
@@ -174,17 +256,15 @@ img {
 }
 
 .p-header .p-header__title {
-  margin-left: 65px;
+  margin-left: 3.4rem;
   font-weight: 900;
-  font-size: 64px;
+  font-size: 6.4rem;
   font-family: Roboto;
 }
 
 .p-main-visual {
   position: relative;
   height: 530px;
-  overflow: hidden;
-  background-image: url(../../../images/mainvisual\(pc\).jpg);
   display: flex;
   align-items: center;
 }

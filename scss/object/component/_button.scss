@@ -1,6 +1,12 @@
 .c-button {
     text-align:         center;
     text-decoration:    none;
+
+    //グラデーションのボタン
+    &--gradation {
+      background-color: v.$color-bg-light-gray;
+      background: linear-gradient(#F2EDE9, #DED8D3)
+    }
   }
   
   

@@ -1,6 +1,7 @@
 //foundation
 @use "./foundation/base"; 
 @use "./foundation/variables";
+@use "./foundation/mixin";
 
 //layout
 @use "./layout/l-footer";
@@ -8,10 +9,15 @@
 @use "./layout/l-sidebar";
 
 //object/component
-@use "./object/component/grid";
+@use "./object/component/background";
+@use "./object/component/border";
 @use "./object/component/button";
+@use "./object/component/grid";
+@use "./object/component/opacity";
+@use "./object/component/round";
 @use "./object/component/text";
 @use "./object/component/title";
+@use "./object/component/unit";
 
 //object/project
 @use "./object/project/access";

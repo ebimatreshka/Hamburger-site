@@ -8,20 +8,8 @@ $color-black: #000000;
 //背景色
 $color-bg-seashell: #FFF7EF;     //ヘッダー
 $color-bg-lightgray: #F2EDE9;    //ボタン、サイドバー
-$color-bg-footer: #9D8670;    //フッター
+$color-bg-white: #FFFFFF ;  //front-page
+$color-bg-mocha: #9D8670;    //フッター
+$color-bg-dark-brown: #3C2B1C;  //カードの背景
+$color-bg-light-gray: #F5F5F5;  //single-page文字背景
 
-//ブレイクポイント
-$tablet: 600px;
-$pc: 1025px;
-
-@mixin tablet {
-    @media screen and (min-width: $tablet) {
-        @content;
-    }
-}
-
-@mixin pc {
-    @media screen and (min-width: $pc) {
-       @content; 
-    }
-}
