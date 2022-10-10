@@ -5,3 +5,11 @@
         align-items: center;
     }
 }
+
+.c-flex-box {
+    &--column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

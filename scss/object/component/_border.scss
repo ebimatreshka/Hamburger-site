@@ -1,7 +1,7 @@
 @use "./../../foundation/variables" as v;
 
 .c-border {
-    border: 1px solid $color-brown:
+    border: 1px solid v.$color-brown;
 }
 
 .c-underline {
