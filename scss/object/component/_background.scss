@@ -42,4 +42,8 @@
             background-image: url(./../../../images/shop.jpg);
         }
     }
+    &__footer {
+        @extend .c-background;
+        background-image: url(./../../../images/footer.jpg);
+    }
 }

@@ -36,14 +36,10 @@ img {
   justify-content: center;
   flex-direction: column;
   color: #FFFFFF;
-  background-color: #9D8670;
 }
 
 .l-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 217px;
+  height: 136px;
 }
 
 .l-sidebar {
@@ -71,7 +67,7 @@ img {
   background-color: #F5F5F5;
 }
 
-.c-background, .c-background__main--page, .c-background__main--single, .c-background__main--archive, .c-background__main {
+.c-background, .c-background__footer, .c-background__main--page, .c-background__main--single, .c-background__main--archive, .c-background__main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -87,6 +83,9 @@ img {
 }
 .c-background__main--page {
   background-image: url(./../../../images/shop.jpg);
+}
+.c-background__footer {
+  background-image: url(./../../../images/footer.jpg);
 }
 
 .c-border {
@@ -109,7 +108,7 @@ img {
 
 .c-grid {
   display: grid;
-  grid-template-rows: 217px 1fr 150px;
+  grid-template-rows: 136px 1fr 94px;
   grid-template-columns: 1fr 20%;
 }
 .c-grid__header {
@@ -139,14 +138,14 @@ img {
   opacity: 29%;
 }
 
-.c-round--10per {
-  border-radius: 10%;
+.c-round--63 {
+  border-radius: 6.3px;
 }
-.c-round--20per {
-  border-radius: 20%;
+.c-round--125 {
+  border-radius: 12.5px;
 }
-.c-round--50per {
-  border-radius: 50%;
+.c-round--313 {
+  border-radius: 31.3px;
 }
 
 .c-text--white {
@@ -162,9 +161,16 @@ img {
   color: #000000;
 }
 
-.c-title {
+.c-title__42, .c-title__01, .c-title__02 {
   color: #FFFFFF;
   font-weight: bold;
+  font-size: 4.2vw;
+}
+.c-title__02 {
+  font-size: 2vw;
+}
+.c-title__01 {
+  font-weight: 1vw;
 }
 
 .c-unit--2col {
@@ -173,6 +179,11 @@ img {
   align-items: center;
 }
 
+.c-flex-box--side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .c-flex-box--column {
   display: flex;
   flex-direction: column;
@@ -223,9 +234,6 @@ img {
   background-image: url(./../../../images/brunch-menu-right.jpg);
   margin: 120px 111px 134px 40px;
 }
-.p-brunch-menu__title {
-  font-size: 80px;
-}
 .p-brunch-menu__title::after {
   content: "";
   display: block;
@@ -263,9 +271,9 @@ img {
 }
 
 .p-header .p-header__title {
-  margin-left: 3.4rem;
+  margin-left: 4rem;
   font-weight: 900;
-  font-size: 6.4rem;
+  font-size: 3.3vw;
   font-family: Roboto;
 }
 
@@ -277,7 +285,6 @@ img {
 }
 .p-main-visual__title {
   padding-left: 86px;
-  font-size: 40px;
 }
 
 .p-nav__title {
@@ -295,33 +302,28 @@ img {
 
 .p-search-form {
   display: flex;
-  width: 396px;
   position: relative;
 }
 .p-search-form::before {
   content: "";
   width: 24px;
   height: 24px;
-  background: url(./../../../images/glass.jpg) no-repeat center center/auto 100%;
+  background: url(./../../../images/glass.jpg) no-repeat center center/auto 80%;
   display: inline-block;
   position: absolute;
-  top: 98px;
+  top: 89px;
   left: 12px;
 }
 .p-search-form__keyword {
-  border: 1px solid;
-  border-radius: 10px;
   background-color: #FFFFFF;
-  width: 396px;
-  height: 46px;
+  width: 20.6vw;
+  height: 29px;
   margin: 86px 0 85px;
 }
 .p-search-form__submit {
-  border: 1px solid;
-  border-radius: 10px;
   background-color: #F2EDE9;
-  width: 136px;
-  height: 46px;
+  width: 7vw;
+  height: 29px;
   margin: 86px 31px 85px 13px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,17 @@
 @use "./../../foundation/variables" as v;
 
 .c-title {
-    color: v.$color-white;
-    font-weight: bold;
+    &__42 {
+        color: v.$color-white;
+        font-weight: bold;
+        font-size: 4.2vw;
+    }
+    &__02 {
+        @extend .c-title__42;
+        font-size: 2vw;
+    }
+    &__01 {
+        @extend .c-title__42;
+        font-weight: 1vw;
+    }
 }

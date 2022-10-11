@@ -2,35 +2,35 @@
 
 .p-search-form {
     display: flex;  
-    width: 396px;
+    // width: 396px;
     position: relative;  //虫眼鏡入れるため
     &::before {
         content: "";
         width: 24px;
         height: 24px;
-        background: url(./../../../images/glass.jpg) no-repeat center center / auto 100%;
+        background: url(./../../../images/glass.jpg) no-repeat center center / auto 80%;
         display: inline-block;
         position: absolute;
-        top: 98px;
+        top: 89px;
         left: 12px;
         // font-family: "Font Awesome 6 Free";
         // content: '\f002';
         // font-weight: 400;
     }
     &__keyword {
-        border: 1px solid;
-        border-radius: 10px;
+        // border: 1px solid v.$color-brown;
+        // border-radius: 10px;
         background-color: v.$color-white;
-        width: 396px;
-        height: 46px;
+        width: 20.6vw;
+        height: 29px;
         margin: 86px 0 85px;
     }
     &__submit {
-        border: 1px solid;
-        border-radius: 10px;
+        // border: 1px solid v.$color-brown;
+        // border-radius: 10px;
         background-color: v.$color-bg-lightgray;
-        width: 136px;
-        height: 46px;
+        width: 7vw;
+        height: 29px;
         margin: 86px 31px 85px 13px;    
     }
 }
