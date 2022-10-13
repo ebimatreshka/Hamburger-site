@@ -1,10 +1,12 @@
 .p-main-visual {
     position: relative;
-    height: 530px;
-    display: flex;
-    align-items: center;
+    // width: 971px;
+    height: 331px;
+    // display: flex;
+    // align-items: center;
     &__title {
-        padding-left: 86px;
+        padding: 14% 0 0 86px;
         // font-size: 40px;
     }
 }
+

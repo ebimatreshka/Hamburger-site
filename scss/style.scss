@@ -4,14 +4,17 @@
 @use "./foundation/mixin";
 
 //layout
+@use "./layout/l-container";
 @use "./layout/l-footer";
 @use "./layout/l-header";
+@use "./layout/l-main";
 @use "./layout/l-sidebar";
 
 //object/component
 @use "./object/component/background";
 @use "./object/component/border";
 @use "./object/component/button";
+@use "./object/component/font";
 @use "./object/component/grid";
 @use "./object/component/opacity";
 @use "./object/component/round";

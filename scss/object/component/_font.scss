@@ -1,0 +1,17 @@
+@use "./../../foundation/variables" as v;
+
+//google fonts
+.c-font {
+    &__M--regular {
+        font-family: 'M PLUS 1p', sans-serif;
+        font-weight: 400;
+    }
+    &__M--bold {
+        font-family: 'M PLUS 1p', sans-serif;
+        font-weight: 700;
+    }
+    &__R {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+    }    
+}
