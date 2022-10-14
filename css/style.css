@@ -115,7 +115,6 @@ img {
 }
 .c-font__R {
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
 }
 
 .c-grid {
@@ -223,12 +222,12 @@ img {
 .p-access__title::after {
   content: "";
   display: block;
-  width: 75px;
+  width: 40px;
   height: 3px;
   background-color: #FFFFFF;
   position: absolute;
-  left: 120px;
-  top: 155px;
+  top: 100px;
+  left: 1.4vw;
 }
 .p-access__text {
   padding: 39% 14% 6% 12%;
@@ -237,24 +236,28 @@ img {
 
 .p-brunch-menu {
   display: flex;
+  margin: 70px 70px 82px 69px;
 }
 .p-brunch-menu__ul-left {
+  position: relative;
   min-height: 1193px;
   background-image: url(./../../../images/brunch-menu-left.jpg);
-  margin: 120px 40px 134px 111px;
+  margin-right: 50px;
 }
 .p-brunch-menu__ul-right {
+  position: relative;
   min-height: 1193px;
   background-image: url(./../../../images/brunch-menu-right.jpg);
-  margin: 120px 111px 134px 40px;
 }
 .p-brunch-menu__title::after {
   content: "";
   display: block;
-  width: 80px;
+  width: 40px;
   height: 3px;
   background-color: #FFFFFF;
   position: absolute;
+  top: 100px;
+  left: 1.4vw;
 }
 .p-brunch-menu__dl {
   background-color: #FFFFFF;
@@ -302,9 +305,7 @@ img {
 
 .p-nav__title {
   padding-left: 12%;
-}
-.p-nav__title:first-child {
-  padding-top: 85px;
+  padding-bottom: 25px;
 }
 .p-nav__ul {
   padding-left: 18%;
@@ -340,5 +341,9 @@ img {
   margin: 86px 31px 85px 13px;
   font-size: 0.8vw;
   color: #707070;
+}
+
+.p-nav__title--menu {
+  margin-top: 51px;
 }
 /*# sourceMappingURL=style.css.map */

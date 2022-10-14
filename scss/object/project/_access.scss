@@ -18,12 +18,12 @@
     &__title::after {
         content: "";
         display: block;
-        width: 75px;
+        width: 40px;
         height: 3px;
         background-color: #FFFFFF;
         position: absolute;
-        left: 120px;
-        top: 155px;
+        top: 100px;
+        left: 1.4vw;
     }
     &__text {
         padding: 39% 14% 6% 12%;

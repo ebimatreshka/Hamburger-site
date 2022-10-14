@@ -1,0 +1,9 @@
+@use "./../../foundation/variables" as v;
+
+ .c-pseudo-element {
+    content:"";
+    display:block;
+    height:3px;
+    background-color: v.$color-white;
+    position:absolute;
+ }
