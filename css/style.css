@@ -117,6 +117,13 @@ img {
   font-family: "Roboto", sans-serif;
 }
 
+.c-font-size__16 {
+  font-size: 0.8vw;
+}
+.c-font-size__24 {
+  font-size: 1.3vw;
+}
+
 .c-grid {
   display: grid;
   grid-template-rows: 136px 1fr 94px;
@@ -216,8 +223,9 @@ img {
   height: 649px;
 }
 .p-access__title {
-  padding-top: 83px;
-  padding-left: 119px;
+  position: relative;
+  padding-top: 52px;
+  padding-left: 74px;
 }
 .p-access__title::after {
   content: "";
@@ -226,8 +234,7 @@ img {
   height: 3px;
   background-color: #FFFFFF;
   position: absolute;
-  top: 100px;
-  left: 1.4vw;
+  top: 118px;
 }
 .p-access__text {
   padding: 39% 14% 6% 12%;
@@ -260,12 +267,18 @@ img {
   left: 1.4vw;
 }
 .p-brunch-menu__dl {
-  background-color: #FFFFFF;
-  opacity: 0.6;
+  background: rgb(255, 255, 255);
   margin: 20px;
+  padding: 7.5px 13px 12.5px 12.5px;
 }
 .p-brunch-menu__dl:nth-of-type(1) {
   margin-top: 702px;
+}
+.p-brunch-menu__dt {
+  padding: 7.5px 0 0 12.5px;
+}
+.p-brunch-menu__dd {
+  padding: 5.6px 13px 12.5px 12.5px;
 }
 
 .p-footer {

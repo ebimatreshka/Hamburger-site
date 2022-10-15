@@ -14,3 +14,12 @@
         font-family: 'Roboto', sans-serif;
     }    
 }
+
+.c-font-size {
+    &__16 {
+        font-size: 0.8vw;
+    }
+    &__24 {
+        font-size: 1.3vw;
+    }
+}

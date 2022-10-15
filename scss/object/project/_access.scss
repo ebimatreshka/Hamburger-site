@@ -12,8 +12,9 @@
         height: 649px;
     }
     &__title {
-        padding-top: 83px;
-        padding-left: 119px;
+        position: relative;
+        padding-top: 52px;
+        padding-left: 74px;
     }
     &__title::after {
         content: "";
@@ -22,10 +23,14 @@
         height: 3px;
         background-color: #FFFFFF;
         position: absolute;
-        top: 100px;
-        left: 1.4vw;
+        top: 118px;
+        // left: 1.4vw;
     }
     &__text {
+        // padding-top: 164px;
+        // padding-right: 84px;
+        // padding-bottom: 25px;
+        // padding-left: 74px;
         padding: 39% 14% 6% 12%;
         font-size: 1.4rem;
     }
