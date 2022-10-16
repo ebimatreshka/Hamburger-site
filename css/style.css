@@ -66,7 +66,7 @@ img {
   background-color: #F5F5F5;
 }
 
-.c-background, .c-background__footer, .c-background__main--page, .c-background__main--single, .c-background__main--archive, .c-background__main {
+.c-background, .c-background__footer, .c-background__page, .c-background__single, .c-background__archive, .c-background__menu--right, .c-background__menu--left, .c-background__main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -74,13 +74,19 @@ img {
 .c-background__main {
   background-image: url(./../../../images/mainvisual\(pc\).jpg);
 }
-.c-background__main--archive {
+.c-background__menu--left {
   background-image: url(./../../../images/brunch-menu-left.jpg);
 }
-.c-background__main--single {
+.c-background__menu--right {
+  background-image: url(./../../../images/brunch-menu-right.jpg);
+}
+.c-background__archive {
+  background-image: url(./../../../images/brunch-menu-left.jpg);
+}
+.c-background__single {
   background-image: url(./../../../images/hamburger-single.jpg);
 }
-.c-background__main--page {
+.c-background__page {
   background-image: url(./../../../images/shop.jpg);
 }
 .c-background__footer {
@@ -251,14 +257,15 @@ img {
 }
 .p-brunch-menu__ul-left {
   position: relative;
-  min-height: 1193px;
-  background-image: url(./../../../images/brunch-menu-left.jpg);
+  min-height: 746px;
   margin-right: 50px;
 }
 .p-brunch-menu__ul-right {
   position: relative;
-  min-height: 1193px;
-  background-image: url(./../../../images/brunch-menu-right.jpg);
+  min-height: 746px;
+}
+.p-brunch-menu__title {
+  margin-left: 1.4vw;
 }
 .p-brunch-menu__title::after {
   width: 40px;
@@ -274,7 +281,7 @@ img {
   margin-top: 702px;
 }
 .p-brunch-menu__dt {
-  padding: 7.5px 0 0 12.5px;
+  padding: 7.5px 13px 0 12.5px;
 }
 .p-brunch-menu__dd {
   padding: 5.6px 13px 12.5px 12.5px;

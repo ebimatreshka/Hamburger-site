@@ -5,22 +5,22 @@
     margin: 70px 70px 82px 69px;
     &__ul-left {
         position: relative;
-        min-height: 1193px;
-        background-image: url(./../../../images/brunch-menu-left.jpg);
+        min-height: 746px;
+        // background-image: url(./../../../images/brunch-menu-left.jpg);
         margin-right: 50px;
     }
     &__ul-right {
         position: relative;
-        min-height: 1193px;
-        background-image: url(./../../../images/brunch-menu-right.jpg);
+        min-height: 746px;
+        // background-image: url(./../../../images/brunch-menu-right.jpg);
         // margin: 120px 111px 134px 40px;
     }
     // &__li:nth-of-type(2) {
     //     margin-top: 400px;
     // }
-    // &__title {
-    //     // font-size: 80px;
-    // }
+    &__title {
+        margin-left: 1.4vw;
+    }
     &__title::after {
         // content:"";
         // display:block;
@@ -40,7 +40,7 @@
         margin-top: 702px;
     }
     &__dt {
-        padding: 7.5px 0 0 12.5px;
+        padding: 7.5px 13px 0 12.5px;
     }
     &__dd {
         padding: 5.6px 13px 12.5px 12.5px;
