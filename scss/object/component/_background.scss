@@ -32,11 +32,21 @@
     }
     &__menu--left {
         @extend .c-background;
-        background-image: url(./../../../images/brunch-menu-left.jpg)
+        background-image: url(./../../../images/brunch-menu-left.jpg);
     }
     &__menu--right {
         @extend .c-background;
-        background-image: url(./../../../images/brunch-menu-right.jpg)
+        background-image: url(./../../../images/brunch-menu-right.jpg);
+    }
+    &__map {
+        @extend .c-background;
+        background-image: url(./../../../images/map.jpg);
+        // position: absolute;
+    }
+    &__map--black {
+        @extend .c-background;
+        background-image: url(./../../../images/black.jpg);
+        // position: absolute;
     }
     &__archive {
         @extend .c-background;

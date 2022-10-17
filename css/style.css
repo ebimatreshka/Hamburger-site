@@ -41,6 +41,10 @@ img {
   height: 136px;
 }
 
+.l-main {
+  width: 80vw;
+}
+
 .l-sidebar {
   display: flex;
   flex-direction: column;
@@ -66,7 +70,7 @@ img {
   background-color: #F5F5F5;
 }
 
-.c-background, .c-background__footer, .c-background__page, .c-background__single, .c-background__archive, .c-background__menu--right, .c-background__menu--left, .c-background__main {
+.c-background, .c-background__footer, .c-background__page, .c-background__single, .c-background__archive, .c-background__map--black, .c-background__map, .c-background__menu--right, .c-background__menu--left, .c-background__main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -79,6 +83,12 @@ img {
 }
 .c-background__menu--right {
   background-image: url(./../../../images/brunch-menu-right.jpg);
+}
+.c-background__map {
+  background-image: url(./../../../images/map.jpg);
+}
+.c-background__map--black {
+  background-image: url(./../../../images/black.jpg);
 }
 .c-background__archive {
   background-image: url(./../../../images/brunch-menu-left.jpg);
@@ -225,9 +235,7 @@ img {
 }
 
 .p-access {
-  width: 100%;
   height: 649px;
-  background-image: url(./../../../images/map.jpg);
 }
 .p-access__container {
   position: relative;
@@ -237,7 +245,7 @@ img {
   height: 649px;
 }
 .p-access__title {
-  position: relative;
+  position: absolute;
   padding-top: 52px;
   padding-left: 74px;
 }

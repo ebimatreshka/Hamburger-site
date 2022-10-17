@@ -1,9 +1,8 @@
 @use "./../../foundation/variables" as v;
 
 .p-access {
-    width: 100%;
     height: 649px;
-    background-image: url(./../../../images/map.jpg);
+    // background-image: url(./../../../images/map.jpg);
     &__container {
         position: relative;
         background-color: v.$color-black;
@@ -12,7 +11,7 @@
         height: 649px;
     }
     &__title {
-        position: relative;
+        position: absolute;
         padding-top: 52px;
         padding-left: 74px;
     }
