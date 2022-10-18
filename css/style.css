@@ -249,7 +249,7 @@ img {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .p-access__container {
   position: relative;
@@ -374,6 +374,7 @@ img {
   width: 20.6vw;
   height: 29px;
   margin: 86px 0 85px;
+  padding-left: 40px;
 }
 .p-search-form__submit {
   background-color: #F2EDE9;
