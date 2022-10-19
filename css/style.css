@@ -370,7 +370,7 @@ img {
   background: url(./../../../images/glass.jpg) no-repeat center center/auto 80%;
   display: inline-block;
   position: absolute;
-  top: 64px;
+  top: 65px;
   left: 12px;
 }
 .p-search-form__keyword {
