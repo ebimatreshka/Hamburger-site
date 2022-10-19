@@ -282,10 +282,12 @@ img {
   position: relative;
   min-height: 746px;
   margin-right: 50px;
+  width: 100%;
 }
 .p-brunch-menu__ul-right {
   position: relative;
   min-height: 746px;
+  width: 100%;
 }
 .p-brunch-menu__title {
   margin-left: 1.4vw;
@@ -332,7 +334,7 @@ img {
 }
 
 .p-header .p-header__title {
-  margin-left: 4rem;
+  margin-left: 3.3vw;
   font-weight: 900;
   font-size: 3.3vw;
 }
@@ -358,35 +360,37 @@ img {
 
 .p-search-form {
   display: flex;
+  height: 11.33vw;
   position: relative;
 }
 .p-search-form::before {
   content: "";
-  width: 24px;
+  width: 2vw;
   height: 24px;
   background: url(./../../../images/glass.jpg) no-repeat center center/auto 80%;
   display: inline-block;
   position: absolute;
-  top: 89px;
+  top: 64px;
   left: 12px;
 }
 .p-search-form__keyword {
   background-color: #FFFFFF;
   width: 20.6vw;
-  height: 29px;
-  margin: 86px 0 85px;
-  padding-left: 40px;
+  height: 36px;
+  margin: 4.3vw 0.67vw 4.35vw;
+  padding-left: 2.5vw;
 }
 .p-search-form__submit {
   background-color: #F2EDE9;
   width: 7vw;
-  height: 29px;
-  margin: 86px 31px 85px 13px;
+  height: 36px;
+  margin: 4.3vw 1.61vw 4.35vw 0;
   font-size: 0.8vw;
   color: #707070;
 }
 
 .p-nav__title--menu {
   margin-top: 51px;
+  margin-bottom: 22px;
 }
 /*# sourceMappingURL=style.css.map */

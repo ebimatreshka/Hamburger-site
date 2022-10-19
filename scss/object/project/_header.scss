@@ -1,8 +1,9 @@
+@use "./../../foundation/mixin" as v;
+
 .p-header {
     .p-header__title {
-        margin-left: 4rem;
+        margin-left: 3.3vw;;
         font-weight: 900;
         font-size:   3.3vw;
-        //           font-family: Roboto;
     }
 }
