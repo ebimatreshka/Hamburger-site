@@ -1,7 +1,7 @@
 @use "./../foundation/variables" as v;
 
 .l-sidebar {
-    display: flex;
-    flex-direction: column;
+    display:          flex;
+    flex-direction:   column;
     background-color: v.$color-bg-lightgray;
 }

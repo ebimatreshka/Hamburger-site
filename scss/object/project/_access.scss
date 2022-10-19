@@ -2,51 +2,51 @@
 
 .p-access {
     min-height: 405.6px;
-    position: relative;
+    position:   relative;
     background-image: url(./../../../images/map.jpg);
     &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
+            content:          '';
+            position:         absolute;
+            top:              0;
+            right:            0;
+            bottom:           0;
+            left:             0;
             background-color: rgba(0,0,0,0.4);
-    }
+            }
     // &__black {
     //     background-color: rgba(0,0,0,0.6);
     // }
     &__container {
-        position: relative;
+        position:         relative;
         background-color: rgba(0,0,0,0.29);
-        // opacity: 0.29;
-        width: 61%;
-        min-height: 405.6px;
-        // height: 405.6px;
-    }
+        //                opacity: 0.29;
+        width:            61%;
+        min-height:       405.6px;
+        //                height:  405.6px;
+        }
     &__title {
-        position: absolute;
-        padding-top: 4.32vw;
+        position:     absolute;
+        padding-top:  4.32vw;
         padding-left: 6.19vw;
-        color: v.$color-white;
-    }
+        color:        v.$color-white;
+        }
     &__title::after {
-        // content: "";
-        // display: block;
-        width: 3.9vw;
+        //      content:          "";
+        //      display:          block;
+        width:  3.9vw;
         height: 2px;
-        // background-color: #FFFFFF;
-        // position: absolute;
-        top: 9.86vw;
-        // left: 1.4vw;
-    }
+        //      background-color: #FFFFFF;
+        //      position:         absolute;
+        top:    9.86vw;
+        //      left:             1.4vw;
+        }
     &__text {
-        // padding-top: 164px;
-        // padding-right: 84px;
-        // padding-bottom: 25px;
-        // padding-left: 74px;
-        padding: 13.17vw 6.97vw 2.08vw 6.19vw;
-        font-size: 0.83vw;  
+        //           padding-top:    164px;
+        //           padding-right:  84px;
+        //           padding-bottom: 25px;
+        //           padding-left:   74px;
+        padding:     13.17vw 6.97vw 2.08vw 6.19vw;
+        font-size:   0.83vw;  
         line-height: 2;      
-    }
+        }
 }
