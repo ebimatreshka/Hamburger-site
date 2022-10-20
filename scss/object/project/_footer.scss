@@ -4,14 +4,14 @@
     position: relative;
     &__ul {
         display:   flex;
-        margin:    2.08vw auto 1.41vw;
+        margin:    25px auto 17px;
         font-size: 1vw;
         :first-child::after {
             position: absolute;
             top:      28px;
             content:  "";
             display:  inline-block;
-            width:    0.1vw;
+            width:    1.3px;
             height:   18px;
             background-color: v.$color-white;
         }
