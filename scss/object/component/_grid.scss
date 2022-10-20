@@ -1,6 +1,7 @@
 .c-grid {
     display:            grid;
-    grid-template-rows: 136px 1fr 94px;
+    // grid-template-rows: 136px 1fr 94px;
+    grid-template-rows: 11.33vw 1fr 7.83vw;
     grid-template-columns: 1fr 20%;
     &__header {
         grid-row: 1;

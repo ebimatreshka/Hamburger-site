@@ -2,12 +2,13 @@
 
 .p-brunch-menu {
     display: flex;
-    margin:  70px 70px 82px 69px;
+    margin:  5.83vw 5.83vw 6.83vw 5.75vw;
+    // margin:  70px 70px 82px 69px;
     &__ul-left {
         position:     relative;
         min-height:   746px;
         //            background-image: url(./../../../images/brunch-menu-left.jpg);
-        margin-right: 50px;
+        margin-right: 4.16vw;
         width: 100%;
         }
     &__ul-right {
@@ -26,7 +27,7 @@
     &__title::after {
         //      content:"";
         //      display:block;
-        width:  40px;
+        width:  3.33vw;
         height: 2px;
         //      background-color: v.$color-white;
         //      position:         absolute;
@@ -35,14 +36,14 @@
         }
     &__dl {
         background: rgba(255,255,255,1);
-        margin:     20px;
+        margin:     1.66vw;
         //          padding: 7.5px 13px 12.5px 12.5px;
         }
     &__dl:nth-of-type(1) {
         margin-top: 702px;
     }
     &__dt {
-        padding: 7.5px 13px 0 12.5px;
+        padding: 0.625vw 1.08vw 0 1.04vw;
     }
     &__dd {
         padding: 5.6px 13px 12.5px 12.5px;
