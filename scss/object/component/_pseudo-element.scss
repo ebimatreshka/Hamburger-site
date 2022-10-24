@@ -1,5 +1,7 @@
+//色指定
 @use "./../../foundation/variables" as v;
 
+//擬似要素(下線)
  .c-pseudo-element {
     &::after {
         content:"";

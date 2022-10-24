@@ -1,9 +1,12 @@
+//文字色指定
 @use "./../../foundation/variables" as v;
 
+//front-pageの地図部分
 .p-access {
     min-height: 405.6px;
     position:   relative;
-    background-image: url(./../../../images/map.jpg);
+    background-image: url(./../../../images/map.jpg);   //地図の画像
+    //全体の黒の背景を擬似要素で
     &::before {
             content:          '';
             position:         absolute;
@@ -13,38 +16,28 @@
             left:             0;
             background-color: rgba(0,0,0,0.4);
             }
-    // &__black {
-    //     background-color: rgba(0,0,0,0.6);
-    // }
+    //文字部分の黒背景
     &__container {
         position:         relative;
         background-color: rgba(0,0,0,0.29);
-        //                opacity: 0.29;
         width:            61%;
         min-height:       405.6px;
-        //                height:  405.6px;
         }
+    //見出し
     &__title {
         position:     absolute;
         padding-top:  4.32vw;
         padding-left: 6.19vw;
         color:        v.$color-white;
         }
+    //見出しの下線
     &__title::after {
-        //      content:          "";
-        //      display:          block;
         width:  3.9vw;
         height: 2px;
-        //      background-color: #FFFFFF;
-        //      position:         absolute;
         top:    9.86vw;
-        //      left:             1.4vw;
         }
+    //地図の上に被る文章
     &__text {
-        //           padding-top:    164px;
-        //           padding-right:  84px;
-        //           padding-bottom: 25px;
-        //           padding-left:   74px;
         padding:     13.17vw 6.97vw 2.08vw 6.19vw;
         font-size:   0.83vw;  
         line-height: 2;      

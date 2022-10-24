@@ -1,12 +1,10 @@
+//mein visualの基準と高さ設定
 .p-main-visual {
     position: relative;
-    // width: 971px;
     height: 331px;
-    // display: flex;
-    // align-items: center;
+    //タイトルの余白設定
     &__title {
         padding: 144.3px 0 151.8px 4.47vw;
-        // font-size: 40px;
     }
 }
 

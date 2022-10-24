@@ -1,9 +1,12 @@
+//文字色指定
 @use "./../../foundation/variables" as v;
 
+//検索ボックスと検索ボタン
+//横並び
 .p-search-form {
     display: flex;  
-    // height:  11.33vw;
     position: relative;  //虫眼鏡入れるため
+    //虫眼鏡の画像を擬似要素で
     &::before {
         content:    "";
         width:      2vw;
@@ -14,22 +17,16 @@
         top:        50%;
         left:       20px;
         transform:  translateY(-50%) translateX(-50%);    //虫眼鏡の高さを半分マイナス上にずらすと、縦の中央配置
-        //          font-family:                     "Font     Awesome 6      Free";
-        //          content:                         '\f002';
-        //          font-weight:                     400;
         }
+    //検索ボックスの色、幅、高さ、余白定義
     &__keyword {
-        //                border:        1px solid v.$color-brown;
-        //                border-radius: 10px;
         background-color: v.$color-white;
         width:            20.6vw;
         height:           36px;
-        // margin:           4.3vw 0.67vw 4.35vw;
         padding-left:     2.5vw;
         }
+    //検索ボタンの色、幅、高さ、余白定義
     &__submit {
-        //                border:        1px  solid v.$color-brown;
-        //                border-radius: 10px;
         background-color: v.$color-bg-lightgray;
         width:            7vw;
         height:           36px;

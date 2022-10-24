@@ -1,6 +1,9 @@
+//文字色指定
 @use "./../../foundation/mixin" as v;
 
+//ヘッダー
 .p-header {
+    //hamburgerの文字のサイズと左の余白
     .p-header__title {
         margin-left: 3.3vw;;
         font-weight: 900;

@@ -1,3 +1,5 @@
+//未使用
+//2カラムのレイアウト
 .c-unit {
     &--2col {
         display:         flex;
@@ -6,12 +8,16 @@
     }
 }
 
+//未使用
+//flex-boxの定義
 .c-flex-box {
+    //横並び
     &--side {
         display:         flex;
         justify-content: space-between;
         align-items:     center;
     }
+    //縦並び
     &--column {
         display:         flex;
         flex-direction:  column;

@@ -1,11 +1,16 @@
+//文字色指定
 @use "./../../foundation/variables" as v;
 
+//フッター(基準設定)
 .p-footer {
     position: relative;
+    //ショップ情報とヒストリー
+    //横並び
     &__ul {
         display:   flex;
         margin:    25px auto 17px;
         font-size: 1vw;
+        //ショップ情報の後ろに擬似要素で仕切り作成
         :first-child::after {
             position: absolute;
             top:      28px;
@@ -16,6 +21,7 @@
             background-color: v.$color-white;
         }
     }
+    //コピーライトの真ん中中央揃え
     &__copyright {
             margin: 0 auto;
     }

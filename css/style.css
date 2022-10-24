@@ -70,7 +70,7 @@ img {
   background-color: #F5F5F5;
 }
 
-.c-background, .c-background__footer, .c-background__page, .c-background__single, .c-background__archive, .c-background__map--black, .c-background__map, .c-background__menu--right, .c-background__menu--left, .c-background__main {
+.c-background, .c-background__footer, .c-background__page, .c-background__single, .c-background__archive, .c-background__map, .c-background__menu--right, .c-background__menu--left, .c-background__main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -86,9 +86,6 @@ img {
 }
 .c-background__map {
   background-image: url(./../../../images/map.jpg);
-}
-.c-background__map--black {
-  background-image: url(./../../../images/black.jpg);
 }
 .c-background__archive {
   background-image: url(./../../../images/brunch-menu-left.jpg);
