@@ -2,7 +2,7 @@
 
 .p-search-form {
     display: flex;  
-    height:  11.33vw;
+    // height:  11.33vw;
     position: relative;  //虫眼鏡入れるため
     &::before {
         content:    "";
@@ -11,8 +11,9 @@
         background: url(./../../../images/glass.jpg) no-repeat center  center / auto 80%;
         display:    inline-block;
         position:   absolute;
-        top:        43%;
-        left:       12px;
+        top:        50%;
+        left:       20px;
+        transform:  translateY(-50%) translateX(-50%);    //虫眼鏡の高さを半分マイナス上にずらすと、縦の中央配置
         //          font-family:                     "Font     Awesome 6      Free";
         //          content:                         '\f002';
         //          font-weight:                     400;
@@ -23,8 +24,8 @@
         background-color: v.$color-white;
         width:            20.6vw;
         height:           36px;
-        margin:           4.3vw 0.67vw 4.35vw;
-        padding-left:     2.5vw;
+        // margin:           4.3vw 0.67vw 4.35vw;
+        // padding-left:     2.5vw;
         }
     &__submit {
         //                border:        1px  solid v.$color-brown;
@@ -32,7 +33,7 @@
         background-color: v.$color-bg-lightgray;
         width:            7vw;
         height:           36px;
-        margin:           4.3vw 1.61vw 4.35vw 0;   
+        margin:           0 1.61vw 0 0.67vw;   
         font-size:        0.8vw; 
         color:            v.$color-brown;
         }

@@ -360,7 +360,6 @@ img {
 
 .p-search-form {
   display: flex;
-  height: 11.33vw;
   position: relative;
 }
 .p-search-form::before {
@@ -370,21 +369,20 @@ img {
   background: url(./../../../images/glass.jpg) no-repeat center center/auto 80%;
   display: inline-block;
   position: absolute;
-  top: 43%;
-  left: 12px;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%) translateX(-50%);
 }
 .p-search-form__keyword {
   background-color: #FFFFFF;
   width: 20.6vw;
   height: 36px;
-  margin: 4.3vw 0.67vw 4.35vw;
-  padding-left: 2.5vw;
 }
 .p-search-form__submit {
   background-color: #F2EDE9;
   width: 7vw;
   height: 36px;
-  margin: 4.3vw 1.61vw 4.35vw 0;
+  margin: 0 1.61vw 0 0.67vw;
   font-size: 0.8vw;
   color: #707070;
 }
