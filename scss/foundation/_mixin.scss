@@ -2,12 +2,14 @@
 $tablet: 600px;
 $pc: 1025px;
 
+//タブレットサイズ
 @mixin tablet {
     @media screen and (min-width: $tablet) {
         @content;
     }
 }
 
+//PCサイズ
 @mixin pc {
     @media screen and (min-width: $pc) {
        @content; 

@@ -223,15 +223,17 @@ img {
   align-items: center;
 }
 
-.c-flex-box--side {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 .c-flex-box--column {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 1025px) {
+  .c-flex-box--column {
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }
 
 .p-access {
