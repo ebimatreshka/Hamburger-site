@@ -1,5 +1,7 @@
 //色指定
 @use "./../../foundation/variables" as v;
+//レスポンシブ
+@use "./../../foundation/mixin" as m;
 
 //google fonts
 .c-font {
@@ -18,13 +20,34 @@
 
 //フォントサイズ
 .c-font-size {
-    &__16 {
-        font-size: 0.83vw;
+    &__14 {
+        font-size: 1.36vw;
+        // @include m.pc {
+        //     font-size: 0.83vw;
+        // }
+    }
+    // &__16 {
+    //     font-size: 1.21vw;
+    //     @include m.pc {
+    //         font-size: 0.83vw;
+    //     }
+    // }
+    &__20 {
+        font-size: 1.724vw;
     }
     &__24 {
-        font-size: 1.3vw;
+        font-size: 2.07vw;
+        // @include m.pc {
+        //     font-size: 1.3vw;
+        // }
     }
-    &__36 {
-        font-size: 1.87vw;
+    &__30 {
+        font-size: 2.5vw;
+        // @include m.pc  {
+        // font-size: 1.87vw;
+        // }
     }
+    // &__36 {
+    //     font-size: 1.87vw;
+    // }
 }

@@ -1,5 +1,23 @@
+//レスポンシブ
+@use "./../../foundation/mixin" as m;
+
 //サイドバーの一番上のMenuの余白定義
-.p-nav__title--menu {
-    margin-top: 51px;
-    margin-bottom: 22px;
+// .p-nav__title--menu {
+//     margin-top: 51px;
+//     margin-bottom: 22px;
+// }
+.u-margin__title--menu {
+    display: none;
+    @include m.pc {
+        display: block;
+        margin-top: 51px;
+        margin-bottom: 22px;
+    }
+}
+
+.u-margin__T130 {
+    margin-top: 130px;
+    @include m.pc {
+        margin-top: 0;
+    }
 }

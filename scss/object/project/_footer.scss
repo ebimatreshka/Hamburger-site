@@ -1,5 +1,7 @@
 //文字色指定
 @use "./../../foundation/variables" as v;
+//レスポンシブ
+@use "./../../foundation/mixin" as m;
 
 //フッター(基準設定)
 .p-footer {
@@ -9,7 +11,10 @@
     &__ul {
         display:   flex;
         margin:    25px auto 17px;
-        font-size: 1vw;
+        // font-size: 1vw;
+        @include m.pc {
+            font-size: 1vw;
+        }
         //ショップ情報の後ろに擬似要素で仕切り作成
         :first-child::after {
             position: absolute;
@@ -23,6 +28,9 @@
     }
     //コピーライトの真ん中中央揃え
     &__copyright {
+        margin: -5px auto;
+        @include m.pc {
             margin: 0 auto;
+        }    
     }
 }

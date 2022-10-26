@@ -1,5 +1,7 @@
 //文字色指定
 @use "./../../foundation/variables" as v;
+//レスポンシブ
+@use "./../../foundation/mixin" as m;
 
 //サイドバー
 .p-nav {
@@ -8,10 +10,12 @@
         padding-left: 12%;
         padding-bottom: 25px;
     }
+
     //ulの左の余白
     &__ul {
         padding-left: 18%;
     }
+
     //liの下の余白
     &__li {
         padding-bottom: 23px;

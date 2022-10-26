@@ -1,5 +1,7 @@
 //文字色指定
 @use "./../../foundation/variables" as v;
+//ミックスイン
+@use "./../../foundation/mixin" as m;
 
 //検索ボックスと検索ボタン
 //横並び
@@ -21,19 +23,25 @@
     //検索ボックスの色、幅、高さ、余白定義
     &__keyword {
         background-color: v.$color-white;
-        width:            20.6vw;
+        width:            34.14vw;
         height:           36px;
         padding-left:     2.5vw;
+        @include m.pc {
+            width: 20.6vw;
         }
+    }
     //検索ボタンの色、幅、高さ、余白定義
     &__submit {
         background-color: v.$color-bg-lightgray;
-        width:            7vw;
+        width:            11.724vw;
         height:           36px;
         margin:           0 1.61vw 0 0.67vw;   
         font-size:        0.8vw; 
         color:            v.$color-brown;
+        @include m.pc {
+            width: 7vw;
         }
+    }
 }
 
 

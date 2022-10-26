@@ -1,5 +1,7 @@
 //文字色指定
 @use "./../../foundation/variables" as v;
+//レスポンシブ
+@use "./../../foundation/mixin" as m;
 
 //front-pageの地図部分
 .p-access {
@@ -20,15 +22,22 @@
     &__container {
         position:         relative;
         background-color: rgba(0,0,0,0.29);
-        width:            61%;
+        width:            100%;
         min-height:       405.6px;
+        @include m.pc {
+            width:        61%;
+        }
         }
     //見出し
     &__title {
         position:     absolute;
         padding-top:  4.32vw;
-        padding-left: 6.19vw;
+        padding-left: 3.62vw;
         color:        v.$color-white;
+        @include m.pc {
+            font-size: 1.87vw;
+            padding-left: 6.19vw;
+        }
         }
     //見出しの下線
     &__title::after {
@@ -38,8 +47,13 @@
         }
     //地図の上に被る文章
     &__text {
-        padding:     13.17vw 6.97vw 2.08vw 6.19vw;
-        font-size:   0.83vw;  
-        line-height: 2;      
+        padding:     13.17vw 2.5vw 2.08vw 3.62vw;
+        // font-size:   0.83vw;  
+        line-height: 2.357;  
+        @include m.pc {
+            font-size: 0.83vw;
+            padding:     13.17vw 6.97vw 2.08vw 6.19vw;
+            line-height: 2;  
+        }    
         }
 }
