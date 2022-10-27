@@ -6,8 +6,16 @@
     
     //hamburgerの文字のサイズと左の余白
     .p-header__title {
-        margin-left: 3.3vw;;
+        // margin-left: 3.3vw;;
         font-weight: 900;
-        font-size:   3.3vw;
+        // font-size:   3.3vw;
+        @include m.tablet {
+            font-size: 3.448vw;
+        }
+        @include m.pc {
+            margin-left: 3.3vw;;
+            // font-weight: 900;
+            font-size:   3.3vw;
+        }
     }
 }

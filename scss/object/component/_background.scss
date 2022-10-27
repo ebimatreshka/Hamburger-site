@@ -1,5 +1,7 @@
 //色指定
 @use "./../../foundation/variables" as v;
+//レスポンシブ
+@use "./../../foundation/mixin" as m;
 
 //背景色指定
 .c-bg-color {
@@ -32,7 +34,11 @@
     //front-pageのmainvisual
     &__main {
         @extend .c-background;
-        background-image: url(./../../../images/mainvisual\(pc\).jpg);
+        background-image:  url(./../../../images/mainvisual\(sp\).jpg);
+        @include m.tablet {
+            @extend .c-background;
+            background-image: url(./../../../images/mainvisual\(pc\).jpg);
+        }
     }
     //front-pageのパン3つの写真(左側)
     &__menu--left {

@@ -5,13 +5,22 @@
 .p-main-visual {
     position: relative;
     height: 331px;
+
     //タイトルの余白設定
     &__title {
-        display: none;
-        padding: 144.3px 0 151.8px 4.47vw;
+        display: block;
+        padding: 144.3px 0 151.8px 6.66vw;
+        font-size: 9.6vw;
+
+        //tbサイズでタイトル消える
+        @include m.tablet {
+            display: none;
+            padding: 144.3px 0 151.8px 4.47vw;
+        }
+
         @include m.pc {
             display: block;
-            padding: 144.3px 0 151.8px 4.47vw;
+            font-size: 2vw;
         }
     }
 }
