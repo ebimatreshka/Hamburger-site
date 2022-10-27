@@ -1,3 +1,9 @@
+ //レスポンシブ
+@use "./../foundation/mixin" as m;
+
  .l-main {
-    width: 80vw;
- }
+    width: 100vw;
+    @include m.pc {
+      width: 80vw;
+   }
+}

@@ -26,6 +26,11 @@
             background-color: v.$color-white;
         }
     }
+    &__menu__li {
+        @include m.pc {
+            font-size: 1vw;
+        }
+    }
     //コピーライトの真ん中中央揃え
     &__copyright {
         margin: -5px auto;
