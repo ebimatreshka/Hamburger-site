@@ -268,7 +268,11 @@ img {
 @media screen and (min-width: 600px) {
   .c-unit--2col {
     flex-direction: row;
-    align-items: center;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .c-unit--2col {
+    justify-content: space-between;
   }
 }
 

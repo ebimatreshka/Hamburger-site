@@ -9,7 +9,10 @@
         flex-direction: column;
         @include m.tablet {
             flex-direction: row;
-            align-items: center;
+            // align-items: center;
+        }
+        @include m.pc {
+            justify-content: space-between;
         }
     }
 }
