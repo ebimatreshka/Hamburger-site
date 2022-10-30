@@ -18,7 +18,14 @@
         position:     relative;
         min-height:   489.7px;
         margin-right: 3.537vw;
+        margin-bottom: 5.33vw;
         width: 100%;
+        @include m.tablet {
+            // position:     relative;
+            // min-height:   489.7px;
+            // margin-right: 3.537vw;
+            // width: 100%;
+        }
         @include m.pc {
             min-height:   746px;
             margin-right: 50px;
@@ -38,15 +45,28 @@
 
     //タイトルの位置
     &__title {
-        margin-left: 1.4vw;
+        margin-left: 4vw;
+        @include m.tablet {
+            margin-left: 1.4vw;
+            font-size: 4.2vw;
+        }
+        @include m.pc {
+            font-size: 3.3vw;
+        }
     }
 
     //タイトル下の下線の位置、幅など
     &__title::after {
-        width:  3.33vw;
-        height: 3.5px;
-        top:    80px;
-        left:   1.4vw;
+        width:  9.03vw;
+        height: 6.5px;
+        top:    103px;
+        left:   4vw;
+        @include m.tablet {
+            width:  3.33vw;
+            height: 3.5px;
+            top:    80px;
+            left:   1.4vw;
+        }
         @include m.pc {
             width: 40px;
             height: 2px;

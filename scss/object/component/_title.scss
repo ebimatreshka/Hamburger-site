@@ -5,7 +5,12 @@
 .c-title {
     &__42 {
         color: v.$color-white;
+        @extend .c-title__42;
         font-size: 4.2vw;
+    }
+    &__41 {
+        @extend .c-title__42;
+        font-size: 10.93vw;
     }
     &__02 {
         @extend .c-title__42;
