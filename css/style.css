@@ -37,9 +37,6 @@ img {
   color: #FFFFFF;
 }
 
-.l-header {
-  height: 217px;
-}
 @media screen and (min-width: 1025px) {
   .l-header {
     height: 136px;
@@ -272,8 +269,15 @@ img {
 
 .c-unit--2col {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 600px) {
+  .c-unit--2col {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .c-flex-box--column {
@@ -475,7 +479,6 @@ img {
 }
 @media screen and (min-width: 1025px) {
   .p-main-visual__title {
-    display: block;
     font-size: 2vw;
   }
 }

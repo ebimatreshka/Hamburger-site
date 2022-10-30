@@ -5,8 +5,15 @@
 .c-unit {
     &--2col {
         display:         flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        // justify-content: space-between;
+        // align-items: center;
+        @include m.tablet {
+            display:         flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
 }
 
