@@ -4,8 +4,8 @@
 @use "./../foundation/mixin" as m;
 
 .l-header {
-    height: 217px;
+    // height: 217px;
     @include m.pc {
-        height: 136px;
+        // height: 136px;
     }
 }

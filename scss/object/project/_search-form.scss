@@ -40,7 +40,8 @@
         background-color: v.$color-bg-lightgray;
         width:            20.8vw;
         height:           46px;
-        margin:           0 8.26vw 0 3.2vw;   
+        // margin:           0 8.26vw 0 3.2vw;
+        margin: 0 8.27vw 0 3.2vw;   
         font-size:        4.26vw; 
         color:            v.$color-brown;
         @include m.tablet {
