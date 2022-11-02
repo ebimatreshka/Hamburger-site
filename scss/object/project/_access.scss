@@ -23,11 +23,14 @@
         position:         relative;
         background-color: rgba(0,0,0,0.29);
         width:            100%;
-        min-height:       405.6px;
+        min-height:       243.36px;
+        @include m.tablet {
+            min-height: 405.6px;
+        }
         @include m.pc {
             width:        61%;
         }
-        }
+    }
     //見出し
     &__title {
         position:     absolute;

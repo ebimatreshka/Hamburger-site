@@ -29,6 +29,7 @@
         @include m.pc {
             min-height:   746px;
             margin-right: 50px;
+            margin-bottom: 0vw;
         }
         }
 
@@ -88,6 +89,9 @@
     //白い箱の中の見出し(Take Out/Eat In)の余白
     &__dt {
         padding: 7.5px 13px 0 12.5px;
+        @include m.tablet {
+            font-size: 3.5vw;
+        }
         @include m.pc {
             font-size: 1.3vw;
         }
