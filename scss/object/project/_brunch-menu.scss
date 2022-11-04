@@ -38,18 +38,23 @@
     &__ul-right {
         position:   relative;
         min-height: 489.7px;
+        // margin-right: 3.537vw;
+        margin-bottom: 5.33vw;
         width: 100%;
         @include m.pc {
             min-height:   746px;
+            // margin-right: 50px;
+            margin-bottom: 0vw;
         }
         }
 
     //タイトルの位置
     &__title {
         margin-left: 4vw;
+        // font-size: 2.07vw;
         @include m.tablet {
             margin-left: 1.4vw;
-            font-size: 4.2vw;
+            font-size: 3.79vw;
         }
         @include m.pc {
             font-size: 3.3vw;
@@ -60,18 +65,18 @@
     &__title::after {
         width:  9.03vw;
         height: 6.5px;
-        top:    103px;
+        top:    17vw;
         left:   4vw;
         @include m.tablet {
             width:  3.33vw;
             height: 3.5px;
-            top:    80px;
+            top:    66px;
             left:   1.4vw;
         }
         @include m.pc {
             width: 40px;
             height: 2px;
-            top: 100px;
+            top: 70px;
         }
         }
 
@@ -83,7 +88,10 @@
 
     //上の箱のmargin設定
     &__dl:nth-of-type(1) {
-        margin-top: 702px;
+        margin-top: 305px;
+        @include m.tablet {
+            margin-top: 702px;
+        }
     }
 
     //白い箱の中の見出し(Take Out/Eat In)の余白

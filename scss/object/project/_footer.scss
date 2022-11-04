@@ -21,8 +21,11 @@
             content:  "";
             display:  inline-block;
             width:    1.3px;
-            height:   18px;
+            height:   13px;
             background-color: v.$color-white;
+            @include m.tablet {
+                height: 18px;
+            }
         }
     }
     &__menu__li {

@@ -137,10 +137,10 @@ img {
 }
 
 .c-font-size__14 {
-  font-size: 1.36vw;
+  font-size: 3.73vw;
 }
 .c-font-size__13 {
-  font-size: 3.4vw;
+  font-size: 5.87vw;
 }
 .c-font-size__20 {
   font-size: 1.724vw;
@@ -152,7 +152,7 @@ img {
   font-size: 2.07vw;
 }
 .c-font-size__30 {
-  font-size: 2.5vw;
+  font-size: 8vw;
 }
 .c-font-size__40 {
   font-size: 10.6vw;
@@ -296,9 +296,14 @@ img {
 }
 
 .p-access {
-  min-height: 405.6px;
+  min-height: 691px;
   position: relative;
   background-image: url(./../../../images/map.jpg);
+}
+@media screen and (min-width: 600px) {
+  .p-access {
+    min-height: 405.6px;
+  }
 }
 .p-access::before {
   content: "";
@@ -308,12 +313,19 @@ img {
   bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.4);
+  height: 60%;
+}
+@media screen and (min-width: 600px) {
+  .p-access::before {
+    height: 100%;
+  }
 }
 .p-access__container {
   position: relative;
   background-color: rgba(0, 0, 0, 0.29);
   width: 100%;
   min-height: 243.36px;
+  line-height: 2.36;
 }
 @media screen and (min-width: 600px) {
   .p-access__container {
@@ -328,8 +340,14 @@ img {
 .p-access__title {
   position: absolute;
   padding-top: 4.32vw;
-  padding-left: 3.62vw;
+  padding-left: 10.67vw;
   color: #FFFFFF;
+}
+@media screen and (min-width: 600px) {
+  .p-access__title {
+    font-size: 2.58vw;
+    padding-left: 3.62vw;
+  }
 }
 @media screen and (min-width: 1025px) {
   .p-access__title {
@@ -338,13 +356,30 @@ img {
   }
 }
 .p-access__title::after {
-  width: 3.9vw;
+  width: 20vw;
   height: 2px;
-  top: 9.86vw;
+  top: 25vw;
+}
+@media screen and (min-width: 600px) {
+  .p-access__title::after {
+    width: 6.46vw;
+    top: 10.86vw;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-access__title::after {
+    width: 3.9vw;
+  }
 }
 .p-access__text {
-  padding: 13.17vw 2.5vw 2.08vw 3.62vw;
+  padding: 155px 10.67vw 51px 10.67vw;
   line-height: 2.357;
+}
+@media screen and (min-width: 600px) {
+  .p-access__text {
+    font-size: 1.19vw;
+    padding: 120px 3.62vw 51px 3.62vw;
+  }
 }
 @media screen and (min-width: 1025px) {
   .p-access__text {
@@ -379,11 +414,13 @@ img {
 .p-brunch-menu__ul-right {
   position: relative;
   min-height: 489.7px;
+  margin-bottom: 5.33vw;
   width: 100%;
 }
 @media screen and (min-width: 1025px) {
   .p-brunch-menu__ul-right {
     min-height: 746px;
+    margin-bottom: 0vw;
   }
 }
 .p-brunch-menu__title {
@@ -392,7 +429,7 @@ img {
 @media screen and (min-width: 600px) {
   .p-brunch-menu__title {
     margin-left: 1.4vw;
-    font-size: 4.2vw;
+    font-size: 3.79vw;
   }
 }
 @media screen and (min-width: 1025px) {
@@ -403,14 +440,14 @@ img {
 .p-brunch-menu__title::after {
   width: 9.03vw;
   height: 6.5px;
-  top: 103px;
+  top: 17vw;
   left: 4vw;
 }
 @media screen and (min-width: 600px) {
   .p-brunch-menu__title::after {
     width: 3.33vw;
     height: 3.5px;
-    top: 80px;
+    top: 66px;
     left: 1.4vw;
   }
 }
@@ -418,7 +455,7 @@ img {
   .p-brunch-menu__title::after {
     width: 40px;
     height: 2px;
-    top: 100px;
+    top: 70px;
   }
 }
 .p-brunch-menu__dl {
@@ -426,7 +463,12 @@ img {
   margin: 20px;
 }
 .p-brunch-menu__dl:nth-of-type(1) {
-  margin-top: 702px;
+  margin-top: 305px;
+}
+@media screen and (min-width: 600px) {
+  .p-brunch-menu__dl:nth-of-type(1) {
+    margin-top: 702px;
+  }
 }
 .p-brunch-menu__dt {
   padding: 7.5px 13px 0 12.5px;
@@ -463,8 +505,13 @@ img {
   content: "";
   display: inline-block;
   width: 1.3px;
-  height: 18px;
+  height: 13px;
   background-color: #FFFFFF;
+}
+@media screen and (min-width: 600px) {
+  .p-footer__ul :first-child::after {
+    height: 18px;
+  }
 }
 @media screen and (min-width: 1025px) {
   .p-footer__menu__li {
@@ -482,10 +529,12 @@ img {
 
 .p-header .p-header__title {
   font-weight: 900;
+  line-height: 1.325;
 }
 @media screen and (min-width: 600px) {
   .p-header .p-header__title {
     font-size: 3.448vw;
+    margin-bottom: 12px;
   }
 }
 @media screen and (min-width: 1025px) {
@@ -537,7 +586,7 @@ img {
 }
 .p-search-form::before {
   content: "";
-  width: 2vw;
+  width: 7vw;
   height: 24px;
   background: url(./../../../images/glass.jpg) no-repeat center center/auto 80%;
   display: inline-block;
@@ -568,7 +617,7 @@ img {
   background-color: #F2EDE9;
   width: 20.8vw;
   height: 46px;
-  margin: 0 8.27vw 0 3.2vw;
+  margin-left: 3.2vw;
   font-size: 4.26vw;
   color: #707070;
 }
@@ -576,12 +625,13 @@ img {
   .p-search-form__submit {
     width: 11.724vw;
     height: 36px;
-    margin: 0 1.61vw 0 0.67vw;
+    margin-left: 1.2vw;
     font-size: 0.8vw;
   }
 }
 @media screen and (min-width: 1025px) {
   .p-search-form__submit {
+    margin: 0 1.61vw 0 0.67vw;
     width: 7vw;
   }
 }

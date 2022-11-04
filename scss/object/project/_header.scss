@@ -8,9 +8,11 @@
     .p-header__title {
         // margin-left: 3.3vw;;
         font-weight: 900;
+        line-height: 1.325;
         // font-size:   3.3vw;
         @include m.tablet {
             font-size: 3.448vw;
+            margin-bottom: 12px;
         }
         @include m.pc {
             margin-left: 3.3vw;;

@@ -11,7 +11,7 @@
     //虫眼鏡の画像を擬似要素で
     &::before {
         content:    "";
-        width:      2vw;
+        width:      7vw;
         height:     24px;
         background: url(./../../../images/glass.jpg) no-repeat center  center / auto 80%;
         display:    inline-block;
@@ -41,16 +41,18 @@
         width:            20.8vw;
         height:           46px;
         // margin:           0 8.26vw 0 3.2vw;
-        margin: 0 8.27vw 0 3.2vw;   
+        // margin: 0 8.27vw 0 3.2vw;   
+        margin-left: 3.2vw;
         font-size:        4.26vw; 
         color:            v.$color-brown;
         @include m.tablet {
             width:            11.724vw;
             height:           36px;
-            margin:           0 1.61vw 0 0.67vw;   
+            margin-left: 1.2vw;
             font-size:        0.8vw;     
         }
         @include m.pc {
+            margin:           0 1.61vw 0 0.67vw;   
             width: 7vw;
         }
     }
