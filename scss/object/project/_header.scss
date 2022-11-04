@@ -9,10 +9,14 @@
         // margin-left: 3.3vw;;
         font-weight: 900;
         line-height: 1.325;
-        // font-size:   3.3vw;
+        font-size: 8.6vw;
+        padding-top: 20px;
+        text-align: center;
+        // font-size:   10.6vw;
         @include m.tablet {
-            font-size: 3.448vw;
+            font-size: 3.18vw;
             margin-bottom: 12px;
+            padding-top: 0px;
         }
         @include m.pc {
             margin-left: 3.3vw;;

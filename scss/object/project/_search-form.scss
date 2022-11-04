@@ -8,6 +8,7 @@
 .p-search-form {
     display: flex;  
     position: relative;  //虫眼鏡入れるため
+    justify-content: center;
     //虫眼鏡の画像を擬似要素で
     &::before {
         content:    "";
@@ -17,14 +18,17 @@
         display:    inline-block;
         position:   absolute;
         top:        50%;
-        left:       20px;
+        left:       11%;
         transform:  translateY(-50%) translateX(-50%);    //虫眼鏡の高さを半分マイナス上にずらすと、縦の中央配置
+        @include m.tablet {
+            left: 290px;
+        }
         }
     //検索ボックスの色、幅、高さ、余白定義
     &__keyword {
         background-color: v.$color-white;
         width:            61.33vw;
-        height:           46px;
+        height:           40px;
         padding-left:     6.4vw;
         @include m.tablet {
             width:            34.14vw;
@@ -39,11 +43,11 @@
     &__submit {
         background-color: v.$color-bg-lightgray;
         width:            20.8vw;
-        height:           46px;
+        height:           40px;
         // margin:           0 8.26vw 0 3.2vw;
         // margin: 0 8.27vw 0 3.2vw;   
         margin-left: 3.2vw;
-        font-size:        4.26vw; 
+        font-size:        3.8vw; 
         color:            v.$color-brown;
         @include m.tablet {
             width:            11.724vw;
