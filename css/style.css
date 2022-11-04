@@ -288,12 +288,6 @@ img {
   justify-content: center;
   align-items: center;
 }
-@media screen and (min-width: 1025px) {
-  .c-flex-box--column {
-    justify-content: space-between;
-    flex-direction: row;
-  }
-}
 
 .p-access {
   min-height: 691px;
@@ -530,6 +524,7 @@ img {
 .p-header .p-header__title {
   font-weight: 900;
   line-height: 1.325;
+  text-align: center;
 }
 @media screen and (min-width: 600px) {
   .p-header .p-header__title {
@@ -583,6 +578,7 @@ img {
 .p-search-form {
   display: flex;
   position: relative;
+  justify-content: center;
 }
 .p-search-form::before {
   content: "";
@@ -591,8 +587,8 @@ img {
   background: url(./../../../images/glass.jpg) no-repeat center center/auto 80%;
   display: inline-block;
   position: absolute;
-  top: 50%;
-  left: 20px;
+  top: 25%;
+  left: 40px;
   transform: translateY(-50%) translateX(-50%);
 }
 .p-search-form__keyword {
