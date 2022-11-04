@@ -32,11 +32,19 @@
         flex-direction:  column;
         justify-content: center;
         align-items: center;
+<<<<<<< HEAD
 
         //pc1025px(横並び 左右に均等配置)
     //     @include m.pc {
     //         justify-content: space-between;
     //         flex-direction: row;        
     //     }
+=======
+        //pc1025px(横並び 左右に均等配置)
+        @include m.pc {
+            justify-content: space-between;
+            flex-direction: row;        
+        }
+>>>>>>> parent of 3ef5c2a (header組み直し)
     }
 }
