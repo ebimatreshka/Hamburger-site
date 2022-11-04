@@ -11,19 +11,23 @@
     //虫眼鏡の画像を擬似要素で
     &::before {
         content:    "";
-        width:      7vw;
-        height:     24px;
-        background: url(./../../../images/glass.jpg) no-repeat center  center / auto 80%;
-        display:    inline-block;
-        position:   absolute;
-<<<<<<< HEAD
-        top:        25%;
-        left:       40px;
-=======
-        top:        50%;
-        left:       20px;
->>>>>>> parent of 3ef5c2a (header組み直し)
-        transform:  translateY(-50%) translateX(-50%);    //虫眼鏡の高さを半分マイナス上にずらすと、縦の中央配置
+        width:      39px;
+        height:     46px;
+        background: url(./../../../images/glass.jpg) no-repeat center  center / auto 50%;
+        display:    block;
+        line-height: 46px;
+        margin: 0 -46px 0 0;
+        z-index: 10;
+        // position:   absolute;
+        // top:        25%;
+        // left:       40px;
+        // transform:  translateY(-50%) translateX(-50%);    //虫眼鏡の高さを半分マイナス上にずらすと、縦の中央配置
+        @include m.tablet {
+            width: 36px;
+            height: 36px;
+            line-height: 36px;
+            margin: 0 -39px 0 0;
+        }
         }
     //検索ボックスの色、幅、高さ、余白定義
     &__keyword {

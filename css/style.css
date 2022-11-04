@@ -287,15 +287,12 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-<<<<<<< HEAD
-=======
 }
 @media screen and (min-width: 1025px) {
   .c-flex-box--column {
     justify-content: space-between;
     flex-direction: row;
   }
->>>>>>> parent of 3ef5c2a (header組み直し)
 }
 
 .p-access {
@@ -533,10 +530,6 @@ img {
 .p-header .p-header__title {
   font-weight: 900;
   line-height: 1.325;
-<<<<<<< HEAD
-  text-align: center;
-=======
->>>>>>> parent of 3ef5c2a (header組み直し)
 }
 @media screen and (min-width: 600px) {
   .p-header .p-header__title {
@@ -593,19 +586,21 @@ img {
 }
 .p-search-form::before {
   content: "";
-  width: 7vw;
-  height: 24px;
-  background: url(./../../../images/glass.jpg) no-repeat center center/auto 80%;
-  display: inline-block;
-  position: absolute;
-<<<<<<< HEAD
-  top: 25%;
-  left: 40px;
-=======
-  top: 50%;
-  left: 20px;
->>>>>>> parent of 3ef5c2a (header組み直し)
-  transform: translateY(-50%) translateX(-50%);
+  width: 39px;
+  height: 46px;
+  background: url(./../../../images/glass.jpg) no-repeat center center/auto 50%;
+  display: block;
+  line-height: 46px;
+  margin: 0 -46px 0 0;
+  z-index: 10;
+}
+@media screen and (min-width: 600px) {
+  .p-search-form::before {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    margin: 0 -39px 0 0;
+  }
 }
 .p-search-form__keyword {
   background-color: #FFFFFF;
