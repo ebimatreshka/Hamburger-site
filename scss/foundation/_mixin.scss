@@ -15,3 +15,9 @@ $pc: 1025px;
        @content; 
     }
 }
+
+//rem
+@mixin font-rem( $font-size-px, $root-font-size: 16 ) {
+    font-size: math.div( $font-size-px, $root-font-size ) * 1rem;
+    
+}
