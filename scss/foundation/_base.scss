@@ -4,16 +4,16 @@
     box-sizing: border-box;
 }
 
-html {
-    font-size:       62.5%; //1rem=10px
-    line-height:     1.6;
+html {  //html幅があってもなくてもいい人
+    font-size:       16px; 
+    line-height:     1.6em;   //単位emをチェックする
     scroll-behavior: smooth;
 }
 
 body {
     color:      v.$color-brown;
-    font-size:  1.6rem;
-    width:      100%;
+    // font-size:  1.6rem;
+    width:      100vw;  //htmlに頼らない幅をつける
     overflow-x: hidden;
 }
 

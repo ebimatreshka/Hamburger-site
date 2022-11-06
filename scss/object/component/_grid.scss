@@ -4,7 +4,7 @@
 //グリッドレイアウト
 .c-grid {
     display:            grid;
-    grid-template-rows: 136px 1fr 94px;
+    grid-template-rows: 57.87vw 1fr 25.07vw;     //
     grid-template-columns: 1fr;
     @include m.pc {
         grid-template-columns: 1fr 20%;    

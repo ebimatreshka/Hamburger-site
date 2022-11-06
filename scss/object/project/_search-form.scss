@@ -32,9 +32,9 @@
     //検索ボックスの色、幅、高さ、余白定義
     &__keyword {
         background-color: v.$color-white;
-        width:            61.33vw;
-        height:           46px;
-        padding-left:     6.4vw;
+        width: m.sp-vw( 230, 375 );
+        height: m.sp-vw( 46, 375 );
+        padding-left: m.sp-vw( 24, 375 );
         @include m.tablet {
             width:            34.14vw;
             height:           36px;
@@ -47,12 +47,10 @@
     //検索ボタンの色、幅、高さ、余白定義
     &__submit {
         background-color: v.$color-bg-lightgray;
-        width:            20.8vw;
-        height:           46px;
-        // margin:           0 8.26vw 0 3.2vw;
-        // margin: 0 8.27vw 0 3.2vw;   
-        margin-left: 3.2vw;
-        font-size:        4.26vw; 
+        width: m.sp-vw( 78, 375 );
+        height: m.sp-vw( 46, 375 );
+        margin-left: m.sp-vw( 12, 375 );
+        font-size: m.sp-vw( 16, 375);
         color:            v.$color-brown;
         @include m.tablet {
             width:            11.724vw;

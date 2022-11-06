@@ -7,7 +7,8 @@
 //横並び、マージン
 .p-brunch-menu {
     // display: flex;
-    margin:  28.7px 3.448vw;
+    // margin:  28.7px 3.448vw;
+    margin: 7.65vw 3.448vw;
     @include m.pc {
         margin:  75px 5.83vw 83.8px 5.78vw;
     }
@@ -16,7 +17,8 @@
     //高さを文字数に合わせて可変
     &__ul-left {
         position:     relative;
-        min-height:   489.7px;
+        // min-height:   489.7px;
+        min-height: m.sp-vw( 489.7 );
         margin-right: 3.537vw;
         margin-bottom: 5.33vw;
         width: 100%;
@@ -37,7 +39,8 @@
     //高さを文字数に合わせて可変
     &__ul-right {
         position:   relative;
-        min-height: 489.7px;
+        // min-height: 489.7px;
+        min-height: m.sp-vw( 489.7 );
         // margin-right: 3.537vw;
         margin-bottom: 5.33vw;
         width: 100%;
@@ -50,7 +53,10 @@
 
     //タイトルの位置
     &__title {
+        padding-top: m.sp-vw( 11, 375 );
         margin-left: 4vw;
+        font-size: m.sp-vw( 41, 375);
+        line-height: 1.317;
         // font-size: 2.07vw;
         @include m.tablet {
             margin-left: 1.4vw;
@@ -65,7 +71,8 @@
     &__title::after {
         width:  9.03vw;
         height: 6.5px;
-        top:    17vw;
+        height: 1.2vw;
+        top:    19vw;
         left:   4vw;
         @include m.tablet {
             width:  3.33vw;
@@ -83,12 +90,14 @@
     //Take Out/Eat Inの説明文の白い箱
     &__dl {
         background: rgba(255,255,255,1);
-        margin:     20px;
+        // margin:     20px;
+        margin: m.sp-vw( 20 );
         }
 
     //上の箱のmargin設定
     &__dl:nth-of-type(1) {
-        margin-top: 305px;
+        // margin-top: 305px;
+        margin-top: m.sp-vw( 305 );
         @include m.tablet {
             margin-top: 702px;
         }
@@ -96,17 +105,23 @@
 
     //白い箱の中の見出し(Take Out/Eat In)の余白
     &__dt {
-        padding: 7.5px 13px 0 12.5px;
+        // padding: 7.5px 13px 0 12.5px;
+        padding: 1.87vw 0 0.8vw 2.67vw;
+        font-size: m.sp-vw( 22 );
         @include m.tablet {
             font-size: 3.5vw;
         }
         @include m.pc {
             font-size: 1.3vw;
+            
         }
     }
 
     //白い箱の説明文の余白
     &__dd {
-        padding: 5.6px 13px 12.5px 12.5px;
+        // padding: 5.6px 13px 12.5px 12.5px;
+        padding: 0.8vw 2.67vw 4vw 2.67vw;
+        font-size: m.sp-vw( 16 );
+        line-height: 1.438;
     }
 }

@@ -1,3 +1,5 @@
+@use "sass:math";
+
 //ブレイクポイント
 $tablet: 600px;
 $pc: 1025px;
@@ -18,6 +20,21 @@ $pc: 1025px;
 
 //rem
 @mixin font-rem( $font-size-px, $root-font-size: 16 ) {
-    font-size: math.div( $font-size-px, $root-font-size ) * 1rem;
-    
+    font-size: math.div( $font-size-px, $root-font-size ) * 1rem;    
 }
+
+
+//vw
+$sp-design-width: 375; //スマホデザインの幅 
+
+@function sp-vw($num, $width: $sp-design-width) {   //関数の宣言
+    @return(1vw * $num / $width * 100);
+}
+
+
+
+
+// @function vw( $size: 16) {
+//     $vw: $size * (100 / $sp-design-width) + vw; //
+//     @return $vw;
+// }
