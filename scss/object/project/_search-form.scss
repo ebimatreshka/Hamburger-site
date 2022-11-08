@@ -43,7 +43,9 @@
             // padding-left:     2.5vw;     
         }
         @include m.pc {
-            width: 20.6vw;
+            // width: 20.6vw;
+            width: m.pc-vw( 396 );
+            height: m.pc-vw( 46 );
         }
     }
     //検索ボタンの色、幅、高さ、余白定義
@@ -68,6 +70,9 @@
         @include m.pc {
             margin:           0 1.61vw 0 0.67vw;   
             width: 7vw;
+            width: m.pc-vw( 136 );
+            height: m.pc-vw( 46 );
+            font-size: m.pc-vw( 16 );
         }
     }
 }

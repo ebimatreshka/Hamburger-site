@@ -10,6 +10,7 @@
         grid-template-rows: 26.02vw 1fr 17.99vw;     //
     }
     @include m.pc {
+        grid-template-rows: 11.3vw 1fr 7.8125vw;     //
         grid-template-columns: 1fr 20%;    
     }
 
