@@ -9,6 +9,9 @@
     // display: flex;
     // margin:  28.7px 3.448vw;
     margin: 7.65vw 3.448vw;
+    @include m.tablet {
+        margin: 4.79vw 3.448vw 0 3.44vw;
+    }
     @include m.pc {
         margin:  75px 5.83vw 83.8px 5.78vw;
     }
@@ -23,6 +26,7 @@
         margin-bottom: 5.33vw;
         width: 100%;
         @include m.tablet {
+            min-height: m.tb-vw( 681 );
             // position:     relative;
             // min-height:   489.7px;
             // margin-right: 3.537vw;
@@ -59,8 +63,10 @@
         line-height: 1.317;
         // font-size: 2.07vw;
         @include m.tablet {
-            margin-left: 1.4vw;
-            font-size: 3.79vw;
+            // margin-left: 1.4vw;
+            margin-left: m.tb-vw( 11 );
+            // font-size: 3.79vw;
+            font-size: m.tb-vw( 44);
         }
         @include m.pc {
             font-size: 3.3vw;
@@ -75,10 +81,14 @@
         top:    19vw;
         left:   4vw;
         @include m.tablet {
-            width:  3.33vw;
-            height: 3.5px;
-            top:    66px;
+            // width:  3.33vw;
+            width: m.tb-vw( 35.99 );
+            // height: 3.5px;
+            height: m.tb-vw( 3.5 );
+            // top:    66px;
+            top: 11.913vw;
             left:   1.4vw;
+            left: m.tb-vw( 15.1 );
         }
         @include m.pc {
             width: 40px;
@@ -92,14 +102,17 @@
         background: rgba(255,255,255,1);
         // margin:     20px;
         margin: m.sp-vw( 20 );
+        @include m.tablet {
+            margin: 1.79vw 1.79vw 1.91vw 1.91vw;
         }
+    }
 
     //上の箱のmargin設定
     &__dl:nth-of-type(1) {
         // margin-top: 305px;
         margin-top: m.sp-vw( 305 );
         @include m.tablet {
-            margin-top: 702px;
+            margin-top: m.tb-vw( 595 );
         }
     }
 
@@ -110,6 +123,7 @@
         font-size: m.sp-vw( 22 );
         @include m.tablet {
             font-size: 3.5vw;
+            font-size: m.tb-vw( 24 );
         }
         @include m.pc {
             font-size: 1.3vw;
@@ -123,5 +137,8 @@
         padding: 0.8vw 2.67vw 4vw 2.67vw;
         font-size: m.sp-vw( 16 );
         line-height: 1.438;
+        @include m.tablet {
+            font-size: m.tb-vw( 14 );
+        }
     }
 }

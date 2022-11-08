@@ -7,6 +7,10 @@
     // height: 331px;
     height: m.sp-vw( 331 );
 
+    @include m.tablet {
+        height: m.tb-vw( 285 );
+    }
+
     //タイトルの余白設定
     &__title {
         display: block;

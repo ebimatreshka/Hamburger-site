@@ -1,8 +1,13 @@
 //色指定
 @use "./../foundation/variables" as v;
+@use "./../foundation/mixin" as m;
 
 .l-footer {
     display:        flex;
     flex-direction: column;
+    justify-content: center;
     color:          v.$color-white;
+    @include m.tablet {
+        justify-content: space-evenly;
+    }
 }

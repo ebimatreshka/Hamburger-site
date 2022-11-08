@@ -38,7 +38,7 @@
         min-height: m.sp-vw( 243.36 );
         line-height: 2.36;
         @include m.tablet {
-            min-height: 405.6px;
+            min-height: m.tb-vw( 415 );
         }
         @include m.pc {
             width:        61%;
@@ -54,8 +54,10 @@
         // color:        v.$color-white;
         font-size: m.sp-vw( 30, 375);
         @include m.tablet {
-            font-size: 2.58vw;
+            // font-size: 2.58vw;
+            font-size: m.tb-vw( 30 );
             padding-left: 3.62vw;
+            padding: 4.79vw 0 0 5.03vw;
         }
         @include m.pc {
             font-size: 1.87vw;
@@ -69,8 +71,10 @@
         top: 32vw;
         // top: 19.86vw;
         @include m.tablet {
-            width:  6.46vw;
-            top:    10.86vw;
+            // width:  6.46vw;
+            width: m.tb-vw( 75 );
+            height: 0.35vw;
+            top:    12.86vw;
         }
         @include m.pc {
             width: 3.9vw;
@@ -85,7 +89,9 @@
         line-height: 2.357;
         @include m.tablet {
             font-size: 1.19vw;
-            padding: 120px 3.62vw 51px 3.62vw;;
+            font-size: m.tb-vw( 14 );
+            // padding: 120px 3.62vw 51px 3.62vw;;
+            padding: 15vw 3.47vw 0 5.03vw;
         }  
         @include m.pc {
             font-size: 0.83vw;

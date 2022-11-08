@@ -6,22 +6,32 @@
     
     //hamburgerの文字のサイズと左の余白
     .p-header__title {
-        // margin-left: 3.3vw;;
         font-weight: 900;
         line-height: 1.325;
-        font-size: m.sp-vw( 40, 375 );
-        padding-bottom: m.sp-vw( 38, 375 );
+        font-size: m.sp-vw( 40 );
+        padding-bottom: m.sp-vw( 38 );
 
-        // @include m.font-rem( 40 );
-        // font-size:   3.3vw;
         @include m.tablet {
-            font-size: 3.448vw;
-            margin-bottom: 12px;
+            // font-size: 3.448vw;
+            font-size: m.tb-vw( 40 );
+            // margin-bottom: 12px;
+            // margin-bottom: m.tb-vw( 38 );
+            padding-bottom: m.tb-vw( 38 );
         }
         @include m.pc {
             margin-left: 3.3vw;;
             // font-weight: 900;
             font-size:   3.3vw;
+        }
+        &--menu {
+            display: none;
+            @include m.tablet {
+                display: block;
+                font-size: m.tb-vw( 34 );
+                position: absolute;
+                top: 3vw;
+                left: 87vw;
+            }
         }
     }
 }

@@ -18,6 +18,7 @@ $pc: 1025px;
     }
 }
 
+
 //rem
 @mixin font-rem( $font-size-px, $root-font-size: 16 ) {
     font-size: math.div( $font-size-px, $root-font-size ) * 1rem;    
@@ -31,10 +32,8 @@ $sp-design-width: 375; //スマホデザインの幅
     @return(1vw * $num / $width * 100);
 }
 
+$tb-design-width: 834; //タブレットデザインの幅
 
-
-
-// @function vw( $size: 16) {
-//     $vw: $size * (100 / $sp-design-width) + vw; //
-//     @return $vw;
-// }
+@function tb-vw($num, $width: $tb-design-width) {
+    @return(1vw * $num / $width * 100);
+}
