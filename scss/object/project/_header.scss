@@ -24,7 +24,14 @@
             font-size:   3.3vw;
         }
         &--menu {
-            display: none;
+            display: block;
+            font-size: m.sp-vw( 20 );
+            position: absolute;
+            // top: 3vw;
+            top: m.sp-vw( 14 );
+            // left: 87vw;
+            left: m.sp-vw( 308 );
+
             @include m.tablet {
                 display: block;
                 font-size: m.tb-vw( 34 );
