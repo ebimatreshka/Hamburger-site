@@ -11,6 +11,10 @@
     background-image: url(./../../../images/map.jpg);   //地図の画像
     @include m.tablet {
         min-height: 405.6px;
+        min-height: m.tb-vw( 415 );
+    }
+    @include m.pc {
+        min-height: m.pc-vw( 649 );
     }
     //全体の黒の背景を擬似要素で
     &::before {
@@ -42,6 +46,7 @@
         }
         @include m.pc {
             width:        61%;
+            min-height: 33.8020833333vw;
         }
     }
     //見出し
@@ -60,8 +65,10 @@
             padding: 4.79vw 0 0 5.03vw;
         }
         @include m.pc {
-            font-size: 1.87vw;
-            padding-left: 6.19vw;
+            // font-size: 1.87vw;
+            font-size: m.pc-vw( 36 );
+            // padding-left: 6.19vw;
+            padding: 4.32vw 0 0 6.19vw;
         }
     }
     //見出しの下線
@@ -78,6 +85,8 @@
         }
         @include m.pc {
             width: 3.9vw;
+            height: 0.15vw;
+            top: m.pc-vw( 189.5 );
         }
     }
     //地図の上に被る文章
@@ -94,9 +103,10 @@
             padding: 15vw 3.47vw 7.3vw 5.03vw;
         }  
         @include m.pc {
-            font-size: 0.83vw;
-            padding:     13.17vw 6.97vw 2.08vw 6.19vw;
-            line-height: 2;  
+            // font-size: 0.83vw;
+            font-size: m.pc-vw( 16 );
+            padding:     13.177vw 6.979vw 0 6.198vw;
+            line-height: 2.0625;  
         }    
     }
 }

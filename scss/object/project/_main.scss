@@ -14,20 +14,24 @@
     //タイトルの余白設定
     &__title {
         display: block;
-        // padding: 144.3px 0 151.8px 6.66vw;
-        padding: 38.48vw 0  40.48vw 1.776vw;
-        font-size: m.sp-vw( 40 );
-        padding-left: m.sp-vw( 25 );
+        // padding: 38.48vw 0  40.48vw 1.776vw;
+        font-size: m.sp-vw( 36 );
+        // padding-left: m.sp-vw( 25 );
+        position: absolute;
+        top: 42.73vw;
+        left: m.sp-vw( 26 );
 
         //tbサイズでタイトル消える
         @include m.tablet {
             display: none;
-            padding: 144.3px 0 151.8px 4.47vw;
+            // padding: 144.3px 0 151.8px 4.47vw;
         }
 
         @include m.pc {
             display: block;
-            font-size: 2vw;
+            font-size: m.pc-vw( 40 );
+            top: 17.3vw;
+            left: 4.479vw;
         }
     }
 }

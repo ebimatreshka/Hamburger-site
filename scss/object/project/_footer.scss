@@ -36,6 +36,11 @@
                 width: 0.25vw;
                 height: m.tb-vw( 18 );
             }
+            @include m.pc {
+                top: 1.9vw;
+                width: 0.15vw;
+                height: m.pc-vw( 20 );
+            }
         }
     }
     &__menu__li {
@@ -44,6 +49,7 @@
         }
         @include m.pc {
             font-size: 1vw;
+            font-size: m.pc-vw( 20 );
         }
     }
     //コピーライトの真ん中中央揃え
@@ -55,6 +61,7 @@
             margin: 0 auto;
         }
         @include m.pc {
+            font-size: m.pc-vw( 14 );
             margin: 0 auto;
         }    
     }

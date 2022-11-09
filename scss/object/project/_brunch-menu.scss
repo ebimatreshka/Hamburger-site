@@ -10,7 +10,8 @@
     // margin:  28.7px 3.448vw;
     margin: 7.65vw 3.448vw;
     @include m.tablet {
-        margin: 4.79vw 3.448vw 0 3.44vw;
+        // margin: 4.79vw 3.448vw 0 3.44vw;
+        margin: 4.79vw 4.79vw 0 4.79vw;
     }
     @include m.pc {
         margin:  75px 5.83vw 83.8px 5.78vw;
@@ -27,14 +28,18 @@
         width: 100%;
         @include m.tablet {
             min-height: m.tb-vw( 681 );
+            margin-right: m.tb-vw( 41 );
             // position:     relative;
             // min-height:   489.7px;
             // margin-right: 3.537vw;
             // width: 100%;
         }
         @include m.pc {
-            min-height:   746px;
+            // min-height:   746px;
+            min-height: m.pc-vw( 1193 );
+            min-width: m.pc-vw( 625 );
             margin-right: 50px;
+            margin-right: m.pc-vw( 80 );
             margin-bottom: 0vw;
         }
         }
@@ -50,6 +55,7 @@
         width: 100%;
         @include m.pc {
             min-height:   746px;
+            min-width: m.pc-vw( 625 );
             // margin-right: 50px;
             margin-bottom: 0vw;
         }
@@ -69,7 +75,9 @@
             font-size: m.tb-vw( 44);
         }
         @include m.pc {
-            font-size: 3.3vw;
+            // font-size: 3.3vw;
+            font-size: m.pc-vw( 80 );
+            padding-top: m.pc-vw( 20 );
         }
     }
 
@@ -91,11 +99,15 @@
             left: m.tb-vw( 15.1 );
         }
         @include m.pc {
-            width: 40px;
-            height: 2px;
-            top: 70px;
+            // width: 40px;
+            width: m.pc-vw( 63 );
+            // height: 2px;
+            height: 0.25vw;
+            // top: 70px;
+            // top: 9.64vw;
+            top: 8vw;
         }
-        }
+    }
 
     //Take Out/Eat Inの説明文の白い箱
     &__dl {
@@ -104,6 +116,10 @@
         margin: m.sp-vw( 20 );
         @include m.tablet {
             margin: 1.79vw 1.79vw 1.91vw 1.91vw;
+        }
+        @include m.pc {
+            margin: 1.042vw;
+            margin: m.pc-vw( 20 );
         }
     }
 
@@ -114,6 +130,9 @@
         @include m.tablet {
             margin-top: m.tb-vw( 595 );
         }
+        @include m.pc {
+            margin-top: m.pc-vw( 695 );
+        }
     }
 
     //白い箱の中の見出し(Take Out/Eat In)の余白
@@ -122,12 +141,13 @@
         padding: 1.87vw 0 0.8vw 2.67vw;
         font-size: m.sp-vw( 22 );
         @include m.tablet {
-            font-size: 3.5vw;
+            // font-size: 3.5vw;
             font-size: m.tb-vw( 24 );
         }
         @include m.pc {
-            font-size: 1.3vw;
-            
+            // font-size: 1.3vw;
+            font-size: m.pc-vw( 24 );
+            padding: 0.625vw 0 0.46875vw 1.041vw;
         }
     }
 
@@ -139,6 +159,10 @@
         line-height: 1.438;
         @include m.tablet {
             font-size: m.tb-vw( 14 );
+        }
+        @include m.pc {
+            font-size: m.pc-vw( 16 );
+            padding: 0.46875vw 1.09375vw 1.042vw 1.042vw;
         }
     }
 }
