@@ -19,7 +19,7 @@ $pc: 1025px;
 }
 
 
-//rem(デザインカンプのpxをvwに変換)
+//rem(デザインカンプのpxをvwに変換)　今回未使用
 @mixin font-rem( $font-size-px, $root-font-size: 16 ) {
     font-size: math.div( $font-size-px, $root-font-size ) * 1rem;    
 }

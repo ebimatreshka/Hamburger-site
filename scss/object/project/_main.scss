@@ -4,7 +4,6 @@
 //mein visualの基準と高さ設定
 .p-main-visual {
     position: relative;
-    // height: 331px;
     height: m.sp-vw( 331 );
 
     @include m.tablet {
@@ -14,9 +13,7 @@
     //タイトルの余白設定
     &__title {
         display: block;
-        // padding: 38.48vw 0  40.48vw 1.776vw;
         font-size: m.sp-vw( 36 );
-        // padding-left: m.sp-vw( 25 );
         position: absolute;
         top: 42.73vw;
         left: m.sp-vw( 26 );
@@ -24,7 +21,6 @@
         //tbサイズでタイトル消える
         @include m.tablet {
             display: none;
-            // padding: 144.3px 0 151.8px 4.47vw;
         }
 
         @include m.pc {
@@ -35,4 +31,3 @@
         }
     }
 }
-

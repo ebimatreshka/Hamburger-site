@@ -12,16 +12,11 @@
         padding-bottom: m.sp-vw( 38 );
 
         @include m.tablet {
-            // font-size: 3.448vw;
             font-size: m.tb-vw( 40 );
-            // margin-bottom: 12px;
-            // margin-bottom: m.tb-vw( 38 );
             padding-bottom: m.tb-vw( 38 );
         }
         @include m.pc {
-            // margin-left: 3.3vw;;
             margin-left: m.pc-vw( 65 );
-            // font-weight: 900;
             font-size:   3.3vw;
             font-size: m.pc-vw( 64 );
             padding-bottom: 0;
@@ -30,9 +25,7 @@
             display: block;
             font-size: m.sp-vw( 20 );
             position: absolute;
-            // top: 3vw;
             top: m.sp-vw( 14 );
-            // left: 87vw;
             left: m.sp-vw( 308 );
 
             @include m.tablet {

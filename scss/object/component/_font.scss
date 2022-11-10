@@ -21,16 +21,14 @@
 //フォントサイズ
 .c-font-size {
     &__14 {
+        //未使用
         font-size: 3.73vw;
-        // font-size: 1.36vw;
         font-size: m.sp-vw( 14 );
     }
     &__13 {
         font-size: 5.87vw;
-        // font-size: 3.4vw;
     }
     &__20 {
-        // font-size: 1.724vw; 
         font-size: m.sp-vw( 20 );
     }
     &__22 {
@@ -41,9 +39,5 @@
     }
     &__30 {
         font-size: 8vw;
-        // font-size: 2.5vw;
     }
-    // &__40 {
-    //     font-size: 2.5rem;
-    // }
 }

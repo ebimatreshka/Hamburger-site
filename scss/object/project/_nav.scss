@@ -6,15 +6,9 @@
 //サイドバー
 .p-nav {
     position: static;
-    // @include m.pc {
-    //     position: static;
-    // display: none;
-    // @include m.pc {
-    //     display: block;
-    // }
     //Menu,バーガー、サイド、ドリンクの余白設定
+
     &__title {
-        // padding-left: 12%;
         padding-left: m.sp-vw( 46 );
         padding-bottom: m.sp-vw( 25 );
         @include m.pc {

@@ -5,7 +5,6 @@
 
 //front-pageの地図部分
 .p-access {
-    // min-height: 691px;
     min-height: m.sp-vw( 691 );
     position:   relative;
     background-image: url(./../../../images/map.jpg);   //地図の画像
@@ -16,6 +15,7 @@
     @include m.pc {
         min-height: m.pc-vw( 649 );
     }
+
     //全体の黒の背景を擬似要素で
     &::before {
             content:          '';
@@ -30,9 +30,7 @@
                 height: 100%;
             }
     }
-            // @include m.tablet {
-            //     height: 100%;
-            // }
+
     //文字部分の黒背景
     &__container {
         position:         relative;
@@ -49,36 +47,30 @@
             min-height: 33.8020833333vw;
         }
     }
+
     //見出し
     &__title {
         position:     absolute;
-        // padding-top:  4.32vw;
         padding-top: m.sp-vw( 40, 375 );
-        // padding-left: 10.67vw;
         padding-left: m.sp-vw( 42, 375 );
-        // color:        v.$color-white;
         font-size: m.sp-vw( 30, 375);
         @include m.tablet {
-            // font-size: 2.58vw;
             font-size: m.tb-vw( 30 );
             padding-left: 3.62vw;
             padding: 4.79vw 0 0 5.03vw;
         }
         @include m.pc {
-            // font-size: 1.87vw;
-            font-size: m.pc-vw( 36 );
-            // padding-left: 6.19vw;
+            font-size: m.pc-vw( 36 );            // padding-left: 6.19vw;
             padding: 4.32vw 0 0 6.19vw;
         }
     }
+
     //見出しの下線
     &__title::after {
         width: 20vw;
         height: 0.53vw;
         top: 32vw;
-        // top: 19.86vw;
         @include m.tablet {
-            // width:  6.46vw;
             width: m.tb-vw( 75 );
             height: 0.35vw;
             top:    12.86vw;
@@ -91,19 +83,14 @@
     }
     //地図の上に被る文章
     &__text {
-        // padding:     13.17vw 2.5vw 2.08vw 3.62vw;
-        // font-size:   0.83vw;  
-        // padding: 155px 10.67vw 51px 10.67vw;;
         padding: 41.33vw 10.67vw  13.6vw 10.67vw;
         line-height: 2.357;
         @include m.tablet {
             font-size: 1.19vw;
             font-size: m.tb-vw( 14 );
-            // padding: 120px 3.62vw 51px 3.62vw;;
             padding: 15vw 3.47vw 7.3vw 5.03vw;
         }  
         @include m.pc {
-            // font-size: 0.83vw;
             font-size: m.pc-vw( 16 );
             padding:     13.177vw 6.979vw 0 6.198vw;
             line-height: 2.0625;  

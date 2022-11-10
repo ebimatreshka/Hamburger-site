@@ -19,13 +19,6 @@
 
 //flex-boxの定義
 .c-flex-box {
-    //横並び
-    // &--side {
-    //     display:         flex;
-    //     justify-content: space-between;
-    //     align-items:     center;
-    // }
-
     //縦並び
     &--column {
         display:         flex;
