@@ -16,8 +16,17 @@
 }
 
 .u-margin__T130 {
-    margin-top: 130px;
+    // margin-top: 130px;
+    margin-top: m.sp-vw( 212 );
     @include m.pc {
         margin-top: 0;
     }
+}
+
+.u-margin__T11 {
+    margin-top: m.sp-vw( 11 );
+}
+
+.u-margin__T18 {
+    margin-top: m.sp-vw( 18 );
 }

@@ -14,17 +14,21 @@
     // }
     //Menu,バーガー、サイド、ドリンクの余白設定
     &__title {
-        padding-left: 12%;
-        padding-bottom: 25px;
+        // padding-left: 12%;
+        padding-left: m.sp-vw( 46 );
+        padding-bottom: m.sp-vw( 25 );
+        @include m.pc {
+            padding-bottom: m.pc-vw( 25 );
+        }
     }
 
     //ulの左の余白
     &__ul {
-        padding-left: 18%;
+        padding-left: m.sp-vw( 66 );
     }
 
     //liの下の余白
     &__li {
-        padding-bottom: 23px;
+        padding-bottom: m.sp-vw( 23 );
     }
 }
