@@ -1,0 +1,25 @@
+//色指定
+@use "./../foundation/variables" as v;
+//ミックスイン
+@use "./../foundation/mixin" as m;
+
+.l-container {
+    position: relative;
+}
+
+.l-container__black {
+    display: block;
+    content: "";
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 915.266667vw;
+    width: m.sp-vw( 375 );
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 20;
+    @include m.tablet {
+        display: none;
+    }
+}

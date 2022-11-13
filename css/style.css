@@ -30,6 +30,29 @@ img {
   display: block;
 }
 
+.l-container {
+  position: relative;
+}
+
+.l-container__black {
+  display: block;
+  content: "";
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 915.266667vw;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+}
+@media screen and (min-width: 600px) {
+  .l-container__black {
+    display: none;
+  }
+}
+
 .l-footer {
   display: flex;
   flex-direction: column;
@@ -176,6 +199,10 @@ img {
     grid-template-rows: 11.3vw 1fr 7.8125vw;
     grid-template-columns: 1fr 20%;
   }
+}
+.c-grid__black {
+  grid-row: 1/5;
+  grid-column: 1/4;
 }
 .c-grid__header {
   grid-row: 1;
@@ -719,6 +746,11 @@ img {
   height: 8.5333333333vw;
   position: relative;
 }
+@media screen and (min-width: 600px) {
+  .p-nav__hamburger-btn-wrapper {
+    display: none;
+  }
+}
 .p-nav__hamburger-btn-wrapper::before, .p-nav__hamburger-btn-wrapper::after {
   content: "";
   width: 8.5333333333vw;
@@ -728,6 +760,11 @@ img {
   left: 86.9333333333vw;
   display: block;
   background: #707070;
+}
+@media screen and (min-width: 1025px) {
+  .p-nav__hamburger-btn-wrapper::before, .p-nav__hamburger-btn-wrapper::after {
+    display: none;
+  }
 }
 .p-nav__hamburger-btn-wrapper::before {
   top: 5.5vw;
@@ -741,16 +778,34 @@ img {
   padding-left: 12.2666666667vw;
   padding-bottom: 6.6666666667vw;
 }
+@media screen and (min-width: 600px) {
+  .p-nav__title {
+    padding-left: 5.51558753vw;
+    font-size: 2.8776978417vw;
+  }
+}
 @media screen and (min-width: 1025px) {
   .p-nav__title {
     padding-bottom: 1.3020833333vw;
+    padding-left: 2.3958333333vw;
+    font-size: 1.7708333333vw;
   }
 }
 .p-nav__ul {
   padding-left: 17.6vw;
 }
+@media screen and (min-width: 600px) {
+  .p-nav__ul {
+    padding-left: 7.9136690647vw;
+  }
+}
 .p-nav__li {
   padding-bottom: 6.1333333333vw;
+}
+@media screen and (min-width: 600px) {
+  .p-nav__li {
+    padding-bottom: 2.757793765vw;
+  }
 }
 
 .p-search-form {
@@ -827,8 +882,7 @@ img {
 @media screen and (min-width: 1025px) {
   .u-margin__title--menu {
     display: block;
-    margin-top: 51px;
-    margin-bottom: 22px;
+    margin-top: 4.2708333333vw;
   }
 }
 

@@ -10,8 +10,10 @@
     display: none;
     @include m.pc {
         display: block;
-        margin-top: 51px;
-        margin-bottom: 22px;
+        // margin-top: 51px;
+        // margin-bottom: 22px;
+        margin-top: m.pc-vw( 82 );
+        // margin-left: m.pc-vw( 46 );
     }
 }
 
