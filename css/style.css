@@ -711,7 +711,31 @@ img {
 }
 
 .p-nav {
-  position: static;
+  position: relative;
+}
+.p-nav__hamburger-btn-wrapper {
+  display: block;
+  width: 8.5333333333vw;
+  height: 8.5333333333vw;
+  position: relative;
+}
+.p-nav__hamburger-btn-wrapper::before, .p-nav__hamburger-btn-wrapper::after {
+  content: "";
+  width: 8.5333333333vw;
+  height: 1vw;
+  position: fixed;
+  top: 6.6666666667vw;
+  left: 86.9333333333vw;
+  display: block;
+  background: #707070;
+}
+.p-nav__hamburger-btn-wrapper::before {
+  top: 5.5vw;
+  transform: rotate(45deg);
+}
+.p-nav__hamburger-btn-wrapper::after {
+  top: 5.5vw;
+  transform: rotate(-45deg);
 }
 .p-nav__title {
   padding-left: 12.2666666667vw;

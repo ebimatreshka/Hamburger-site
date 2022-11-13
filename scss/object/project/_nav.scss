@@ -5,9 +5,40 @@
 
 //サイドバー
 .p-nav {
-    position: static;
+    // position: static;
+    position: relative;
     //Menu,バーガー、サイド、ドリンクの余白設定
 
+    &__hamburger-btn-wrapper {
+        display: block;
+        width: m.sp-vw( 32 );
+        height: m.sp-vw( 32 );
+        position: relative;
+        // background: v.$color-brown;
+        &::before,
+        &::after {
+            content: "";    //中身空っぽ
+            width: m.sp-vw( 32 );
+            height: 1vw;
+            position: fixed;    //固定表示
+            top: m.sp-vw( 25 );
+            left: m.sp-vw( 326 );
+            // top: 50%;
+            // left: calc( 1080% - 32px / 2);
+            // top: calc( 91% - 32px / 2);
+            display: block;
+            background: v.$color-brown;
+        }
+        
+        &::before {
+            top: 5.5vw;
+            transform: rotate( 45deg);
+        }
+        &::after {
+            top: 5.5vw;
+            transform: rotate( -45deg);
+        }
+    }
     &__title {
         padding-left: m.sp-vw( 46 );
         padding-bottom: m.sp-vw( 25 );
