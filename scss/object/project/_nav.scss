@@ -7,6 +7,7 @@
 .p-nav {
     // position: static;
     position: relative;
+
     //Menu,バーガー、サイド、ドリンクの余白設定
 
     &__hamburger-btn-wrapper {
@@ -34,7 +35,7 @@
             display: block;
             background: v.$color-brown;
             @include m.pc {
-                display: none;
+                // display: none;
             }
         }
         
@@ -55,17 +56,40 @@
             font-size: m.tb-vw( 24 );
         }
         @include m.pc {
-            padding-bottom: m.pc-vw( 25 );
+            padding-bottom: m.pc-vw( 40 );
             padding-left: m.pc-vw( 46 );
+            text-align: left;
+            font-size: m.pc-vw( 24 );
+            font-weight: 700;
+        }
+    }
+    &__title--menu {
+        font-size: m.sp-vw( 34 );
+        @include m.tablet {
+            font-size: m.tb-vw( 34 );
+        }
+        @include m.pc {
             font-size: m.pc-vw( 34 );
+            font-weight: 700;
         }
     }
 
     //ulの左の余白
     &__ul {
         padding-left: m.sp-vw( 66 );
+        // width: 87.5%;
+        // height: 100%;
+        // position: fixed;
+        // top: 0;
+        // right: 0;
+        // z-index: 30;
+        // transform: translateX( 250px );
+        // transition: all 0.5s;
         @include m.tablet {
             padding-left: m.tb-vw( 66 );
+        }
+        @include m.pc {
+            padding-left: m.pc-vw( 66 );
         }
     }
 
@@ -74,6 +98,9 @@
         padding-bottom: m.sp-vw( 23 );
         @include m.tablet {
             padding-bottom: m.tb-vw( 23 );
+        }
+        @include m.pc {
+            padding-bottom: m.pc-vw( 23 );
         }
     }
 }

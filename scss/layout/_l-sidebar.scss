@@ -1,9 +1,24 @@
 //色指定
 @use "./../foundation/variables" as v;
+//レスポンシブ
+@use "./../foundation/mixin" as m;
+
 
 //メニュー
 .l-sidebar {
     display:          flex;
     flex-direction:   column;
     background-color: v.$color-bg-lightgray;
+    display: none;
+    position: fixed;
+    left: 12.666667vw;
+    width: 87.5%;
+    height: 100%;
+    z-index: 40;
+}
+
+//sp版のsidebar
+.l-sidebar.is-open {
+    display: block;
+    overflow: scroll;
 }

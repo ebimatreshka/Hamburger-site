@@ -4,6 +4,7 @@
 @use "./foundation/variables";
 
 //layout
+@use "./layout/l.body";
 @use "./layout/l-container";
 @use "./layout/l-footer";
 @use "./layout/l-header";
@@ -18,7 +19,7 @@
 @use "./object/component/grid";
 @use "./object/component/opacity"; //透過
 @use "./object/component/pseudo-element"; //擬似要素
-@use "./object/component/round"; //角丸
+@use "./object/component/round"; //角丸s
 @use "./object/component/text";
 @use "./object/component/title";
 @use "./object/component/unit"; //２カラム　flex-box
