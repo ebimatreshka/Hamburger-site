@@ -5,7 +5,7 @@
 .p-header {
     
     //hamburgerの文字のサイズと左の余白
-    .p-header__title {
+    &__title {
         font-weight: 900;
         line-height: 1.325;
         font-size: m.sp-vw( 40 );
@@ -24,6 +24,7 @@
         &--menu {
             display: block;
             font-size: m.sp-vw( 20 );
+            font-weight: 700;
             position: absolute;
             top: m.sp-vw( 14 );
             left: m.sp-vw( 308 );

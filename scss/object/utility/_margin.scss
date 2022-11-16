@@ -20,6 +20,9 @@
 .u-margin__T130 {
     // margin-top: 130px;
     margin-top: m.sp-vw( 212 );
+    @include m.tablet {
+        margin-top: m.tb-vw( 212 );
+    }
     @include m.pc {
         margin-top: 0;
     }

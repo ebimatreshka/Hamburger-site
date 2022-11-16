@@ -28,12 +28,12 @@
             height: 1vw;
             position: fixed;    //固定表示
             top: m.sp-vw( 25 );
-            left: m.sp-vw( 326 );
-            // top: 50%;
-            // left: calc( 1080% - 32px / 2);
-            // top: calc( 91% - 32px / 2);
+            left: m.sp-vw( 281 );
             display: block;
             background: v.$color-brown;
+            @include m.tablet {
+            left: m.sp-vw( 281 );
+            }
             @include m.pc {
                 // display: none;
             }

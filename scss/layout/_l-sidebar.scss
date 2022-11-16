@@ -15,10 +15,25 @@
     width: 87.5%;
     height: 100%;
     z-index: 40;
+    right: 0;
+    transform: translateX(328px);
+    @include m.tablet {
+        left: 56vw;
+        width: 44%;
+    }
+    @include m.pc {
+        display: block;
+        position: relative;
+        left: m.pc-vw( -328 );
+        width: 100%;
+    }
 }
 
 //sp版のsidebar
 .l-sidebar.is-open {
     display: block;
     overflow: scroll;
+    // right: -100%;
+    transition: all 0.6s;
+    transform: translateX( 0 );
 }

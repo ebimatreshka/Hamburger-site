@@ -16,6 +16,7 @@
         height: 915.266667vw;
         width: m.sp-vw( 375 );
         background-color: rgba(0, 0, 0, 0.5);
+        transition: all 0.6s;
         z-index: 20;
         @include m.tablet {
             display: none;
@@ -26,5 +27,7 @@
 //sp版の全面黒透過幕
 .l-container__black.is-open {
     display: block;
+    opacity: 3; //透明度を0にすることで隠す
+    transition: opacity 0.5s; //透明度の0→1になる速度
 }
 
