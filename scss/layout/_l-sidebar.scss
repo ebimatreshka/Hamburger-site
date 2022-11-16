@@ -17,6 +17,7 @@
     z-index: 40;
     right: 0;
     transform: translateX(328px);
+    transform: all .5s;
     @include m.tablet {
         left: 56vw;
         width: 44%;
@@ -33,7 +34,5 @@
 .l-sidebar.is-open {
     display: block;
     overflow: scroll;
-    // right: -100%;
-    transition: all 0.6s;
     transform: translateX( 0 );
 }
