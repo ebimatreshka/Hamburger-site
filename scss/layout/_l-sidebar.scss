@@ -11,13 +11,11 @@
     background-color: v.$color-bg-lightgray;
     display: none;
     position: fixed;
-    left: 12.666667vw;
-    width: 87.5%;
+    z-index: 999;
+    right: -100%; //見えないように右側に隠す
+    transition: all 0.6s; //右から左へのアニメーション
+    width: 87.5%; //画面幅
     height: 100%;
-    z-index: 40;
-    right: 0;
-    transform: translateX(328px);
-    transform: all .5s;
     @include m.tablet {
         left: 56vw;
         width: 44%;
@@ -31,8 +29,9 @@
 }
 
 //sp版のsidebar
-.l-sidebar.is-open {
+.l-sidebar.active {
     display: block;
     overflow: scroll;
-    transform: translateX( 0 );
+    right: 0; //元の場所に右から出てくる
+
 }

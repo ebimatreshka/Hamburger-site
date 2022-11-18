@@ -7,6 +7,7 @@
 .p-nav {
     // position: static;
     position: relative;
+    // transition: all .5s ease-out;
 
     //Menu,バーガー、サイド、ドリンクの余白設定
 
@@ -28,7 +29,7 @@
             height: 1vw;
             position: fixed;    //固定表示
             top: m.sp-vw( 25 );
-            left: m.sp-vw( 281 );
+            right: m.sp-vw( 17 );
             display: block;
             background: v.$color-brown;
             @include m.tablet {
@@ -47,6 +48,14 @@
             top: 5.5vw;
             transform: rotate( -45deg);
         }
+    }
+    &__hamburger-btn-wrapper--btn {
+        display: block;
+        width: m.sp-vw( 32 );
+        height: m.sp-vw( 32 );
+        position: absolute;
+        top: m.sp-vw( 25 );
+        left: m.sp-vw( 279 );
     }
     &__title {
         padding-left: m.sp-vw( 46 );
@@ -103,4 +112,8 @@
             padding-bottom: m.pc-vw( 23 );
         }
     }
+}
+
+.p-nav.active {
+    left: 0;
 }
