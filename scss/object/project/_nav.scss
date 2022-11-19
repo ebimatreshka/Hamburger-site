@@ -14,9 +14,12 @@
     &__hamburger-btn-wrapper {
         display: block;
         width: m.sp-vw( 32 );
-        height: m.sp-vw( 32 );
+        height: 1.9vw;
         position: relative;
-        // background: v.$color-brown;
+        min-height: 8.53vw;
+        top: 2vw;
+        left: 74.5vw;   
+        background: yellow;
         @include m.tablet {
             // width: m.tb-vw( 32 );
             // height: m.tb-vw( 32 );
@@ -54,7 +57,7 @@
         width: m.sp-vw( 32 );
         height: m.sp-vw( 32 );
         position: absolute;
-        top: m.sp-vw( 25 );
+        top: 1.9vw;
         left: m.sp-vw( 279 );
     }
     &__title {

@@ -802,8 +802,12 @@ img {
 .p-nav__hamburger-btn-wrapper {
   display: block;
   width: 8.5333333333vw;
-  height: 8.5333333333vw;
+  height: 1.9vw;
   position: relative;
+  min-height: 8.53vw;
+  top: 2vw;
+  left: 74.5vw;
+  background: yellow;
 }
 @media screen and (min-width: 600px) {
   .p-nav__hamburger-btn-wrapper {
@@ -838,7 +842,7 @@ img {
   width: 8.5333333333vw;
   height: 8.5333333333vw;
   position: absolute;
-  top: 6.6666666667vw;
+  top: 1.9vw;
   left: 74.4vw;
 }
 .p-nav__title {

@@ -4,7 +4,10 @@ $(function () {
     $(this).toggleClass("is-active");
     $(".l-container__black").toggleClass("is-active"); //黒幕にis-activeをつける(表示)
     $(".l-sidebar").toggleClass("is-open"); //sidebarにis-openをつける(表示)
+  });
 
+  $(".p-nav__hamburger-btn-wrapper").click(function () {
+    $(".p-header__title--menu").removeClass("is-active");
   })
 })
 
