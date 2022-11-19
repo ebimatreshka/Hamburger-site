@@ -6,7 +6,7 @@
 .l-container {
     position: relative;
     &__black {
-        display: none;      //menuクリックしたら出てくる
+        // display: none;      //menuクリックしたら出てくる
         content: "";
         position: relative;
         top: 0;
@@ -16,9 +16,10 @@
         height: 915.266667vw;
         width: m.sp-vw( 375 );
         background-color: rgba(0, 0, 0, 0.5);
-
-        // transition: all 0.6s ease-out;
-        z-index: 20;
+        opacity: 0; //完全に透明に
+        visibility: hidden; //要素及びその子孫の要素を表示しない(要素があるスペースには余白ができる)
+        transition: all 0.5s; 
+        z-index: 19;
         @include m.tablet {
             display: none;
         }
@@ -26,9 +27,10 @@
 }
 
 //sp版の全面黒透過幕
-.l-container__black.is-open {
-    display: block;
-    opacity: 3; //透明度を0にすることで隠す
-    transition: all 0.5s ease-in-out; //透明度の0→1になる速度
+.l-container__black.is-active {
+    // display: block;
+    opacity: 1; //透明度を0にすることで隠す
+    visibility: visible;
+    // transition: all 0.5s; //透明度の0→1になる速度
 }
 
