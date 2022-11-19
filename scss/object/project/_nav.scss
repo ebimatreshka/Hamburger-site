@@ -7,23 +7,21 @@
 .p-nav {
     // position: static;
     position: relative;
-    // transition: all .5s ease-out;
+    overflow-x: hidden; //横スクロールバーを消す
 
     //Menu,バーガー、サイド、ドリンクの余白設定
 
     &__hamburger-btn-wrapper {
         display: block;
         width: m.sp-vw( 32 );
-        height: 1.9vw;
-        position: relative;
+        height: m.sp-vw( 32 );
+        position: absolute;
         min-height: 8.53vw;
         top: 2vw;
         left: 74.5vw;   
-        background: yellow;
         @include m.tablet {
-            // width: m.tb-vw( 32 );
-            // height: m.tb-vw( 32 );
-            display: none;
+            width: m.tb-vw( 32 );
+            height: m.tb-vw( 32 );
         }
         &::before,
         &::after {
@@ -36,10 +34,13 @@
             display: block;
             background: v.$color-brown;
             @include m.tablet {
-            left: m.sp-vw( 281 );
+                width: m.tb-vw( 32 );
+                height: 0.5vw;
+                top: m.tb-vw( 25 );
+                right: ( 25 );
             }
             @include m.pc {
-                // display: none;
+                display: none;
             }
         }
         
@@ -89,14 +90,6 @@
     //ulの左の余白
     &__ul {
         padding-left: m.sp-vw( 66 );
-        // width: 87.5%;
-        // height: 100%;
-        // position: fixed;
-        // top: 0;
-        // right: 0;
-        // z-index: 30;
-        // transform: translateX( 250px );
-        // transition: all 0.5s;
         @include m.tablet {
             padding-left: m.tb-vw( 66 );
         }
@@ -117,6 +110,6 @@
     }
 }
 
-.p-nav.active {
-    left: 0;
+.p-nav__hamburger-btn-wrapper.is-active {
+    display: none;
 }

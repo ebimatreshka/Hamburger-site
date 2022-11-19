@@ -798,20 +798,21 @@ img {
 
 .p-nav {
   position: relative;
+  overflow-x: hidden;
 }
 .p-nav__hamburger-btn-wrapper {
   display: block;
   width: 8.5333333333vw;
-  height: 1.9vw;
-  position: relative;
+  height: 8.5333333333vw;
+  position: absolute;
   min-height: 8.53vw;
   top: 2vw;
   left: 74.5vw;
-  background: yellow;
 }
 @media screen and (min-width: 600px) {
   .p-nav__hamburger-btn-wrapper {
-    display: none;
+    width: 3.8369304556vw;
+    height: 3.8369304556vw;
   }
 }
 .p-nav__hamburger-btn-wrapper::before, .p-nav__hamburger-btn-wrapper::after {
@@ -826,7 +827,15 @@ img {
 }
 @media screen and (min-width: 600px) {
   .p-nav__hamburger-btn-wrapper::before, .p-nav__hamburger-btn-wrapper::after {
-    left: 74.9333333333vw;
+    width: 3.8369304556vw;
+    height: 0.5vw;
+    top: 2.9976019185vw;
+    right: 25;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-nav__hamburger-btn-wrapper::before, .p-nav__hamburger-btn-wrapper::after {
+    display: none;
   }
 }
 .p-nav__hamburger-btn-wrapper::before {
@@ -905,8 +914,8 @@ img {
   }
 }
 
-.p-nav.active {
-  left: 0;
+.p-nav__hamburger-btn-wrapper.is-active {
+  display: none;
 }
 
 .p-search-form {
@@ -915,11 +924,11 @@ img {
 }
 .p-search-form::before {
   content: "";
-  width: 39px;
-  height: 46px;
+  width: 10.4vw;
+  height: 12.2666666667vw;
   background: url(./../../../images/glass.jpg) no-repeat center center/auto 50%;
   display: block;
-  line-height: 46px;
+  line-height: 12.2666666667vw;
   margin: 0 -46px 0 0;
   z-index: 10;
 }

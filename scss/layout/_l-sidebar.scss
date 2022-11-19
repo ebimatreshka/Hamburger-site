@@ -9,7 +9,6 @@
     display:          flex;
     flex-direction:   column;
     background-color: v.$color-bg-lightgray;
-    // display: none;
     position: fixed;
     z-index: 99;
     right: -100%; //見えないように右側に隠す
@@ -32,7 +31,6 @@
 
 //sp版のsidebar
 .l-sidebar.is-open {
-    // display: block;
     overflow: scroll;
     right: 0; //元の場所に右から出てくる
     visibility: visible; //表示する

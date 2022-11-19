@@ -12,11 +12,12 @@
     //虫眼鏡の画像を擬似要素で
     &::before {
         content:    "";
-        width:      39px;
-        height:     46px;
+        // width:      39px;
+        width: m.sp-vw( 39 );
+        height:     m.sp-vw( 46 );
         background: url(./../../../images/glass.jpg) no-repeat center  center / auto 50%;
         display:    block;
-        line-height: 46px;
+        line-height: m.sp-vw( 46 );
         margin: 0 -46px 0 0;
         z-index: 10;
         @include m.tablet {
