@@ -44,7 +44,6 @@ img {
   right: 0;
   bottom: 0;
   left: 0;
-  height: 915.266667vw;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
@@ -99,10 +98,11 @@ img {
 }
 @media screen and (min-width: 1025px) {
   .l-sidebar {
-    display: block;
     position: relative;
-    left: -17.0833333333vw;
+    left: 0;
     width: 100%;
+    visibility: visible;
+    opacity: 1;
   }
 }
 
@@ -138,33 +138,34 @@ img {
   background-position: center;
 }
 .c-background__main {
-  background-image: url(./../../../images/mainvisual\(sp\).jpg);
+  background-image: url("../images/mainvisual-sp.jpg");
+  background-color: green;
 }
 @media screen and (min-width: 600px) {
   .c-background__main {
-    background-image: url(./../../../images/mainvisual\(pc\).jpg);
+    background-image: url("../images/mainvisual-pc.jpg");
   }
 }
 .c-background__menu--left {
-  background-image: url(./../../../images/brunch-menu-left.jpg);
+  background-image: url("../images/brunch-menu-left.jpg");
 }
 .c-background__menu--right {
-  background-image: url(./../../../images/brunch-menu-right.jpg);
+  background-image: url("../images/brunch-menu-right.jpg");
 }
 .c-background__map {
-  background-image: url(./../../../images/map.jpg);
+  background-image: url("../images/map.jpg");
 }
 .c-background__archive {
-  background-image: url(./../../../images/brunch-menu-left.jpg);
+  background-image: url("../images/brunch-menu-left.jpg");
 }
 .c-background__single {
-  background-image: url(./../../../images/hamburger-single.jpg);
+  background-image: url("../images/hamburger-single.jpg");
 }
 .c-background__page {
-  background-image: url(./../../../images/shop.jpg);
+  background-image: url("../images/shop.jpg");
 }
 .c-background__footer {
-  background-image: url(./../../../images/footer.jpg);
+  background-image: url("../images/footer.jpg");
 }
 
 .c-border {
@@ -393,7 +394,6 @@ img {
 .p-access {
   min-height: 184.2666666667vw;
   position: relative;
-  background-image: url(./../../../images/map.jpg);
 }
 @media screen and (min-width: 600px) {
   .p-access {
@@ -917,39 +917,47 @@ img {
   position: relative;
 }
 .p-search-form::before {
-  content: "";
-  width: 10.4vw;
-  height: 12.2666666667vw;
-  background: url(./../../../images/glass.jpg) no-repeat center center/auto 50%;
+  content: \f002;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  font-size: 5vw;
   display: block;
   line-height: 12.2666666667vw;
-  margin: 0 -46px 0 0;
+  margin: 2px -46px 0 0;
   z-index: 10;
 }
 @media screen and (min-width: 600px) {
   .p-search-form::before {
-    width: 36px;
-    height: 36px;
-    line-height: 36px;
-    margin: 0 -39px 0 0;
+    font-size: 3vw;
+    line-height: 5.5vw;
+    margin: 1px -39px 0 0;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-search-form::before {
+    font-size: 1.5vw;
+    line-height: 26px;
+    margin: 3px -27px 0 0;
   }
 }
 .p-search-form__keyword {
   background-color: #FFFFFF;
   width: 61.3333333333vw;
   height: 12.2666666667vw;
-  padding-left: 6.4vw;
+  padding-left: 10vw;
 }
 @media screen and (min-width: 600px) {
   .p-search-form__keyword {
     width: 47.4820143885vw;
     height: 5.51558753vw;
+    padding-left: 5.515vw;
   }
 }
 @media screen and (min-width: 1025px) {
   .p-search-form__keyword {
     width: 20.625vw;
     height: 2.3958333333vw;
+    padding-left: 3vw;
   }
 }
 .p-search-form__submit {
@@ -1026,4 +1034,5 @@ img {
     padding-bottom: 1.9791666667vw;
   }
 }
+
 /*# sourceMappingURL=style.css.map */

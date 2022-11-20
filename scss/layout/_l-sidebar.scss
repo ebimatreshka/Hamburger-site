@@ -21,10 +21,12 @@
         width: 44%;
     }
     @include m.pc {
-        display: block;
+        // display: block;
         position: relative;
-        left: m.pc-vw( -328 );
+        left: 0;
         width: 100%;
+        visibility: visible; //表示する
+        opacity: 1;    
     }
 }
 

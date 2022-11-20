@@ -11,20 +11,31 @@
 
     //虫眼鏡の画像を擬似要素で
     &::before {
-        content:    "";
-        // width:      39px;
-        width: m.sp-vw( 39 );
-        height:     m.sp-vw( 46 );
-        background: url(./../../../images/glass.jpg) no-repeat center  center / auto 50%;
+        content: \f002;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 700;
+        font-size: 5vw;
+        // content:    "";
+        // // width:      39px;
+        // width: m.sp-vw( 39 );
+        // height:     m.sp-vw( 46 );
+        // background: url(../images/glass.jpg) no-repeat center  center / auto 50%;
         display:    block;
         line-height: m.sp-vw( 46 );
-        margin: 0 -46px 0 0;
+        margin: 2px -46px 0 0;
         z-index: 10;
         @include m.tablet {
-            width: 36px;
-            height: 36px;
-            line-height: 36px;
-            margin: 0 -39px 0 0;
+            // width: 36px;
+            // height: 36px;
+            font-size: 3vw;
+            // line-height: 36px;
+            line-height: 5.5vw;
+            margin: 1px -39px 0 0;
+        }
+        @include m.pc {
+            font-size: 1.5vw;
+            line-height: 26px;
+            margin: 3px -27px 0 0;
         }
     }
 
@@ -33,15 +44,17 @@
         background-color: v.$color-white;
         width: m.sp-vw( 230, 375 );
         height: m.sp-vw( 46, 375 );
-        padding-left: m.sp-vw( 24, 375 );
+        padding-left: 10vw;
         @include m.tablet {
             width: m.tb-vw( 396 );
             height: m.tb-vw( 46 );
+            padding-left: 5.515vw;
         }
         @include m.pc {
             // width: 20.6vw;
             width: m.pc-vw( 396 );
             height: m.pc-vw( 46 );
+            padding-left: 3vw;
         }
     }
 
