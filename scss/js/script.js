@@ -1,4 +1,4 @@
-//ハンバーガーメニュー
+//ハンバーガーメニュー(スライドインさせるために)
 $(function () {
   $(".p-header__title--menu").click(function () {
     $(this).toggleClass("is-active");

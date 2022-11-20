@@ -52,11 +52,6 @@ img {
   transition: all 0.5s;
   z-index: 19;
 }
-@media screen and (min-width: 600px) {
-  .l-container__black {
-    display: none;
-  }
-}
 
 .l-container__black.is-active {
   opacity: 1;
@@ -99,7 +94,6 @@ img {
 }
 @media screen and (min-width: 600px) {
   .l-sidebar {
-    left: 56vw;
     width: 44%;
   }
 }

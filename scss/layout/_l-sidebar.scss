@@ -18,7 +18,6 @@
     opacity: 0; //完全に透明に
     visibility: hidden; //要素及びその子孫の要素を表示しない
     @include m.tablet {
-        left: 56vw;
         width: 44%;
     }
     @include m.pc {
