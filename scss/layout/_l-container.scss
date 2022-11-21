@@ -25,5 +25,9 @@
 .l-container__black.is-active {
     opacity: 1; //透明度を0にすることで隠す
     visibility: visible;
+    @include m.pc {
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 
