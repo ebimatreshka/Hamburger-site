@@ -20,7 +20,9 @@
 
         //tbサイズでタイトル消える
         @include m.tablet {
-            display: none;
+            font-size: m.tb-vw( 36 );
+            top: 16vw;
+            left: m.tb-vw( 36 );
         }
 
         @include m.pc {

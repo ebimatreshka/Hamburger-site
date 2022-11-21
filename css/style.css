@@ -31,7 +31,7 @@ img {
 }
 
 .l-body.is-active {
-  position: fixed;
+  overflow: hidden;
 }
 
 .l-container {
@@ -778,7 +778,9 @@ img {
 }
 @media screen and (min-width: 600px) {
   .p-main-visual__title {
-    display: none;
+    font-size: 4.3165467626vw;
+    top: 16vw;
+    left: 4.3165467626vw;
   }
 }
 @media screen and (min-width: 1025px) {
