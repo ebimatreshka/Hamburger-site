@@ -19,7 +19,7 @@ $pc: 1025px;
 }
 
 
-//rem(デザインカンプのpxをvwに変換)　今回未使用
+//rem(デザインカンプのpxをremに変換)　今回未使用
 @mixin font-rem( $font-size-px, $root-font-size: 16 ) {
     font-size: math.div( $font-size-px, $root-font-size ) * 1rem;    
 }
@@ -43,3 +43,4 @@ $pc-design-width: 1920; //PCデザインの幅
 @function pc-vw($num, $width: $pc-design-width) {
     @return(1vw * $num / $width * 100);
 }
+

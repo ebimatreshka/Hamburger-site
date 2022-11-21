@@ -37,7 +37,7 @@
                 width: m.tb-vw( 32 );
                 height: 0.5vw;
                 top: m.tb-vw( 25 );
-                right: ( 25 );
+                right: m.tb-vw( 25 );
             }
             @include m.pc {
                 display: none;

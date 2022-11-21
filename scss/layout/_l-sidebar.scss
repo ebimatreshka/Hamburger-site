@@ -21,10 +21,10 @@
         width: 44%;
     }
     @include m.pc {
-        // display: block;
         position: relative;
-        left: 0;
+        right: 0;
         width: 100%;
+        transition: all 0s; //0sにしてすぐに表示
         visibility: visible; //表示する
         opacity: 1;    
     }

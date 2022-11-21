@@ -3,7 +3,7 @@
 
 //グリッドレイアウト
 .c-grid {
-    display:            grid;
+    display: grid;
     grid-template-rows: 57.87vw 1fr 40vw;   //行
     grid-template-columns: 1fr;  //列 sidebar非表示
     @include m.tablet {

@@ -9,4 +9,7 @@
 .l-body.is-active {
     // position: fixed;
     overflow: hidden;
+    @include m.pc {
+        overflow: scroll;
+    }
 }
