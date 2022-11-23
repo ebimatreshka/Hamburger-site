@@ -96,7 +96,7 @@ img {
   position: fixed;
   z-index: 99;
   right: -100%;
-  transition: all 0.6s;
+  transition: right 0.6s;
   width: 87.5%;
   height: 100%;
   opacity: 0;
@@ -112,7 +112,7 @@ img {
     position: relative;
     right: 0;
     width: 100%;
-    transition: all 0s;
+    transition: 0s;
     visibility: visible;
     opacity: 1;
   }
@@ -829,6 +829,11 @@ img {
     height: 3.8369304556vw;
   }
 }
+@media screen and (min-width: 1025px) {
+  .p-nav__hamburger-btn-wrapper {
+    display: none;
+  }
+}
 .p-nav__hamburger-btn-wrapper::before, .p-nav__hamburger-btn-wrapper::after {
   content: "";
   width: 8.5333333333vw;
@@ -845,11 +850,6 @@ img {
     height: 0.5vw;
     top: 2.9976019185vw;
     right: 2.9976019185vw;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .p-nav__hamburger-btn-wrapper::before, .p-nav__hamburger-btn-wrapper::after {
-    display: none;
   }
 }
 .p-nav__hamburger-btn-wrapper::before {

@@ -23,6 +23,9 @@
             width: m.tb-vw( 32 );
             height: m.tb-vw( 32 );
         }
+        @include m.pc {
+            display: none; //付け足したけどいるのかどうか？
+        }
         &::before,
         &::after {
             content: "";    //中身空っぽ
@@ -39,18 +42,24 @@
                 top: m.tb-vw( 25 );
                 right: m.tb-vw( 25 );
             }
-            @include m.pc {
-                display: none;
-            }
+            // @include m.pc {
+            //     display: none;
+            // }
         }
         
         &::before {
             top: 5.5vw;
             transform: rotate( 45deg);
+            // @include m.pc {
+            //     display: none;
+            // }
         }
         &::after {
             top: 5.5vw;
             transform: rotate( -45deg);
+            // @include m.pc {
+            //     display: none;
+            // }
         }
     }
     &__hamburger-btn-wrapper--btn {
