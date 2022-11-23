@@ -17,7 +17,7 @@
 
     &__black {
         grid-row: 1/4;
-        grid-column: 1/3;
+        // grid-column: 1/3; //設定しないとheaderが揺れないでレスポンシブできる
         @include m.pc {
             grid-row: 1/4;
             grid-column: unset; //最終的にはautoが入る
