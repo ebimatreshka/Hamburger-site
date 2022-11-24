@@ -10,6 +10,6 @@
     // position: fixed;
     overflow: hidden;
     @include m.pc {
-        overflow: scroll;
+        overflow-y: scroll;
     }
 }

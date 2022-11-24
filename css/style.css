@@ -35,7 +35,7 @@ img {
 }
 @media screen and (min-width: 1025px) {
   .l-body.is-active {
-    overflow: scroll;
+    overflow-y: scroll;
   }
 }
 
@@ -124,6 +124,11 @@ img {
   right: 0;
   visibility: visible;
   opacity: 1;
+}
+@media screen and (min-width: 1025px) {
+  .l-sidebar.is-open {
+    overflow-x: hidden;
+  }
 }
 
 .c-bg-color--seashell {
@@ -933,22 +938,20 @@ img {
   font-weight: 700;
   font-size: 5vw;
   display: block;
-  line-height: 12.2666666667vw;
-  margin: 0.53vw -7.27vw 0 0;
+  line-height: 1px;
+  margin: 6.5vw -7.27vw 0 0;
   z-index: 10;
 }
 @media screen and (min-width: 600px) {
   .p-search-form::before {
     font-size: 3vw;
-    line-height: 5.5vw;
-    margin: 0.12vw -4.68vw 0 0;
+    margin: 3vw -4.68vw 0 0;
   }
 }
 @media screen and (min-width: 1025px) {
   .p-search-form::before {
     font-size: 1.5vw;
-    line-height: 28px;
-    margin: 0.13vw -2.5vw 0 0;
+    margin: 1.3vw -2.5vw 0 0;
   }
 }
 .p-search-form__keyword {
