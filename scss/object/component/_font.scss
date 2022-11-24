@@ -22,15 +22,15 @@
 .c-font-size {
     &__14 {
         //未使用
-        font-size: 3.73vw;
-        font-size: m.sp-vw( 14 );
+        font-size    : 3.73vw;
+        font-size    : m.sp-vw( 14 );
     }
     &__13 {
-        font-size: 5.87vw;
+        font-size    : 5.87vw;
     }
     //sidebarのメニューの文字サイズ
     &__20 {
-        font-size: m.sp-vw( 20 );
+        font-size    : m.sp-vw( 20 );
         @include m.tablet {
             font-size: m.tb-vw( 20 );
         }
@@ -39,12 +39,12 @@
         }
     }
     &__22 {
-        font-size: 2.2vw;
+        font-size    : 2.2vw;
     }
     &__24 {
-        font-size: 2.07vw;
+        font-size    : 2.07vw;
     }
     &__30 {
-        font-size: 8vw;
+        font-size    : 8vw;
     }
 }

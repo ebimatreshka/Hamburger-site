@@ -3,8 +3,8 @@
 
 //mein visualの基準と高さ設定
 .p-main-visual {
-    position: relative;
-    height: m.sp-vw( 331 );
+    position  : relative;
+    height    : m.sp-vw( 331 );
 
     @include m.tablet {
         height: m.tb-vw( 285 );
@@ -12,24 +12,27 @@
 
     //タイトルの余白設定
     &__title {
-        display: block;
-        font-size: m.sp-vw( 36 );
-        position: absolute;
-        top: 42.73vw;
-        left: m.sp-vw( 26 );
+        display      : block;
+        font-size    : m.sp-vw( 36 );
+        position     : absolute;
+        top          : 42.73vw;
+        left         : m.sp-vw( 26 );
 
         //tbサイズでタイトル消える
         @include m.tablet {
             font-size: m.tb-vw( 36 );
-            top: 16vw;
-            left: m.tb-vw( 36 );
+            top      : 16vw;
+            left     : m.tb-vw( 36 );
         }
 
         @include m.pc {
-            display: block;
+            display  : block;
             font-size: m.pc-vw( 40 );
-            top: 17.3vw;
-            left: 4.479vw;
+            top      : 17.3vw;
+            left     : 4.479vw;
+        }
+        &--archive {
+            font-size: ;
         }
     }
 }

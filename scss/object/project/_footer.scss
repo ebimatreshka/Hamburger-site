@@ -9,32 +9,32 @@
     //ショップ情報とヒストリー
     //横並び
     &__ul {
-        display:   flex;
-        margin: 6.67vw auto 4.53vw;
+        display      : flex;
+        margin       : 6.67vw auto 4.53vw;
         @include m.tablet {
-            margin: 0 auto;
+            margin   : 0 auto;
         }
         @include m.pc {
             font-size: 1vw;
         }
         //ショップ情報の後ろに擬似要素で仕切り作成
         :first-child::after {
-            position: absolute;
-            top: 15.47vw;
-            content:  "";
-            display:  inline-block;
-            width: m.sp-vw( 1.3 );
-            height: 4.466vw;
+            position        : absolute;
+            top             : 15.47vw;
+            content         : "";
+            display         : inline-block;
+            width           : m.sp-vw( 1.3 );
+            height          : 4.466vw;
             background-color: v.$color-white;
             @include m.tablet {
-                top: 4.5vw;
-                width: 0.25vw;
-                height: m.tb-vw( 18 );
+                top         : 4.5vw;
+                width       : 0.25vw;
+                height      : m.tb-vw( 18 );
             }
             @include m.pc {
-                top: 1.9vw;
-                width: 0.15vw;
-                height: m.pc-vw( 20 );
+                top         : 1.9vw;
+                width       : 0.15vw;
+                height      : m.pc-vw( 20 );
             }
         }
     }
@@ -49,14 +49,14 @@
     }
     //コピーライトの真ん中中央揃え
     &__copyright {
-        margin: 0 auto;
+        margin       : 0 auto;
         @include m.tablet {
             font-size: m.tb-vw( 14 );
-            margin: 0 auto;
+            margin   : 0 auto;
         }
         @include m.pc {
             font-size: m.pc-vw( 14 );
-            margin: 0 auto;
+            margin   : 0 auto;
         }    
     }
 }

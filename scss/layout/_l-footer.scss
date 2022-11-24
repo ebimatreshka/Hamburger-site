@@ -5,10 +5,10 @@
 
 //sp縦並び
 .l-footer {
-    display:        flex;
-    flex-direction: column;
+    display        : flex;
+    flex-direction : column;
     justify-content: center;
-    color:          v.$color-white;
+    color          : v.$color-white;
     @include m.tablet {
         justify-content: space-evenly;
     }

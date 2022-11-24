@@ -4,10 +4,10 @@
 //擬似要素(下線)
  .c-pseudo-element {
     &::after {
-        content:"";
-        display:block;
-        height:3px;
+        content         : "";
+        display         : block;
+        height          : 3px;
         background-color: v.$color-white;
-        position:absolute;
+        position        : absolute;
     }
 }

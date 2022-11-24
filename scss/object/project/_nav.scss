@@ -5,100 +5,90 @@
 
 //サイドバー
 .p-nav {
-    // position: static;
-    position: relative;
+    position  : relative;
     overflow-x: hidden; //横スクロールバーを消す
 
     //Menu,バーガー、サイド、ドリンクの余白設定
 
     &__hamburger-btn-wrapper {
-        display: block;
-        width: m.sp-vw( 32 );
-        height: m.sp-vw( 32 );
-        position: absolute;
-        min-height: 8.53vw;
-        top: 2vw;
-        left: 74.5vw;   
+        display    : block;
+        width      : m.sp-vw( 32 );
+        height     : m.sp-vw( 32 );
+        position   : absolute;
+        min-height : 8.53vw;
+        top        : 2vw;
+        left       : 74.5vw;   
         @include m.tablet {
-            width: m.tb-vw( 32 );
-            height: m.tb-vw( 32 );
+            width  : m.tb-vw( 32 );
+            height : m.tb-vw( 32 );
         }
         @include m.pc {
             display: none; //付け足したけどいるのかどうか？
         }
         &::before,
         &::after {
-            content: "";    //中身空っぽ
-            width: m.sp-vw( 32 );
-            height: 1vw;
-            position: fixed;    //固定表示
-            top: m.sp-vw( 25 );
-            right: m.sp-vw( 17 );
-            display: block;
+            content   : "";    //中身空っぽ
+            width     : m.sp-vw( 32 );
+            height    : 1vw;
+            position  : fixed;    //固定表示
+            top       : m.sp-vw( 25 );
+            right     : m.sp-vw( 17 );
+            display   : block;
             background: v.$color-brown;
             @include m.tablet {
-                width: m.tb-vw( 32 );
+                width : m.tb-vw( 32 );
                 height: 0.5vw;
-                top: m.tb-vw( 25 );
-                right: m.tb-vw( 25 );
+                top   : m.tb-vw( 25 );
+                right : m.tb-vw( 25 );
             }
-            // @include m.pc {
-            //     display: none;
-            // }
         }
         
         &::before {
-            top: 5.5vw;
+            top      : 5.5vw;
             transform: rotate( 45deg);
-            // @include m.pc {
-            //     display: none;
-            // }
         }
         &::after {
-            top: 5.5vw;
+            top      : 5.5vw;
             transform: rotate( -45deg);
-            // @include m.pc {
-            //     display: none;
-            // }
         }
     }
     &__hamburger-btn-wrapper--btn {
-        display: block;
-        width: m.sp-vw( 32 );
-        height: m.sp-vw( 32 );
+        display : block;
+        width   : m.sp-vw( 32 );
+        height  : m.sp-vw( 32 );
         position: absolute;
-        top: 1.9vw;
-        left: m.sp-vw( 279 );
+        top     : 1.9vw;
+        left    : m.sp-vw( 279 );
     }
     &__title {
-        padding-left: m.sp-vw( 46 );
-        padding-bottom: m.sp-vw( 25 );
+        padding-left      : m.sp-vw( 46 );
+        padding-bottom    : m.sp-vw( 25 );
         @include m.tablet {
-            padding-left: m.tb-vw( 46 );
-            font-size: m.tb-vw( 24 );
+            padding-left  : m.tb-vw( 46 );
+            font-size     : m.tb-vw( 24 );
         }
         @include m.pc {
             padding-bottom: m.pc-vw( 40 );
-            padding-left: m.pc-vw( 46 );
-            text-align: left;
-            font-size: m.pc-vw( 24 );
-            font-weight: 700;
+            padding-left  : m.pc-vw( 46 );
+            text-align    : left;
+            font-size     : m.pc-vw( 24 );
+            font-weight   : 700;
         }
     }
     &__title--menu {
-        font-size: m.sp-vw( 34 );
+        font-size      : m.sp-vw( 34 );
         @include m.tablet {
-            font-size: m.tb-vw( 34 );
+            font-size  : m.tb-vw( 34 );
         }
         @include m.pc {
-            font-size: m.pc-vw( 34 );
+            font-size  : m.pc-vw( 34 );
             font-weight: 700;
         }
     }
 
     //ulの左の余白
     &__ul {
-        padding-left: m.sp-vw( 66 );
+        padding-left    : m.sp-vw( 66 );
         @include m.tablet {
             padding-left: m.tb-vw( 66 );
         }
@@ -109,7 +99,7 @@
 
     //liの下の余白
     &__li {
-        padding-bottom: m.sp-vw( 23 );
+        padding-bottom    : m.sp-vw( 23 );
         @include m.tablet {
             padding-bottom: m.tb-vw( 23 );
         }

@@ -21,16 +21,16 @@
 .c-flex-box {
     //縦並び
     &--column {
-        display:         flex;
-        flex-direction:  column;
+        display        : flex;
+        flex-direction : column;
         justify-content: center;
-        align-items: center;
+        align-items    : center;
         position: relative;
 
         // pc1025px(横並び 左右に均等配置)
         @include m.pc {
             justify-content: space-between;
-            flex-direction: row;        
+            flex-direction : row;        
         }
     }
 }

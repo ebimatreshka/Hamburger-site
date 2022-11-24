@@ -6,28 +6,28 @@
 .l-container {
     position: relative;
     &__black {
-        content: "";
-        position: fixed; //ウィンドウ左端を基準とした上下左右に要素を移動し、固定ができる
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        width: m.sp-vw( 375 );
-        height: 100vh;
+        content         : "";
+        position        : fixed; //ウィンドウ左端を基準とした上下左右に要素を移動し、固定ができる
+        top             : 0;
+        right           : 0;
+        bottom          : 0;
+        left            : 0;
+        width           : m.sp-vw( 375 );
+        height          : 100vh;
         background-color: rgba(0, 0, 0, 0.5);
-        opacity: 0; //完全に透明に
-        visibility: hidden; //要素及びその子孫の要素を表示しない(要素があるスペースには余白ができる)
-        transition: all 0.5s; //アニメーション
-        z-index: 19; //画面の一番下に出るように
+        opacity         : 0; //完全に透明に
+        visibility      : hidden; //要素及びその子孫の要素を表示しない(要素があるスペースには余白ができる)
+        transition      : all 0.5s; //アニメーション
+        z-index         : 19; //画面の一番下に出るように
     }
 }
 
 //sp,tb版の全面黒透過幕
 .l-container__black.is-active {
-    opacity: 1; //透明度を0にすることで隠す
+    opacity   : 1; //透明度を0にすることで隠す
     visibility: visible;
     @include m.pc {
-        opacity: 0;
+        opacity   : 0;
         visibility: hidden;
     }
 }

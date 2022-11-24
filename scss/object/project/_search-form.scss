@@ -16,25 +16,15 @@
         font-weight: 700;
         font-size: 5vw;
         display:    block;
-        line-height: 1px;
-        // margin: 2px -46px 0 0;
+        line-height: 1px; //上下の余白が消えるため、高さが揃う仕組み(0pxでもOK)
         margin: 6.5vw -7.27vw 0 0;
-
         z-index: 10;
         @include m.tablet {
-            // width: 36px;
-            // height: 36px;
             font-size: 3vw;
-            // line-height: 36px;
-            // line-height: 1px;
-            // margin: 1px -39px 0 0;
             margin: 3vw -4.68vw 0 0;
-
         }
         @include m.pc {
             font-size: 1.5vw;
-            // line-height: 1px;
-            // margin: 3px -27px 0 0;
             margin: 1.3vw -2.5vw 0 0;
         }
     }
@@ -51,7 +41,6 @@
             padding-left: 5.515vw;
         }
         @include m.pc {
-            // width: 20.6vw;
             width: m.pc-vw( 396 );
             height: m.pc-vw( 46 );
             padding-left: 3vw;

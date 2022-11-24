@@ -16,7 +16,7 @@
 
 .c-title {
     &__42 {
-        color: v.$color-white;
+        color    : v.$color-white;
         @extend .c-title__42;
         font-size: 4.2vw;
     }
