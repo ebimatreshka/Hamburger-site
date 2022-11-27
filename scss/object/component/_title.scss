@@ -25,6 +25,9 @@
         font-size: 10.93vw;
         @include m.font-rem( 41 );
     }
+    &__36 {
+        font-size: m.sp-vw( 36 );
+    }
     &__22 {
         @include m.font-rem( 22 );
     }

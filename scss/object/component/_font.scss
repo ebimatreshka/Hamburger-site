@@ -28,6 +28,9 @@
     &__13 {
         font-size    : 5.87vw;
     }
+    &__16 {
+        font-size: m.sp-vw( 16 );
+    }
     //sidebarのメニューの文字サイズ
     &__20 {
         font-size    : m.sp-vw( 20 );
@@ -46,5 +49,8 @@
     }
     &__30 {
         font-size    : 8vw;
+    }
+    &__36 {
+        font-size: m.sp-vw( 36 ); //archiveのmainのtitleで使用
     }
 }

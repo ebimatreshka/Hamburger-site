@@ -9,7 +9,6 @@
     overflow-x: hidden; //横スクロールバーを消す
 
     //Menu,バーガー、サイド、ドリンクの余白設定
-
     &__hamburger-btn-wrapper {
         display    : block;
         width      : m.sp-vw( 32 );
@@ -25,8 +24,9 @@
         @include m.pc {
             display: none; //付け足したけどいるのかどうか？
         }
+        //擬似要素で3本線作成
         &::before,
-        &::after {
+        &::after { 
             content   : "";    //中身空っぽ
             width     : m.sp-vw( 32 );
             height    : 1vw;
@@ -42,7 +42,7 @@
                 right : m.tb-vw( 25 );
             }
         }
-        
+        //回転させて×ボタンへ
         &::before {
             top      : 5.5vw;
             transform: rotate( 45deg);
@@ -52,6 +52,7 @@
             transform: rotate( -45deg);
         }
     }
+    //ボタン表示のハコ
     &__hamburger-btn-wrapper--btn {
         display : block;
         width   : m.sp-vw( 32 );
@@ -109,6 +110,7 @@
     }
 }
 
+//
 .p-nav__hamburger-btn-wrapper.is-active {
     display: none;
 }
