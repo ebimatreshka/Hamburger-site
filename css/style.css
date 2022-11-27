@@ -258,6 +258,9 @@ img {
 .c-font-size__24 {
   font-size: 2.07vw;
 }
+.c-font-size__28 {
+  font-size: 28;
+}
 .c-font-size__30 {
   font-size: 8vw;
 }
@@ -1036,6 +1039,18 @@ img {
     height: 2.3958333333vw;
     font-size: 0.8333333333vw;
   }
+}
+
+.p-section__archiveAbout--article__title {
+  margin-top: 8vw;
+  margin-left: 8vw;
+}
+.p-section__archiveAbout--article__text {
+  margin-top: 8vw;
+  margin-right: 4.8vw;
+  margin-bottom: 5.0666666667vw;
+  margin-left: 5.8666666667vw;
+  line-height: 1.4375;
 }
 
 .u-margin__title--menu {

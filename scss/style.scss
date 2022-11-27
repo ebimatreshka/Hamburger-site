@@ -33,6 +33,7 @@
 @use "./object/project/main";
 @use "./object/project/nav"; //サイドバー
 @use "./object/project/search-form"; //検索ボックス
+@use "./object/project/section"; //archiveのsection
 
 //object/utility
 @use "./object/utility/margin";
