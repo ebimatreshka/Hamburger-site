@@ -2,6 +2,7 @@
 @use "./../../foundation/variables" as v;
 @use "./../../foundation/mixin" as m;
 
+//タイトルの色指定
 .c-title {
     &__white {
         color: v.$color-white;
@@ -14,6 +15,7 @@
     }
 }
 
+//タイトルのフォントサイズ指定
 .c-title {
     &__42 {
         color    : v.$color-white;

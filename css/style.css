@@ -203,6 +203,9 @@ img {
   background-color: #F5F5F5;
   background: linear-gradient(#F2EDE9, #DED8D3);
 }
+.c-button__white {
+  background-color: #FFFFFF;
+}
 
 .c-color__white {
   color: #FFFFFF;
@@ -351,6 +354,9 @@ img {
 }
 .c-round--313 {
   border-radius: 31.3px;
+}
+.c-round--35 {
+  border-radius: 35px;
 }
 
 .c-text--white {
@@ -1053,6 +1059,36 @@ img {
   line-height: 1.4375;
 }
 
+.p-section__card {
+  margin-left: 5.04vw;
+  margin-bottom: 5.5733333333vw;
+  margin-left: 20;
+}
+.p-section__card__title {
+  padding-top: 8.4vw;
+  margin-left: 4.5333333333vw;
+}
+.p-section__card__heading {
+  padding-top: 6.4vw;
+  margin-left: 4.5333333333vw;
+}
+.p-section__card__text {
+  padding-top: 2.6666666667vw;
+  margin-right: 19.4933333333vw;
+  margin-left: 4.5333333333vw;
+  line-height: 1.4375;
+}
+.p-section__card__button {
+  margin-top: 10.6666666667vw;
+  margin-right: 24.8vw;
+  margin-bottom: 11.6533333333vw;
+  margin-left: 21.3066666667vw;
+  padding-top: 2.6666666667vw;
+  padding-right: 11.2266666667vw;
+  padding-bottom: 2.8vw;
+  padding-left: 10.96vw;
+}
+
 .u-margin__title--menu {
   display: none;
 }
@@ -1098,6 +1134,10 @@ img {
     margin-top: 0.9375vw;
     padding-bottom: 1.9791666667vw;
   }
+}
+
+.u-margin__B925 {
+  margin-bottom: 24.6666666667vw;
 }
 
 /*# sourceMappingURL=style.css.map */
