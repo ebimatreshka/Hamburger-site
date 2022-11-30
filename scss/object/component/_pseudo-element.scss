@@ -4,10 +4,23 @@
 //擬似要素(下線)
  .c-pseudo-element {
     &::after {
-        content         : "";
-        display         : block;
-        height          : 3px;
+        content:"";
+        display:block;
+        height:3px;
         background-color: v.$color-white;
-        position        : absolute;
+        position:absolute;
+    }
+}
+
+.c-pseudo-element__black {
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5); //黒透過率100%
     }
 }

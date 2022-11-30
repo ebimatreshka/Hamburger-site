@@ -21,6 +21,7 @@
         :first-child::after {
             position        : absolute;
             top             : 15.47vw;
+            left: m.sp-vw( 200 );
             content         : "";
             display         : inline-block;
             width           : m.sp-vw( 1.3 );

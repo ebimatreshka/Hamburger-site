@@ -15,7 +15,11 @@
         }
     &__R {
         font-family: 'Roboto', sans-serif;
-        }    
+        } 
+    &__R--bold {
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+    }   
 }
 
 //フォントサイズ

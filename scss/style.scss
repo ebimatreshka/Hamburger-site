@@ -32,6 +32,7 @@
 @use "./object/project/header";
 @use "./object/project/main";
 @use "./object/project/nav"; //サイドバー
+@use "./object/project/pagination"; //ページネーション
 @use "./object/project/search-form"; //検索ボックス
 @use "./object/project/section"; //archiveのsection
 

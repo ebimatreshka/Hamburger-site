@@ -175,6 +175,7 @@ img {
 }
 .c-background__archive {
   background-image: url("../images/page-title_arcive.jpg");
+  background-position: inherit;
 }
 .c-background__single {
   background-image: url("../images/hamburger-single.jpg");
@@ -206,6 +207,14 @@ img {
 .c-button__white {
   background-color: #FFFFFF;
 }
+.c-button__pagination {
+  width: 1.8229166667vw;
+  height: 1.8229166667vw;
+  margin-right: 0.78125vw;
+  border: solid 1px #707070;
+  font-size: 0.8333333333vw;
+  color: #707070;
+}
 
 .c-color__white {
   color: #FFFFFF;
@@ -230,6 +239,10 @@ img {
 }
 .c-font__R {
   font-family: "Roboto", sans-serif;
+}
+.c-font__R--bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
 }
 
 .c-font-size__14 {
@@ -344,6 +357,17 @@ img {
   height: 3px;
   background-color: #FFFFFF;
   position: absolute;
+}
+
+.c-pseudo-element__black::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .c-round--63 {
@@ -709,6 +733,7 @@ img {
 .p-footer__ul :first-child::after {
   position: absolute;
   top: 15.47vw;
+  left: 53.3333333333vw;
   content: "";
   display: inline-block;
   width: 0.3466666667vw;
@@ -973,6 +998,20 @@ img {
   display: none;
 }
 
+.p-pagination {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 16.1066666667vw;
+  margin-bottom: 8.2666666667vw;
+}
+.p-pagination__item--link {
+  display: block;
+  text-align: center;
+}
+.p-pagination__item--hide {
+  display: none;
+}
+
 .p-search-form {
   display: flex;
   position: relative;
@@ -1060,9 +1099,9 @@ img {
 }
 
 .p-section__card {
-  margin-left: 5.04vw;
+  margin-right: 5.04vw;
   margin-bottom: 5.5733333333vw;
-  margin-left: 20;
+  margin-left: 5.3333333333vw;
 }
 .p-section__card__title {
   padding-top: 8.4vw;
@@ -1138,6 +1177,19 @@ img {
 
 .u-margin__B925 {
   margin-bottom: 24.6666666667vw;
+}
+
+.u-margin__L82 {
+  margin-left: 2.1866666667vw;
+  margin-right: 58.6666666667vw;
+}
+
+.u-margin__R173 {
+  margin-right: 1.9466666667vw;
+}
+
+.u-margin__L203 {
+  margin-left: 5.4133333333vw;
 }
 
 /*# sourceMappingURL=style.css.map */
