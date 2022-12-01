@@ -5,9 +5,11 @@
 
 .p-pagination {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     margin-top: m.sp-vw( 60.4 );
+    margin-right: m.sp-vw( 45 );
     margin-bottom: m.sp-vw( 31 );
+    margin-left: m.sp-vw( 46 );
     &__item--link {
         display: block;
         text-align: center;

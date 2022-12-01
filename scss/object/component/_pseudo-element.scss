@@ -1,17 +1,29 @@
 //色指定
 @use "./../../foundation/variables" as v;
+//レスポンシブ
+@use "./../../foundation/mixin" as m;
+
 
 //擬似要素(下線)
- .c-pseudo-element {
-    &::after {
-        content:"";
+
+.c-pseudo-element {
+    &__《::before {
+        content:"《";
         display:block;
-        height:3px;
-        background-color: v.$color-white;
         position:absolute;
+        height: m.sp-vw( 22 );
+        background-color: v.$color-bg-egg;
+        left: m.sp-vw( 20.3 );
+    }
+    &__》::after {
+        content:"》";
+        display:block;
+        position:absolute;
+        height: m.sp-vw( 22 );
+        background-color: v.$color-bg-egg;
+        right: m.sp-vw( 20.2 );
     }
 }
-
 .c-pseudo-element__black {
     &::after {
         content: "";
