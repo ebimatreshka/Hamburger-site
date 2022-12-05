@@ -38,6 +38,9 @@
     margin-left: m.sp-vw( 20 );
     @include m.tablet {
         display: flex;
+        margin-right: m.tb-vw( 35 );
+        margin-bottom: m.tb-vw(20.5 );
+        margin-left: m.tb-vw( 43 );
     }
     &__image--blue {
         @include m.tablet {

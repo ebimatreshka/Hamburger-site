@@ -1172,6 +1172,9 @@ img {
 @media screen and (min-width: 600px) {
   .p-section__card {
     display: flex;
+    margin-right: 4.1966426859vw;
+    margin-bottom: 2.4580335731vw;
+    margin-left: 5.1558752998vw;
   }
 }
 @media screen and (min-width: 600px) {
