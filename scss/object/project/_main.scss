@@ -1,7 +1,7 @@
 //ミックスイン
 @use "./../../foundation/mixin" as m;
 
-//mein visualの基準と高さ設定
+//front-page mein visualの基準と高さ設定
 .p-main-visual {
     position  : relative;
     height    : m.sp-vw( 331 );
@@ -32,24 +32,34 @@
         }
     }
 }
-
+//archive-page main-visual
 .p-main-visual__archive {
     position  : relative;
     height    : m.sp-vw( 283 );
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     @include m.tablet {
-        // height: m.tb-vw( 285 );
+        height: m.tb-vw( 283 );
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
     }
 
     &__title {
         line-height: 1.33;
         margin-left: m.sp-vw( 37 );
+        @include m.tablet {
+            line-height: 1.316;
+            margin-left: m.tb-vw( 86 );
+        }
     }
 
     &__detail {
         margin-left: m.sp-vw( 37 );
+        @include m.tablet {
+            margin-left: m.tb-vw( 20 );
+            font-size: m.tb-vw( 16 );
+        }
     }
 }

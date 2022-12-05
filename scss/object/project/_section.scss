@@ -8,6 +8,12 @@
     &__title {
         margin-top : m.sp-vw( 30 );
         margin-left: m.sp-vw( 30 );
+        @include m.tablet {
+            font-size: m.tb-vw( 36 );
+            margin-top: m.tb-vw( 36 );
+            // margin-bottom: m.tb-vw( 0 );
+            margin-left: m.tb-vw( 42 );
+        }
     }
     &__text {
         margin-top   : m.sp-vw( 30 );
@@ -15,6 +21,13 @@
         margin-bottom: m.sp-vw( 19 );
         margin-left  : m.sp-vw( 22 );
         line-height  : 1.4375;
+        @include m.tablet {
+            font-size: m.tb-vw( 16 );
+            margin-top: m.tb-vw( 25 );
+            margin-right: m.tb-vw( 35);
+            margin-bottom: m.tb-vw( 37 );
+            margin-left: m.tb-vw( 42 );
+        }
     }
 }
 
@@ -23,19 +36,46 @@
     margin-right: m.sp-vw( 18.9);
     margin-bottom: m.sp-vw( 20.9);
     margin-left: m.sp-vw( 20 );
+    @include m.tablet {
+        display: flex;
+    }
+    &__image--blue {
+        @include m.tablet {
+            height: m.tb-vw( 354.5 );
+            object-fit: cover;
+        }
+    }
+    &__about--wrapper {
+        @include m.tablet {
+            width: 50%;
+        }
+    }
     &__title {
         padding-top: m.sp-vw( 31.5 );
         margin-left: m.sp-vw( 17 );
+        @include m.tablet {
+            padding-top: m.tb-vw( 26.5 );
+            margin-left: m.tb-vw( 34.7 );
+        }
     }
     &__heading {
         padding-top: m.sp-vw( 24 );
         margin-left: m.sp-vw( 17 );
+        @include m.tablet {
+            padding-top: m.tb-vw( 20 );
+            margin-left: m.tb-vw( 34.7 );
+        }
     }
     &__text {
         padding-top : m.sp-vw( 10 );
         margin-right: m.sp-vw( 73.1 );
         margin-left : m.sp-vw( 17 );
         line-height : 1.4375;
+        @include m.tablet {
+            padding-top: m.tb-vw( 7 );
+            margin-right: m.tb-vw( 59 );
+            margin-left: m.tb-vw( 34.7 );
+        }
     }
     &__button {
         margin-top    : m.sp-vw( 40 );
@@ -46,5 +86,15 @@
         padding-right : m.sp-vw( 42.1 );
         padding-bottom: m.sp-vw( 10.5 );
         padding-left  : m.sp-vw( 41.1);
+        @include m.tablet {
+            margin-top: m.tb-vw( 40.5 );
+            margin-right  : m.tb-vw( 99.8 );
+            margin-bottom : m.tb-vw( 33.5 );
+            margin-left   : m.tb-vw( 114.7 );
+            padding-top   : 0.65vw;
+            padding-right : m.tb-vw( 42.1 );
+            padding-bottom: m.tb-vw( 10 );
+            padding-left  : m.tb-vw( 41);
+            }
     }
 }

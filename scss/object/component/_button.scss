@@ -14,8 +14,13 @@
     background-color: v.$color-bg-light-gray;
     background      : linear-gradient(#F2EDE9, #DED8D3)
   }
+  //archiveのcard型の詳しく見るのボタン
   &__white {
     background-color: v.$color-white;
+    @include m.tablet {
+      width: m.tb-vw( 163.16 );
+      height: m.tb-vw( 42.47 );
+    }
   }
   //paginationの箱型ボタン
   &__pagination {
