@@ -227,6 +227,7 @@ img {
     height: 4.1966426859vw;
     margin-right: 1.7985611511vw;
     font-size: 1.9184652278vw;
+    line-height: 2;
   }
 }
 @media screen and (min-width: 1025px) {
@@ -389,20 +390,30 @@ img {
   background-color: rgba(0, 0, 0, 0.5);
 }
 .c-pseudo-element__《::before {
-  content: "《";
+  content: "前へ";
   display: block;
   position: absolute;
   height: 5.8666666667vw;
   background-color: #FFFDFA;
-  left: 5.4133333333vw;
+  left: 12.2666666667vw;
+}
+@media screen and (min-width: 600px) {
+  .c-pseudo-element__《::before {
+    display: none;
+  }
 }
 .c-pseudo-element__》::after {
-  content: "》";
+  content: "次へ";
   display: block;
   position: absolute;
   height: 5.8666666667vw;
   background-color: #FFFDFA;
-  right: 5.3866666667vw;
+  right: 12vw;
+}
+@media screen and (min-width: 600px) {
+  .c-pseudo-element__》::after {
+    display: none;
+  }
 }
 
 .c-round--63 {
@@ -1056,10 +1067,11 @@ img {
 .p-pagination {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 16.1066666667vw;
-  margin-right: 12vw;
+  margin-right: 5.3866666667vw;
   margin-bottom: 8.2666666667vw;
-  margin-left: 12.2666666667vw;
+  margin-left: 5.4133333333vw;
 }
 @media screen and (min-width: 600px) {
   .p-pagination {
@@ -1072,6 +1084,11 @@ img {
 .p-pagination__item--link {
   display: block;
   text-align: center;
+}
+@media screen and (min-width: 600px) {
+  .p-pagination__item--link {
+    margin-right: 2.0623501199vw;
+  }
 }
 .p-pagination__item--hide {
   display: none;
@@ -1320,8 +1337,10 @@ img {
   margin-right: 1.9466666667vw;
 }
 
-.u-margin__L46 {
-  margin-left: 12.2666666667vw;
+@media screen and (min-width: 600px) {
+  .u-margin__R193 {
+    margin-right: 0.6354916067vw;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
