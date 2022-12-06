@@ -24,11 +24,19 @@
   }
   //paginationの箱型ボタン
   &__pagination {
-    width: m.pc-vw( 35 );
-    height: m.pc-vw( 35 );
-    margin-right: m.pc-vw( 15 );
     border: solid 1px v.$color-brown;
-    font-size: m.pc-vw( 16 );
     color: v.$color-brown;
+    @include m.tablet {
+      width: m.tb-vw( 35 );
+      height: m.tb-vw( 35 );
+      margin-right: m.tb-vw( 15 );
+      font-size: m.tb-vw( 16 );
+    }
+    @include m.pc {
+      width: m.pc-vw( 35 );
+      height: m.pc-vw( 35 );
+      margin-right: m.pc-vw( 15 );
+      font-size: m.pc-vw( 16 );
+    }
   }
 } 

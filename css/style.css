@@ -218,12 +218,24 @@ img {
   }
 }
 .c-button__pagination {
-  width: 1.8229166667vw;
-  height: 1.8229166667vw;
-  margin-right: 0.78125vw;
   border: solid 1px #707070;
-  font-size: 0.8333333333vw;
   color: #707070;
+}
+@media screen and (min-width: 600px) {
+  .c-button__pagination {
+    width: 4.1966426859vw;
+    height: 4.1966426859vw;
+    margin-right: 1.7985611511vw;
+    font-size: 1.9184652278vw;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .c-button__pagination {
+    width: 1.8229166667vw;
+    height: 1.8229166667vw;
+    margin-right: 0.78125vw;
+    font-size: 0.8333333333vw;
+  }
 }
 
 .c-color__white {
@@ -1048,6 +1060,14 @@ img {
   margin-right: 12vw;
   margin-bottom: 8.2666666667vw;
   margin-left: 12.2666666667vw;
+}
+@media screen and (min-width: 600px) {
+  .p-pagination {
+    margin-top: 12.6498800959vw;
+    margin-right: 13.5731414868vw;
+    margin-bottom: 3.5971223022vw;
+    margin-left: 14.6282973621vw;
+  }
 }
 .p-pagination__item--link {
   display: block;
