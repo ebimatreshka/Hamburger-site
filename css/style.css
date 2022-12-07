@@ -327,6 +327,19 @@ img {
 .c-font-size__22 {
   font-size: 2.2vw;
 }
+.c-font-size__24--sidebar-title {
+  font-size: 6.4vw;
+}
+@media screen and (min-width: 600px) {
+  .c-font-size__24--sidebar-title {
+    font-size: 2.8776978417vw;
+  }
+}
+@media screen and (min-width: 600px) and (min-width: 1025px) {
+  .c-font-size__24--sidebar-title {
+    font-size: 1.25vw;
+  }
+}
 .c-font-size__24 {
   font-size: 2.07vw;
 }
@@ -397,6 +410,19 @@ img {
   }
 }
 
+.c-LH--195 {
+  line-height: 1.95;
+}
+
+.c-LH--106 {
+  line-height: 1.0625;
+}
+@media screen and (min-width: 1025px) {
+  .c-LH--106 {
+    line-height: 2.0625;
+  }
+}
+
 .c-opacity--60per {
   opacity: 60%;
 }
@@ -432,7 +458,6 @@ img {
 }
 .c-pseudo-element__》::after {
   content: "次へ";
-  display: block;
   position: absolute;
   height: 5.8666666667vw;
   background-color: #FFFDFA;
@@ -940,6 +965,7 @@ img {
 .p-main-visual__archive__title {
   line-height: 1.33;
   margin-left: 9.8666666667vw;
+  z-index: 10;
 }
 @media screen and (min-width: 600px) {
   .p-main-visual__archive__title {
@@ -954,6 +980,7 @@ img {
 }
 .p-main-visual__archive__detail {
   margin-left: 9.8666666667vw;
+  z-index: 10;
 }
 @media screen and (min-width: 600px) {
   .p-main-visual__archive__detail {
@@ -1378,10 +1405,7 @@ img {
     margin-bottom: 3.125vw;
     margin-left: 10.6770833333vw;
     padding-top: 1.09375vw;
-    padding-right: 5.5208333333vw;
     padding-bottom: 1.40625vw;
-    padding-left: 5.5208333333vw;
-    line-height: 2.0625;
   }
 }
 

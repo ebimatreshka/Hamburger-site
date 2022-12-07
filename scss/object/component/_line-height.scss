@@ -5,3 +5,10 @@
 .c-LH--195 {
     line-height: 1.95;
 }
+//archive cardのbutton
+.c-LH--106 {
+    line-height: 1.0625;
+    @include m.pc {
+        line-height: 2.0625;
+    }
+}

@@ -52,6 +52,7 @@
     &__title {
         line-height: 1.33;
         margin-left: m.sp-vw( 37 );
+        z-index: 10;
         @include m.tablet {
             line-height: 1.316;
             margin-left: m.tb-vw( 86 );
@@ -63,6 +64,7 @@
 
     &__detail {
         margin-left: m.sp-vw( 37 );
+        z-index: 10;
         @include m.tablet {
             margin-left: m.tb-vw( 20 );
             font-size: m.tb-vw( 16 );
