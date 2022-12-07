@@ -17,27 +17,6 @@
         @include m.pc {
             font-size: 1vw;
         }
-        //ショップ情報の後ろに擬似要素で仕切り作成
-        // :first-child::after {
-        //     // position        : absolute;
-        //     // top             : 15.47vw;
-        //     // left: m.sp-vw( 200 );
-        //     content         : "|";
-        //     display         : inline-block;
-        //     // width           : m.sp-vw( 1.3 );
-        //     // height          : 4.466vw;
-        //     background-color: v.$color-white;
-            // @include m.tablet {
-            //     top         : 4.5vw;
-            //     width       : 0.25vw;
-            //     height      : m.tb-vw( 18 );
-            // }
-            // @include m.pc {
-            //     top         : 1.9vw;
-            //     width       : 0.15vw;
-            //     height      : m.pc-vw( 20 );
-            // }
-        // }
     }
     &__menu__li {
         @include m.tablet {
@@ -47,12 +26,6 @@
             font-size: 1vw;
             font-size: m.pc-vw( 20 );
         }
-        //aの一つ目に縦線をつける
-        // a {
-        //     display: block;
-        //     border-right: solid white;
-        //     padding: 0 10px;
-        // }
     }
     //コピーライトの真ん中中央揃え
     &__copyright {

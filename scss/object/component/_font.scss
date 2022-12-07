@@ -34,9 +34,9 @@
     }
     //archiveのcardの小見出しとボタンの文字
     &__16 {
-        font-size: m.sp-vw( 16 );
+        font-size        : m.sp-vw( 16 );
         @include m.tablet {
-            font-size: m.tb-vw( 16 );
+            font-size    : m.tb-vw( 16 );
             @include m.pc {
                 font-size: m.pc-vw( 16 );
             }
@@ -56,9 +56,9 @@
         font-size    : 2.2vw;
     }
     &__24--sidebar-title {
-        font-size: m.sp-vw( 24 );
+        font-size        : m.sp-vw( 24 );
         @include m.tablet {
-            font-size: m.tb-vw( 24 );
+            font-size    : m.tb-vw( 24 );
             @include m.pc {
                 font-size: m.pc-vw( 24 );
             }
@@ -75,8 +75,5 @@
     }
     &__36 {
         font-size: m.sp-vw( 36 ); //archiveのmainのtitleで使用
-        // @include m.tablet {
-        //     font-size: m.tb-vw( 60 );
-        // }
     }
 }

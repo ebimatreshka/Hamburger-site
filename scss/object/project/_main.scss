@@ -34,28 +34,28 @@
 }
 //archive-page main-visual
 .p-main-visual__archive {
-    position  : relative;
-    height    : m.sp-vw( 283 );
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    position           : relative;
+    height             : m.sp-vw( 283 );
+    display            : flex;
+    flex-direction     : column;
+    justify-content    : center;
     @include m.tablet {
-        height: m.tb-vw( 283 );
-        flex-direction: row;
+        height         : m.tb-vw( 283 );
+        flex-direction : row;
         justify-content: flex-start;
-        align-items: center;
+        align-items    : center;
         @include m.pc {
-            height: m.pc-vw( 239 );
+            height     : m.pc-vw( 239 );
         }
     }
 
     &__title {
-        line-height: 1.33;
-        margin-left: m.sp-vw( 37 );
-        z-index: 10;
+        line-height        : 1.33;
+        margin-left        : m.sp-vw( 37 );
+        z-index            : 10;
         @include m.tablet {
-            line-height: 1.316;
-            margin-left: m.tb-vw( 86 );
+            line-height    : 1.316;
+            margin-left    : m.tb-vw( 86 );
             @include m.pc {
                 margin-left: m.pc-vw( 86 );
             }
@@ -64,13 +64,13 @@
 
     &__detail {
         margin-left: m.sp-vw( 37 );
-        z-index: 10;
+        z-index        : 10;
         @include m.tablet {
             margin-left: m.tb-vw( 20 );
-            font-size: m.tb-vw( 16 );
+            font-size  : m.tb-vw( 16 );
         }
         @include m.pc {
-            font-size: m.pc-vw( 16 );
+            font-size  : m.pc-vw( 16 );
         }
     }
 }

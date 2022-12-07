@@ -6,62 +6,62 @@
 //archiveのmain-visualの下の説明文
 .p-section__archiveAbout--article {
     &__title {
-        margin-top : m.sp-vw( 30 );
-        margin-left: m.sp-vw( 30 );
+        margin-top          : m.sp-vw( 30 );
+        margin-left         : m.sp-vw( 30 );
         @include m.tablet {
-            font-size: m.tb-vw( 36 );
-            margin-top: m.tb-vw( 36 );
+            font-size       : m.tb-vw( 36 );
+            margin-top      : m.tb-vw( 36 );
             // margin-bottom: m.tb-vw( 0 );
-            margin-left: m.tb-vw( 42 );
+            margin-left     : m.tb-vw( 42 );
             @include m.pc {
-                font-size: m.pc-vw( 36 );
-                margin-top: m.pc-vw( 60 );
-                margin-left: m.pc-vw( 100 );
+                font-size   : m.pc-vw( 36 );
+                margin-top  : m.pc-vw( 60 );
+                margin-left : m.pc-vw( 100 );
             }
         }
     }
     &__text {
-        margin-top   : m.sp-vw( 30 );
-        margin-right : m.sp-vw( 18 );
-        margin-bottom: m.sp-vw( 19 );
-        margin-left  : m.sp-vw( 22 );
-        line-height  : 1.4375;
+        margin-top       : m.sp-vw( 30 );
+        margin-right     : m.sp-vw( 18 );
+        margin-bottom    : m.sp-vw( 19 );
+        margin-left      : m.sp-vw( 22 );
+        line-height      : 1.4375;
         @include m.tablet {
-            font-size: m.tb-vw( 16 );
-            margin-top: m.tb-vw( 25 );
-            margin-right: m.tb-vw( 35 );
+            font-size    : m.tb-vw( 16 );
+            margin-top   : m.tb-vw( 25 );
+            margin-right : m.tb-vw( 35 );
             margin-bottom: m.tb-vw( 37 );
-            margin-left: m.tb-vw( 42 );
+            margin-left  : m.tb-vw( 42 );
         }
         @include m.pc {
-            font-size: m.pc-vw( 16 );
+            font-size    : m.pc-vw( 16 );
             // margin-top: m.tb-vw( 25 );
-            margin-right: m.pc-vw( 100 );
+            margin-right : m.pc-vw( 100 );
             margin-bottom: m.pc-vw( 71 );
-            margin-left: m.pc-vw( 100 );
+            margin-left  : m.pc-vw( 100 );
         }
     }
 }
 
 //archiveのcard型
 .p-section__card {
-    margin-right: m.sp-vw( 18.9);
-    margin-bottom: m.sp-vw( 20.9);
-    margin-left: m.sp-vw( 20 );
+    margin-right         : m.sp-vw( 18.9);
+    margin-bottom        : m.sp-vw( 20.9);
+    margin-left          : m.sp-vw( 20 );
     @include m.tablet {
-        display: flex;
-        margin-right: m.tb-vw( 35 );
-        margin-bottom: m.tb-vw(20.5 );
-        margin-left: m.tb-vw( 43 );
+        display          : flex;
+        margin-right     : m.tb-vw( 35 );
+        margin-bottom    : m.tb-vw(20.5 );
+        margin-left      : m.tb-vw( 43 );
         @include m.pc {
-            margin-right: m.pc-vw( 100);
+            margin-right : m.pc-vw( 100);
             margin-bottom: m.pc-vw( 30 );
-            margin-left: m.pc-vw( 100 );
+            margin-left  : m.pc-vw( 100 );
         }
     }
     &__image--blue {
         @include m.tablet {
-            height: m.tb-vw( 354.5 );
+            height    : m.tb-vw( 354.5 );
             object-fit: cover;
             @include m.pc {
                 height: m.pc-vw( 471 );
@@ -70,21 +70,21 @@
     }
     &__about--wrapper {
         @include m.tablet {
-            width: 50%;
-            height: m.tb-vw( 354.5 );
+            width     : 50%;
+            height    : m.tb-vw( 354.5 );
             @include m.pc {
                 height: m.pc-vw( 471 );
             }
         }
     }
     &__title {
-        padding-top: m.sp-vw( 31.5 );
-        margin-left: m.sp-vw( 17 );
+        padding-top        : m.sp-vw( 31.5 );
+        margin-left        : m.sp-vw( 17 );
         @include m.tablet {
-            padding-top: m.tb-vw( 30 );
-            margin-left: m.tb-vw( 34.7 );
+            padding-top    : m.tb-vw( 30 );
+            margin-left    : m.tb-vw( 34.7 );
             @include m.pc {
-                font-size: m.pc-vw( 36 );
+                font-size  : m.pc-vw( 36 );
                 line-height: 1.5;
                 padding-top: m.pc-vw( 53 );
                 margin-left: m.pc-vw( 63 );
@@ -92,13 +92,13 @@
         }
     }
     &__heading {
-        padding-top: m.sp-vw( 24 );
-        margin-left: m.sp-vw( 17 );
+        padding-top        : m.sp-vw( 24 );
+        margin-left        : m.sp-vw( 17 );
         @include m.tablet {
-            padding-top: m.tb-vw( 24 );
-            margin-left: m.tb-vw( 34.7 );
+            padding-top    : m.tb-vw( 24 );
+            margin-left    : m.tb-vw( 34.7 );
             @include m.pc {
-                font-size: m.pc-vw( 24 );
+                font-size  : m.pc-vw( 24 );
                 line-height: 1.5;
                 padding-top: m.pc-vw( 47 );
                 margin-left: m.pc-vw( 63 );
@@ -106,50 +106,45 @@
         }
     }
     &__text {
-        padding-top : m.sp-vw( 10 );
-        margin-right: m.sp-vw( 73.1 );
-        margin-left : m.sp-vw( 17 );
-        line-height : 1.4375;
+        padding-top         : m.sp-vw( 10 );
+        margin-right        : m.sp-vw( 73.1 );
+        margin-left         : m.sp-vw( 17 );
+        line-height         : 1.4375;
         @include m.tablet {
-            padding-top: m.tb-vw( 10 );
-            margin-right: m.tb-vw( 59 );
-            margin-left: m.tb-vw( 34.7 );
+            padding-top     : m.tb-vw( 10 );
+            margin-right    : m.tb-vw( 59 );
+            margin-left     : m.tb-vw( 34.7 );
             @include m.pc {
-                font-size: m.pc-vw( 16 );
-                padding-top: m.pc-vw( 17 );
+                font-size   : m.pc-vw( 16 );
+                padding-top : m.pc-vw( 17 );
                 margin-right: m.pc-vw( 104 );
-                margin-left: m.pc-vw( 63 );
+                margin-left : m.pc-vw( 63 );
             }
         }
     }
     &__button {
-        margin-top    : m.sp-vw( 40 );
-        margin-right  : m.sp-vw( 93 );
-        margin-bottom : m.sp-vw( 43.7 );
-        margin-left   : m.sp-vw( 79.9 );
-        padding-top   : m.sp-vw( 10 );
-        padding-right : m.sp-vw( 42.1 );
-        padding-bottom: m.sp-vw( 10.5 );
-        padding-left  : m.sp-vw( 41.1);
+        margin-top               : m.sp-vw( 40 );
+        margin-right             : m.sp-vw( 93 );
+        margin-bottom            : m.sp-vw( 43.7 );
+        margin-left              : m.sp-vw( 79.9 );
+        padding-top              : m.sp-vw( 10 );
+        padding-right            : m.sp-vw( 42.1 );
+        padding-bottom           : m.sp-vw( 10.5 );
+        padding-left             : m.sp-vw( 41.1);
         @include m.tablet {
-            margin-top: m.tb-vw( 40.5 );
-            margin-right  : m.tb-vw( 99.8 );
-            margin-bottom : m.tb-vw( 33.5 );
-            margin-left   : m.tb-vw( 114.7 );
-            padding-top   : m.tb-vw( 10 );
-            padding-right : m.tb-vw( 42.1 );
-            padding-bottom: m.tb-vw( 10 );
-            padding-left  : m.tb-vw( 41);
+            margin-top           : m.tb-vw( 40.5 );
+            margin-right         : m.tb-vw( 99.8 );
+            margin-bottom        : m.tb-vw( 33.5 );
+            margin-left          : m.tb-vw( 114.7 );
+            padding-top          : m.tb-vw( 10 );
+            padding-right        : m.tb-vw( 42.1 );
+            padding-bottom       : m.tb-vw( 10 );
+            padding-left         : m.tb-vw( 41);
             @include m.pc {
-                margin-top: m.pc-vw( 60 );
-                margin-right  : m.pc-vw( 179 );
-                margin-bottom : m.pc-vw( 60 );
-                margin-left   : m.pc-vw( 205 );
-                // padding-top   : m.pc-vw( 27 );
-                // padding-right : m.pc-vw( 106 );
-                // padding-bottom: m.pc-vw( 27 );
-                // padding-left  : m.pc-vw( 106 );
-                // line-height: 2.0625;
+                margin-top       : m.pc-vw( 60 );
+                margin-right     : m.pc-vw( 179 );
+                margin-bottom    : m.pc-vw( 60 );
+                margin-left      : m.pc-vw( 205 );
             }
         }
     }

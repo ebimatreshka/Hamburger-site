@@ -4,38 +4,34 @@
 @use "./../../foundation/mixin" as m;
 
 .p-pagination {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: m.sp-vw( 60.4 );
-    margin-right: m.sp-vw( 20.2 );
-    margin-bottom: m.sp-vw( 31 );
-    margin-left: m.sp-vw( 20.3 );
+    display              : flex;
+    justify-content      : space-between;
+    align-items          : center;
+    margin-top           : m.sp-vw( 60.4 );
+    margin-right         : m.sp-vw( 20.2 );
+    margin-bottom        : m.sp-vw( 31 );
+    margin-left          : m.sp-vw( 20.3 );
     @include m.tablet {
-        justify-content: center;
-        margin-top: m.tb-vw( 105.5 );
-        // margin-right: m.tb-vw( 113.2 );
-        margin-bottom: m.tb-vw( 30 );
-        // margin-left: m.tb-vw( 122 );
+        justify-content  : center;
+        margin-top       : m.tb-vw( 105.5 );
+        margin-bottom    : m.tb-vw( 30 );
         @include m.pc {
-            margin-top: m.pc-vw( 149 );
-            // margin-right: m.pc-vw( 477.2 );
+            margin-top   : m.pc-vw( 149 );
             margin-bottom: m.pc-vw( 64 );
-            // margin-left: ( 477 );
         }
     }
     &__item--link {
-        display: block;
-        text-align: center;
+        display             : block;
+        text-align          : center;
         @include m.tablet {
-            margin-right: m.tb-vw( 17.2 );
+            margin-right    : m.tb-vw( 17.2 );
             @include m.pc {
                 margin-right: m.pc-vw( 15 );
             }
         }
     }
     &__item--hide {
-        display: none; //sp版で不要な表示を消す
+        display    : none; //sp版で不要な表示を消す
         @include m.tablet {
             display: block;
         }
