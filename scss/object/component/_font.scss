@@ -32,11 +32,14 @@
     &__13 {
         font-size    : 5.87vw;
     }
-    //archiveのcardのボタンの文字
+    //archiveのcardの小見出しとボタンの文字
     &__16 {
         font-size: m.sp-vw( 16 );
         @include m.tablet {
             font-size: m.tb-vw( 16 );
+            @include m.pc {
+                font-size: m.pc-vw( 16 );
+            }
         }
     }
     //sidebarのメニューの文字サイズ,archiveのcardのtitle

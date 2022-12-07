@@ -44,6 +44,9 @@
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
+        @include m.pc {
+            height: m.pc-vw( 239 );
+        }
     }
 
     &__title {
@@ -52,6 +55,9 @@
         @include m.tablet {
             line-height: 1.316;
             margin-left: m.tb-vw( 86 );
+            @include m.pc {
+                margin-left: m.pc-vw( 86 );
+            }
         }
     }
 

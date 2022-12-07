@@ -55,5 +55,8 @@
 .u-margin__R193 {
     @include m.tablet {
         margin-right: m.tb-vw( 5.3 );
+        @include m.pc {
+            margin-right: m.pc-vw( 19.3 );
+        }
     }
 }

@@ -20,6 +20,10 @@
     @include m.tablet {
       width: m.tb-vw( 163.16 );
       height: m.tb-vw( 42.47 );
+      @include m.pc {
+        width: m.pc-vw( 292 );
+        height: m.pc-vw( 76 );
+      }
     }
   }
   //paginationの箱型ボタン
@@ -41,3 +45,12 @@
     }
   }
 } 
+
+.c-button__pagination {
+  &:hover {
+    @include m.tablet {
+      background-color: v.$color-dark-brown;
+      color: v.$color-white;
+    }
+  }
+}
