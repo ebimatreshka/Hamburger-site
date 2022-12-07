@@ -868,6 +868,7 @@ img {
   .p-header__title--menu {
     display: block;
     font-size: 4.0767386091vw;
+    line-height: 1.3235;
     font-weight: 600;
     position: absolute;
     top: 3vw;
@@ -958,6 +959,11 @@ img {
   .p-main-visual__archive__detail {
     margin-left: 2.3980815348vw;
     font-size: 1.9184652278vw;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-main-visual__archive__detail {
+    font-size: 0.8333333333vw;
   }
 }
 
@@ -1094,18 +1100,15 @@ img {
 }
 @media screen and (min-width: 600px) {
   .p-pagination {
+    justify-content: center;
     margin-top: 12.6498800959vw;
-    margin-right: 13.5731414868vw;
     margin-bottom: 3.5971223022vw;
-    margin-left: 14.6282973621vw;
   }
 }
 @media screen and (min-width: 600px) and (min-width: 1025px) {
   .p-pagination {
     margin-top: 7.7604166667vw;
-    margin-right: 24.8541666667vw;
     margin-bottom: 3.3333333333vw;
-    margin-left: 477;
   }
 }
 .p-pagination__item--link {

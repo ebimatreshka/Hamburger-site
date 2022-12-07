@@ -12,15 +12,16 @@
     margin-bottom: m.sp-vw( 31 );
     margin-left: m.sp-vw( 20.3 );
     @include m.tablet {
+        justify-content: center;
         margin-top: m.tb-vw( 105.5 );
-        margin-right: m.tb-vw( 113.2 );
+        // margin-right: m.tb-vw( 113.2 );
         margin-bottom: m.tb-vw( 30 );
-        margin-left: m.tb-vw( 122 );
+        // margin-left: m.tb-vw( 122 );
         @include m.pc {
             margin-top: m.pc-vw( 149 );
-            margin-right: m.pc-vw( 477.2 );
+            // margin-right: m.pc-vw( 477.2 );
             margin-bottom: m.pc-vw( 64 );
-            margin-left: ( 477 );
+            // margin-left: ( 477 );
         }
     }
     &__item--link {

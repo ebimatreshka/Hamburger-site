@@ -67,5 +67,8 @@
             margin-left: m.tb-vw( 20 );
             font-size: m.tb-vw( 16 );
         }
+        @include m.pc {
+            font-size: m.pc-vw( 16 );
+        }
     }
 }
