@@ -1,0 +1,21 @@
+//文字色指定
+@use "./../../foundation/variables" as v;
+//レスポンシブ
+@use "./../../foundation/mixin" as m;
+
+//single-page tableの線を一重に
+.p-table {
+    border-collapse: collapse;
+    @include m.pc {
+        width: m.pc-vw( 1358 );
+        margin-top: m.pc-vw( 50 );
+        margin-left: m.pc-vw( 100 );
+    }
+    &__td {
+        @include m.pc {
+            padding-top: m.pc-vw( 28 );
+            padding-bottom: m.pc-vw( 27 );
+            padding-left: m.pc-vw( 30 );
+        }
+    }
+}

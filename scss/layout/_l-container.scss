@@ -32,3 +32,12 @@
     }
 }
 
+//single-pageのタイル型
+.l-container__single {
+    @include m.pc {
+        margin-top: m.pc-vw( 60 );
+        margin-right: m.pc-vw( 97 );
+        margin-left: m.pc-vw( 100 );
+    }
+}
+

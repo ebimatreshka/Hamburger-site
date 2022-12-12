@@ -164,3 +164,23 @@
         margin-left: m.pc-vw( 100 );
     }
 }
+//single ボタン
+.p-section__single--button {
+        @include m.pc {
+            width: m.pc-vw( 429 );
+            height: m.pc-vw( 104 );
+            margin-top: m.pc-vw( 60 );
+            margin-bottom: m.pc-vw( 60 );
+            margin-left: m.pc-vw( 100 );
+            padding-top: m.pc-vw( 41 );
+            line-height: 0;
+    }
+    &-a {
+        @include m.pc {
+            width: m.pc-vw( 429 );
+            height: m.pc-vw( 104 );
+            margin-top: -4vw;
+            display: block;
+        }
+    }
+}

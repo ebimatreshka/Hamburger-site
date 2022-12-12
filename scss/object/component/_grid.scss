@@ -49,3 +49,15 @@
     }
 }
 
+//single-pageのタイル型
+.c-grid__single {
+    display                  : grid;
+    @include m.pc {
+        // grid-template-rows       : 13.39vw 13.39vw 13.39vw;   //行
+        // grid-template-columns    : 25.156vw 25.156vw 25.156vw;  //列
+        grid-template-rows       : 1fr 1fr 1fr;   //行
+        grid-template-columns    : 1fr 1fr 1fr;  //列
+        gap: m.pc-vw( 20 );
+    }
+
+}

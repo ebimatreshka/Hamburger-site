@@ -28,16 +28,21 @@
 @use "./object/component/unit"; //２カラム　flex-box
 
 //object/project
+@use "./object/project/article"; //single-pageの画像と記事の組み合わせ
 @use "./object/project/access"; //front-page地図
 @use "./object/project/blockquote"; //single-pageのblockquote
 @use "./object/project/brunch-menu"; //front-pageのTake Out/Eat In
 @use "./object/project/footer";
 @use "./object/project/header";
+@use "./object/project/list"; //single-pageのlist
 @use "./object/project/main";
 @use "./object/project/nav"; //サイドバー
 @use "./object/project/pagination"; //ページネーション
 @use "./object/project/search-form"; //検索ボックス
 @use "./object/project/section"; //archiveのsection
+@use "./object/project/table"; //single-pageの表
 
 //object/utility
 @use "./object/utility/margin";
+@use "./object/utility/padding"; //single-pageのlist
+@use "./object/utility/width"; //single-pageのtable左側

@@ -1,0 +1,20 @@
+//文字色指定
+@use "./../../foundation/variables" as v;
+//レスポンシブ
+@use "./../../foundation/mixin" as m;
+
+//single
+.p-list__single {
+    @include m.pc {
+        margin-top: m.pc-vw( 60 );
+        margin-left: m.pc-vw( 150 );
+    }
+}
+//single code
+.p-list__single-code {
+    @include m.pc {
+        margin-top: m.pc-vw( 60 );
+        margin-right: m.pc-vw( 99 );
+        margin-left: m.pc-vw( 101 );
+    }
+}

@@ -60,7 +60,54 @@
 .u-margin__L50 {
     margin-left: m.pc-vw( 50 );
 }
-
+//真ん中中央寄せ
 .u-margin__0 {
     margin: 0 auto;
+}
+//single-page下に
+.u-margin__B30 {
+    margin-bottom: m.sp-vw( 30 );
+    @include m.tablet {
+        margin-bottom: m.tb-vw( 61 );
+        @include m.pc {
+            margin-bottom: m.pc-vw( 60 );
+        }
+    }
+}
+
+//single-page listの間
+.u-margin__B20 {
+    margin-bottom: m.sp-vw( 20 );
+    @include m.tablet {
+        margin-bottom: m.tb-vw( 20 );
+        @include m.pc {
+            margin-bottom: m.pc-vw( 20 );
+        }
+    }
+}
+
+.u-margin__L34 {
+    margin-left: m.sp-vw( 18 );
+    @include m.tablet {
+        margin-left: m.tb-vw( 18 );
+        @include m.pc {
+            margin-left: m.pc-vw( 18 );
+        }
+    }
+}
+//single-page 一番下の<p>
+.u-margin__L20 {
+    margin-top: m.sp-vw( 30 );
+    margin-bottom: m.sp-vw( 177 );
+    margin-left: m.sp-vw( 20 );
+    @include m.tablet {
+        margin-top: m.tb-vw( 60 );
+        margin-bottom: m.tb-vw( 228 );
+        margin-left: m.tb-vw( 60 );
+        @include m.pc {
+            margin-top: m.pc-vw( 60 );
+            margin-bottom: m.pc-vw( 353 );
+            margin-left: m.pc-vw( 100 );
+        }
+    }
 }
