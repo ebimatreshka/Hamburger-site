@@ -149,3 +149,18 @@
         }
     }
 }
+
+//singleのsectionのh2
+.p-section {
+    &__single--title-h2,
+    &__single--title-h3,
+    &__single--title-h4-6 {
+    margin-top: m.pc-vw( 60 );
+    margin-left: m.pc-vw( 100 );
+    }
+    &__single--text {
+        margin-top: m.pc-vw( 60 );
+        margin-right: m.pc-vw( 100 );
+        margin-left: m.pc-vw( 100 );
+    }
+}

@@ -1,0 +1,14 @@
+//色指定
+@use "./../../foundation/variables" as v;
+//レスポンシブ
+@use "./../../foundation/mixin" as m;
+
+//singleの画像
+.c-image__single--big {
+    object-fit: cover;
+    object-position: 100% 100%;
+    @include m.pc {
+        width: m.pc-vw( 1353 );
+        height: m.pc-vw( 500 );
+    }
+}

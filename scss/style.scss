@@ -18,6 +18,7 @@
 @use "./object/component/color"; //文字色
 @use "./object/component/font";
 @use "./object/component/grid";
+@use "./object/component/image"; //画像
 @use "./object/component/line-height";
 @use "./object/component/opacity"; //透過
 @use "./object/component/pseudo-element"; //擬似要素
@@ -28,6 +29,7 @@
 
 //object/project
 @use "./object/project/access"; //front-page地図
+@use "./object/project/blockquote"; //single-pageのblockquote
 @use "./object/project/brunch-menu"; //front-pageのTake Out/Eat In
 @use "./object/project/footer";
 @use "./object/project/header";

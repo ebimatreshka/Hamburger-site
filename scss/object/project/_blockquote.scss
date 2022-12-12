@@ -1,0 +1,20 @@
+//文字色指定
+@use "./../../foundation/variables" as v;
+//レスポンシブ
+@use "./../../foundation/mixin" as m;
+
+//single-pageのblockquote
+.p-blockquote {
+    display: block;
+    margin: 0 auto;
+    margin-top: m.pc-vw( 60 );
+    margin-bottom: m.pc-vw( 60);
+    width: m.pc-vw( 1353 );
+    height: m.pc-vw( 319 );
+    &-text {
+        padding-top: m.pc-vw( 50 );
+        padding-right: m.pc-vw( 60 );
+        padding-bottom: m.pc-vw( 60 );
+        padding-left: m.pc-vw( 50 );
+    }
+}
