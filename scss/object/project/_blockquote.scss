@@ -7,14 +7,45 @@
 .p-blockquote {
     display: block;
     margin: 0 auto;
-    margin-top: m.pc-vw( 60 );
-    margin-bottom: m.pc-vw( 60);
-    width: m.pc-vw( 1353 );
-    height: m.pc-vw( 319 );
-    &-text {
-        padding-top: m.pc-vw( 50 );
-        padding-right: m.pc-vw( 60 );
-        padding-bottom: m.pc-vw( 60 );
-        padding-left: m.pc-vw( 50 );
+    @include m.tablet {
+        margin-top: m.tb-vw( 60 );
+        margin-right: m.tb-vw( 60 );
+        margin-bottom: m.tb-vw( 60 );
+        margin-left: m.tb-vw( 60 );
+        @include m.pc {
+            margin-top: m.pc-vw( 60 );
+            margin-bottom: m.pc-vw( 60);
+            width: m.pc-vw( 1353 );
+            height: m.pc-vw( 319 );
+        }
     }
+    &__text {
+        @include m.tablet {
+            padding-top: m.tb-vw( 50 );
+            padding-right: m.tb-vw( 56 );
+            padding-bottom: m.tb-vw( 60 );
+            padding-left: m.tb-vw( 50 );
+        @include m.pc {
+                padding-top: m.pc-vw( 50 );
+                padding-right: m.pc-vw( 60 );
+                padding-bottom: m.pc-vw( 60 );
+                padding-left: m.pc-vw( 50 );
+            }
+        }
+    }
+    &__text2 {
+        @include m.tablet {
+            padding-bottom: m.tb-vw( 60 );
+            margin-left: m.tb-vw( 50 );
+            @include m.pc {
+                padding-left: m.pc-vw( 50 );
+                margin-left: m.pc-vw( 50 );
+            }
+        }
+    }
+}
+//single-page出典の<a>
+.p-blockquote__a {
+    text-decoration: underline;
+    font-style: normal; //イタリック体を解除
 }

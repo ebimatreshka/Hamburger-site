@@ -8,18 +8,38 @@
     &--big {
         object-fit: cover;
         object-position: 100% 100%;
-        @include m.pc {
-            width: m.pc-vw( 1353 );
-            height: m.pc-vw( 500 );
+        @include m.tablet {
+            width: m.tb-vw( 714 );
+            height: m.tb-vw( 264 );
+            @include m.pc {
+                width: m.pc-vw( 1353 );
+                height: m.pc-vw( 500 );
+            }
         }
     }
     &--middle {
         @extend .c-image__single;
+        @include m.tablet {
+            width: m.tb-vw( 306 );
+            height: m.tb-vw( 189 );
         @include m.pc {
-            width: m.pc-vw( 581 );
-            height: m.pc-vw( 358 );
+                width: m.pc-vw( 581 );
+                height: m.pc-vw( 358 );
+            }
         }
     }
+    &--middle2 {
+        @extend .c-image__single;
+        @include m.tablet {
+            width: m.tb-vw( 581 );
+            height: m.tb-vw( 358 );
+        @include m.pc {
+                width: m.pc-vw( 581 );
+                height: m.pc-vw( 358 );
+            }
+        }
+    }
+
     &--small {
         @extend .c-image__single;
         @include m.pc {

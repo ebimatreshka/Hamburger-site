@@ -34,10 +34,15 @@
 
 //single-pageのタイル型
 .l-container__single {
+    @include m.tablet {
+        margin-top: m.tb-vw( 241 );
+        margin-right: m.tb-vw( 60 );
+        margin-left: m.tb-vw( 60 );
     @include m.pc {
-        margin-top: m.pc-vw( 60 );
-        margin-right: m.pc-vw( 97 );
-        margin-left: m.pc-vw( 100 );
+            margin-top: m.pc-vw( 60 );
+            margin-right: m.pc-vw( 97 );
+            margin-left: m.pc-vw( 100 );
+        }
     }
 }
 

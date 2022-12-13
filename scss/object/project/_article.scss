@@ -6,12 +6,22 @@
 //single-pageの画像と記事のセット
 .p-article1 {
     display: flex;
-    margin-top: m.pc-vw( 60 );
-    margin-right: m.pc-vw( 99 );
-    margin-left: m.pc-vw( 100 );
+    @include m.tablet {
+        margin-top: m.tb-vw( 60 );
+        margin-right: m.tb-vw( 60 );
+        margin-left: m.tb-vw( 60 );
+    @include m.pc {
+            margin-top: m.pc-vw( 60 );
+            margin-right: m.pc-vw( 99 );
+            margin-left: m.pc-vw( 100 );
+        }
+    }
     &__text {
-        @include m.pc {
-            margin-left: m.pc-vw( 40 );
+        @include m.tablet {
+            margin-left: m.tb-vw( 21 );
+            @include m.pc {
+                margin-left: m.pc-vw( 40 );
+            }
         }
     }
 }
@@ -19,8 +29,11 @@
 //single-pageの記事と画像のセット
 .p-article2 {
     &__text {
-        @include m.pc {
-            margin-right: m.pc-vw( 40 );
+        @include m.tablet {
+            margin-right: m.tb-vw( 21 );
+            @include m.pc {
+                margin-right: m.pc-vw( 40 );
+            }
         }
     }
 }

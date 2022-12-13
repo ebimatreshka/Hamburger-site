@@ -153,15 +153,65 @@
 //singleのsectionのh2
 .p-section {
     &__single--title-h2,
-    &__single--title-h3,
-    &__single--title-h4-6 {
-    margin-top: m.pc-vw( 60 );
-    margin-left: m.pc-vw( 100 );
+    &__single--title-h6 {
+        margin-top: m.pc-vw( 30 );
+        margin-left: m.sp-vw( 20 );
+        @include m.tablet {
+            margin-top: m.tb-vw( 60 );
+            margin-left: m.tb-vw( 60 );
+            @include m.pc {
+                margin-top: m.pc-vw( 60 );
+                margin-left: m.pc-vw( 100 );
+            }
+        }
+    }
+    &__single--title-h3 {
+        margin-top: m.pc-vw( 34 );
+        margin-left: m.sp-vw( 20 );
+        @include m.tablet {
+            margin-top: m.tb-vw( 60 );
+            margin-left: m.tb-vw( 60 );
+            @include m.pc {
+                margin-top: m.pc-vw( 60 );
+                margin-left: m.pc-vw( 100 );
+            }
+        }
+    }
+    &__single--title-h4 {
+        margin-top: m.pc-vw( 31 );
+        margin-left: m.sp-vw( 20 );
+        @include m.tablet {
+            margin-top: m.tb-vw( 60 );
+            margin-left: m.tb-vw( 60 );
+            @include m.pc {
+                margin-top: m.pc-vw( 60 );
+                margin-left: m.pc-vw( 100 );
+            }
+        }
+    }
+    &__single--title-h5 {
+        margin-top: m.pc-vw( 37 );
+        margin-left: m.sp-vw( 20 );
+        @include m.tablet {
+            margin-top: m.tb-vw( 60 );
+            margin-left: m.tb-vw( 60 );
+            @include m.pc {
+                margin-top: m.pc-vw( 60 );
+                margin-left: m.pc-vw( 100 );
+            }
+        }
     }
     &__single--text {
-        margin-top: m.pc-vw( 60 );
-        margin-right: m.pc-vw( 100 );
-        margin-left: m.pc-vw( 100 );
+        @include m.tablet {
+            margin-top: m.tb-vw( 60 );
+            margin-right: m.tb-vw( 60 );
+            margin-left: m.tb-vw( 60 );
+            @include m.pc {
+                margin-top: m.pc-vw( 60 );
+                margin-right: m.pc-vw( 100 );
+                margin-left: m.pc-vw( 100 );
+            }
+        }
     }
 }
 //single ボタン
