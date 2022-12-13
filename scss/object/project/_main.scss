@@ -90,4 +90,13 @@
             height     : m.pc-vw( 500 );
         }
     }
+    &--title {
+        margin-left        : m.sp-vw( 26 );
+        @include m.tablet {
+            margin-left    : m.tb-vw( 86 );
+            @include m.pc {
+                margin-left: m.pc-vw( 86 );
+            }
+        } 
+    }
 }

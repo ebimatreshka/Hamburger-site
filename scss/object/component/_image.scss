@@ -8,6 +8,8 @@
     &--big {
         object-fit: cover;
         object-position: 100% 100%;
+        width: m.sp-vw( 335 );
+        height: m.sp-vw( 124 );
         @include m.tablet {
             width: m.tb-vw( 714 );
             height: m.tb-vw( 264 );
@@ -19,6 +21,8 @@
     }
     &--middle {
         @extend .c-image__single;
+        width: m.sp-vw( 144 );
+        height: m.sp-vw( 89 );
         @include m.tablet {
             width: m.tb-vw( 306 );
             height: m.tb-vw( 189 );
@@ -30,7 +34,9 @@
     }
     &--middle2 {
         @extend .c-image__single;
-        @include m.tablet {
+        width: m.sp-vw( 267 );
+        height: m.sp-vw( 166 );
+    @include m.tablet {
             width: m.tb-vw( 581 );
             height: m.tb-vw( 358 );
         @include m.pc {
