@@ -7,7 +7,7 @@
 
 //sp版の元の画面を
 .l-body.is-active {
-    overflow: hidden;
+    overflow      : hidden;
     @include m.pc {
         overflow-y: scroll;
     }

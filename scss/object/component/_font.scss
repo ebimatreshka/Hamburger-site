@@ -79,9 +79,9 @@
     }
     //single-page h2
     &__28--single-h2 {
-        font-size: m.sp-vw( 28 );
+        font-size        : m.sp-vw( 28 );
         @include m.tablet {
-            font-size: m.tb-vw( 36 );
+            font-size    : m.tb-vw( 36 );
             @include m.pc {
                 font-size: m.pc-vw( 36 );
             }
@@ -89,18 +89,18 @@
         }
     }
     &__24--single-h3 {
-        font-size: m.sp-vw( 24 );
+        font-size        : m.sp-vw( 24 );
         @include m.tablet {
-            font-size: m.tb-vw( 28 );
+            font-size    : m.tb-vw( 28 );
             @include m.pc {
                 font-size: m.pc-vw( 28 );
             }
         }
     }
     &__20--single-h4-6 {
-        font-size: m.sp-vw( 20 );
+        font-size        : m.sp-vw( 20 );
         @include m.tablet {
-            font-size: m.tb-vw( 20 );
+            font-size    : m.tb-vw( 20 );
             @include m.pc {
                 font-size: m.pc-vw( 20 );
             }

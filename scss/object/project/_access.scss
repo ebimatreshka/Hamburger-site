@@ -48,9 +48,9 @@
     //見出し
     &__title {
         position        : absolute;
-        padding-top     : m.sp-vw( 40, 375 );
-        padding-left    : m.sp-vw( 42, 375 );
-        font-size       : m.sp-vw( 30, 375);
+        padding-top     : m.sp-vw( 40 );
+        padding-left    : m.sp-vw( 42 );
+        font-size       : m.sp-vw( 30 );
         @include m.tablet {
             font-size   : m.tb-vw( 30 );
             padding-left: 3.62vw;

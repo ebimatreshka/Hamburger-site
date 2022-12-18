@@ -18,9 +18,9 @@
         border-radius: 35px;
     }
     &--20 {
-        border-radius: m.sp-vw( 20 ); //single-pageのボタン
+        border-radius        : m.sp-vw( 20 ); //single-pageのボタン
         @include m.tablet {
-            border-radius: m.tb-vw( 20 );
+            border-radius    : m.tb-vw( 20 );
             @include m.pc {
                 border-radius: m.pc-vw( 20 );
             }

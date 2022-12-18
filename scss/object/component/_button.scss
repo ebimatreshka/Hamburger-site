@@ -18,18 +18,18 @@
   &__white {
     background-color: v.$color-white;
     @include m.tablet {
-      width : m.tb-vw( 163.16 );
-      height: m.tb-vw( 42.47 );
+      width         : m.tb-vw( 163.16 );
+      height        : m.tb-vw( 42.47 );
       @include m.pc {
-        width : m.pc-vw( 292 );
-        height: m.pc-vw( 76 );
+        width       : m.pc-vw( 292 );
+        height      : m.pc-vw( 76 );
       }
     }
   }
   //paginationの箱型ボタン
   &__pagination {
-    border: solid 1px v.$color-brown;
-    color : v.$color-brown;
+    border        : solid 1px v.$color-brown;
+    color         : v.$color-brown;
     @include m.tablet {
       width       : m.tb-vw( 35 );
       height      : m.tb-vw( 35 );

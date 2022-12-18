@@ -29,9 +29,9 @@
     }
     //archiveのmain-visualのtitleのfont
     &__36 {
-        font-size    : m.sp-vw( 36 );
+        font-size        : m.sp-vw( 36 );
         @include m.tablet {
-            font-size: m.tb-vw( 60 );
+            font-size    : m.tb-vw( 60 );
             @include m.pc {
                 font-size: m.pc-vw( 60 );
             }
