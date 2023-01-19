@@ -4,9 +4,9 @@
 @use "./../../foundation/mixin" as m;
 
 .u-padding__L16 {
-    padding-left: m.sp-vw( 16 );
+    padding-left        : m.sp-vw( 16 );
     @include m.tablet {
-        padding-left: m.tb-vw( 16 );
+        padding-left    : m.tb-vw( 16 );
         @include m.pc {
             padding-left: m.pc-vw( 16 );
         }
